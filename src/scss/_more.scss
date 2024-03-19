@@ -1,0 +1,54 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.more {
+  padding: 34px 0 66px 0;
+  background-color: $oceanBlue;
+  color: $whiteColor;
+
+  .more-list {
+
+    &__item {
+      margin-bottom: 46px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+
+      &:nth-child(2n) .more-item__info {
+        margin-right: 0;
+        margin-left: 45px;
+      }
+    }
+  }
+}
+
+.more-item {
+
+  &__info {
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    @include raleway(400, 80px);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    padding: 20px 40px;
+    @include raleway(200, 48px);
+    text-transform: uppercase;
+    border: 1px solid $whiteColor;
+  }
+}

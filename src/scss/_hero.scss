@@ -1,0 +1,9 @@
+.hero {
+  margin-bottom: calc(238px - 19px);
+
+  .hero-img {
+    margin-bottom: 19px;
+    width:100%;
+    object-fit: cover;
+  }
+}

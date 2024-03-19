@@ -1,0 +1,28 @@
+@import "_variables.scss";
+@import "mixin.scss";
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+.header-top {
+  margin-bottom: 88px;
+
+  &__logo {
+    margin-left: auto;
+    margin-right: 272px;
+  }
+}
+
+.header-bottom {
+  .header-item__link {
+    display: inline-block;
+    max-width: 202px;
+    text-transform: uppercase;
+    @include raleway(400, 24px);
+  }
+  .header-item:not(:last-child) {
+    margin-right: 92px;
+  }
+}

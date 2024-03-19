@@ -1,0 +1,38 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('../fonts/#{$url}.woff2') format('woff2'),
+    url('../fonts/#{$url}.woff') format('woff');
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@mixin raleway($weight, $size) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin montserrat($weight, $size) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin clearListStyles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin clearBtnStyles {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  cursor: pointer;
+}
+

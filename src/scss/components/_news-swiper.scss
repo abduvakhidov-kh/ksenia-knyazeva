@@ -1,0 +1,56 @@
+@import '_variables.scss';
+
+.news-swiper {
+
+  &__item--last {
+    width: 100%;
+    height: 559px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    & button {
+      padding: 13px 20px;
+      max-width: 170px;
+      @include raleway(400, 16px);
+      text-transform: uppercase;
+      color: $gray;
+      border: 1px solid $gray;
+    }
+  }
+
+  &__top {
+    position: relative;
+    margin-bottom: 8px;
+
+    & span {
+      padding: 8px 10px;
+      @include raleway(400, 24px);
+      color: $oceanBlue;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 32px;
+      left: 0;
+      border-top: 1px solid $oceanBlue;
+      border-bottom: 1px solid $oceanBlue;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &__info {
+    align-items: flex-start;
+    @include montserrat(400, 23px);
+  }
+
+  &__btn {
+    padding: 8px 20px;
+    @include raleway(400, 16px);
+    text-transform: uppercase;
+    color: $gray;
+    border: 1px solid $gray;
+  }
+}

@@ -1,0 +1,13 @@
+@import '_mixin.scss';
+
+@include font-face("TildaSans", "TildaSans-Light", 300);
+@include font-face("TildaSans", "TildaSans-Regular", 400);
+@include font-face("TildaSans", "TildaSans-Semibold", 600);
+@include font-face("TildaSans", "TildaSans-Bold", 700);
+@include font-face("TildaSans", "TildaSans-ExtraBold", 800);
+@include font-face("TildaSans", "TildaSans-Black", 900);
+@include font-face("TildaSansVF", "TildaSansVF", 600);
+@include font-face("Circe", "Circe-Regular", 400);
+@include font-face("Circe", "Circe-Bold",700);
+
+

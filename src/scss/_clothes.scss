@@ -1,0 +1,48 @@
+.clothes {
+  padding: 170px 0;
+  text-transform: uppercase;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    @include raleway(400, 40px);
+  }
+
+  .clothes-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      margin-bottom: 56px;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 72px;
+      }
+    }
+
+    .clothes-item {
+      &__img {
+        margin-bottom: 10px;
+      }
+
+      &__title {
+        margin-bottom: 10px;
+        @include raleway(400, 40px);
+        text-transform: uppercase;
+      }
+
+      &__link {
+        padding: 16px 30px;
+        @include montserrat(400, 24px);
+        text-transform: uppercase;
+        color: $gray;
+        border: 1px solid $gray;
+      }
+    }
+  }
+}

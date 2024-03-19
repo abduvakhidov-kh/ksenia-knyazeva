@@ -1,4 +1,4 @@
-.clothes {
+.categories {
   padding: 170px 0;
   text-transform: uppercase;
 
@@ -11,10 +11,10 @@
     @include raleway(400, 40px);
   }
 
-  .clothes-list {
+  .categories-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
 
     &__item {
@@ -25,13 +25,15 @@
       }
     }
 
-    .clothes-item {
+    .categories-item {
       &__img {
         margin-bottom: 10px;
       }
 
       &__title {
         margin-bottom: 10px;
+        max-width: 425px;
+        text-align:center;
         @include raleway(400, 40px);
         text-transform: uppercase;
       }

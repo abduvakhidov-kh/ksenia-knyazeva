@@ -1,0 +1,55 @@
+@import '../../_variables.scss';
+@import '../../_mixin.scss';
+
+.gallery-list {
+  margin-bottom: 110px;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-bottom: 57px;
+  }
+
+  &__item:not(:nth-child(3n)) {
+    margin-right: 34px;
+  }
+
+  &__top {
+    position: relative;
+    margin-bottom: 8px;
+
+    & span {
+      padding: 8px 10px;
+      @include raleway(400, 30px);
+      color: $oceanBlue;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 32px;
+      left: 0;
+      border-top: 1px solid $oceanBlue;
+      border-bottom: 1px solid $oceanBlue;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &__info {
+    align-items: flex-start;
+    @include montserrat(400, 28px);
+
+    & span span {
+      text-decoration: line-through;
+      font-size: 19px;
+    }
+  }
+
+  &__btn {
+    padding: 8px 20px;
+    @include raleway(400, 20px);
+    text-transform: uppercase;
+    color: $gray;
+    border: 1px solid $gray;
+  }
+}

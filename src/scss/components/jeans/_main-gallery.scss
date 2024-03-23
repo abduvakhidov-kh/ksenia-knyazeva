@@ -1,0 +1,69 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.gallery {
+  margin-bottom: 95px;
+
+  .gallery-content {
+    margin-bottom: 20px;
+  }
+
+  .gallery-left {
+    margin-right: 14px;
+    position: relative;
+
+    & span {
+      padding: 8px 10px;
+      font-size: 48px;
+      font-weight: 400;
+      color: $whiteColor;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 32px;
+      left: 0;
+      border-top: 1px solid $whiteColor;
+      border-bottom: 1px solid $whiteColor;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      & img {
+        width: 158px;
+        height: 110px;
+      }
+    }
+  }
+
+  .gallery-right {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      margin-bottom: 14px;
+    }
+
+    .gallery-bottom__img:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title, &__price {
+    @include montserrat(400, 40px);
+  }
+
+  &__btn {
+    padding: 15px 30px;
+    @include raleway(400, 32px);
+    text-transform: uppercase;
+    color: $gray;
+    border: 1px solid $gray;
+  }
+}

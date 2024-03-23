@@ -1,0 +1,43 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.filters {
+  padding: 83px 0 133px 0;
+
+  &__title {
+    margin-bottom: 60px;
+    @include raleway(400, 64px);
+    text-transform: uppercase;
+  }
+
+  .tags {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+
+    &__link {
+      margin-right: 30px;
+      @include raleway(400, 24px);
+      color: $gray;
+      text-transform: uppercase;
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  .filters-list {
+
+    &__btn {
+      margin-right: 5px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      @include raleway(400, 32px);
+
+      &:not(:last-child) {
+        margin-right: 86px;
+      }
+    }
+  }
+}

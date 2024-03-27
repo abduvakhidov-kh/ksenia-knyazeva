@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - обмен</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/header.html')
+    <main class="main">
+      <section class="filters">
+        <div class="container">
+          <div class="tags">
+            <a href="index.html" class="tags__link">Главная</a>
+          </div>
+        </div>
+      </section>
+      <section class="exchange">
+        <div class="container">
+          <div class="exchange__rules">
+            <h2 class="exchange__title">Правила обмена</h2>
+            <p class="exchange__descr">
+              Вы можете обменять товар на другой размер или модель с нашего сайта в течение
+              14 дней с момента покупки. Для этого напишите нам в любой мессенджер или чат
+              на сайте и мы поможем все оформить.
+            </p>
+          </div>
+          <div class="exchange__conditions">
+            <h3 class="exchange__subtitle">УСЛОВИЯ</h3>
+            <p class="exchange__subdescr">
+              Товар должен быть надлежащего качества (не был в употреблении, сохранены его товарный вид,
+              потребительские свойства, оригинальная упаковка, а также чеки, подтверждающие
+              покупку в нашем магазине). Понадобится Ваш паспорт.
+              Если Вы приобретали товар в розничном магазине, обменять его вы можете только в магазине.
+            </p>
+            <h4 class="exchange-list__title">Не подлежат обмену:</h4>
+            <ul class="exchange-list list-reset">
+              <li class="exchange-list__item">боди</li>
+              <li class="exchange-list__item">купальники</li>
+              <li class="exchange-list__item">чулочно-носочные изделия</li>
+              <li class="exchange-list__item">предметы личной гигиены (заколки, расчески и тд)</li>
+            </ul>
+          </div>
+          <div class="exchange__size">
+            <h3 class="exchange__subtitle">ОБМЕН НА ДРУГОЙ РАЗМЕР</h3>
+            <p class="exchange__subdescr">
+              Если вам не подошла купленная вещь по размеру, вы можете обменять ее на другой размер при
+              условии, что он есть в наличии. В этом случае, обмен производится по стоимости действующей
+              на момент покупки.
+            </p>
+          </div>
+          <div class="exchange__item">
+            <h3 class="exchange__subtitle">ОБМЕН НА ДРУГОЙ ТОВАР</h3>
+            <p class="exchange__subdescr">
+              Если купленная вами вещь не подошла или не понравилась, вы можете обменять ее на любое
+              другое изделие с нашего магазина с доплатой или возвратом разницы в стоимости.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+

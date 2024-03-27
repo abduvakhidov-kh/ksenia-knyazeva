@@ -1,0 +1,52 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.delivery {
+  &__title {
+    margin-bottom: 97px;
+    @include raleway(600, 45px);
+    text-transform: uppercase;
+    color: $oceanBlue;
+    text-align: center;
+  }
+
+  &__descr {
+    margin-bottom: 51px;
+    @include raleway(400, 32px);
+    line-height: 1.5;
+    text-align: center;
+
+    &.text {
+      margin-bottom: 197px;
+    }
+  }
+
+  .delivery-table {
+    margin-bottom: 68px;
+  }
+
+  table, th, td {
+    border: 1px solid $mainColor;
+    border-collapse: collapse;
+  }
+
+  th {
+    padding: 20px 0;
+    @include raleway(600, 32px);
+  }
+
+  td {
+    padding: 20px 40px;
+    max-width: 500px;
+
+    &:nth-child(1) {
+      max-width: 210px;
+      font-weight: 600;
+    }
+  }
+
+  tbody {
+    @include montserrat(500, 24px);
+    text-align: center;
+  }
+}

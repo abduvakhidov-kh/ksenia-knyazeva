@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - приведи подругу</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/header.html')
+    <main class="main">
+      <section class="filters">
+        <div class="container">
+          <div class="tags">
+            <a href="index.html" class="tags__link">Главная</a>
+          </div>
+        </div>
+      </section>
+      <section class="referal">
+        <div class="container">
+          <div class="referal__info">
+            <h2 class="referal__title">
+              приведи подругу
+            </h2>
+            <p class="referal-text info">
+              Вы можете приглашать своих подруг покупать в нашем магазине одежду
+              и аксессуары <span>KSENIA KNYAZEVA</span> и получать за это 3% от всех их покупок.
+              Для приглашения передайте ссылку подруге.
+            </p>
+            <p class="referal__link">
+              Ваша реферальная ссылка на главную страницу:
+              <span>https://knyazeva.ru/?kk=419117</span>
+            </p>
+          </div>
+          <div class="referal__conditions">
+            <h3 class="referal__subtitle">Условия</h3>
+            <p class="referal-text">
+              Вы можете давать ссылку на любую страницу нашего сайта, добавив после адреса страницы
+              переменную <span>"/?kk=419117"</span>.
+              <br><br>
+              Также Вы можете разместить эту ссылку с информацией о нас (на форумах, в постах социальных
+              сетях и в других местах) и получать процент от суммы выкупленных заказов тех клиентов, кто
+              перешел по Вашей ссылке и сделал первый и последующие заказы. Средства, от выполненных
+              зачисляются на Ваш счет через 14 дней после выполнения заказа.
+            </p>
+          </div>
+          <div class="referal__orders">
+            <h3 class="referal__subtitle">ЗАКАЗЫ ПО РЕФЕРАЛЬНОЙ ССЫЛКЕ</h3>
+            <p class="referal-text">Заказов пока нет :(</p>
+          </div>
+          <div class="referal__users">
+            <h3 class="referal__subtitle">Зарегистированные по вашему приглашению пользователи</h3>
+            <p class="referal-text">Зарегистрированных по реферальной ссылке не обнаружено :(</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+

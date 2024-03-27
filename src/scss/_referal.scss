@@ -1,0 +1,65 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.referal {
+  text-align: center;
+
+  &__info {
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__conditions {
+    margin-bottom: 190px;
+    text-align: left;
+  }
+
+  &__orders {
+    margin-bottom: 200px;
+  }
+
+  &__users {
+    margin-bottom: 410px;
+  }
+
+  &__title {
+    margin-bottom: 87px;
+    @include raleway(600, 45px);
+    text-transform: uppercase;
+    color: $oceanBlue;
+  }
+
+  &__subtitle {
+    margin-bottom: 55px;
+    @include raleway(600, 36px);
+    text-transform: uppercase;
+    color: $oceanBlue;
+    text-align: center;
+  }
+
+  &__link {
+    @include montserrat(400, 32px);
+
+    & span {
+      display: block;
+      text-transform: uppercase;
+      color: $oceanBlue;
+    }
+  }
+
+  .referal-text {
+    margin-bottom: 45px;
+    @include raleway(400, 32px);
+    line-height: 1.5;
+
+    &.info {
+      max-width: 1150px;
+    }
+
+    & span {
+      @include montserrat(400, 32px);
+    }
+  }
+}

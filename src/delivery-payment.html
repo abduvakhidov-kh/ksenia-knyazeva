@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - доставка и оплата</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/header.html')
+    <main class="main">
+      <section class="filters">
+        <div class="container">
+          <div class="tags">
+            <a href="index.html" class="tags__link">Главная</a>
+          </div>
+        </div>
+      </section>
+      <section class="delivery">
+        <div class="container">
+          <h2 class="delivery__title">Доставка и оплата</h2>
+          <p class="delivery__descr">МОСКВА (ДО МКАД)</p>
+          <table class="delivery-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>САМОВЫВОЗ ИЗ МАГАЗИНА</th>
+                <th>ДОСТАВКА КУРЬЕРОМ</th>
+                <th>ПУНКТ ВЫДАЧИ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Срок доставки</td>
+                <td>1-2 рабочих дня</td>
+                <td>2-3 рабочих дня</td>
+                <td>2-3 рабочих дня</td>
+              </tr>
+              <tr>
+                <td>Срок хранения</td>
+                <td>3 календарных дня</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+              <tr>
+                <td>Стоимость</td>
+                <td>Бесплатно</td>
+                <td>390 руб</td>
+                <td>Расчет при оформлении заказа</td>
+              </tr>
+              <tr>
+                <td>Оплата</td>
+                <td>Наличными или картой при получении</td>
+                <td>
+                  <p>Наличными или картой при получении</p>
+                  <p style="font-weight: 400;">Оплата онлайн: VISA, MasterCard, МИР, JCB</p>
+                  <p>Предоплата заказа через сервис Долями <span style="font-weight: 400;">(25% сразу, остальное равными платежами каждые 2 недели)</span></p>
+                </td>
+                <td>
+                  <p>Наличными или картой при получении</p>
+                  <p style="font-weight: 400;">Оплата онлайн: VISA, MasterCard, МИР, JCB</p>
+                  <p>Предоплата заказа через сервис Долями <span style="font-weight: 400;">(25% сразу, остальное равными платежами каждые 2 недели)</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Примерка</td>
+                <td colspan="3">Возможность примерки и частичного выкупа</td>
+              </tr>
+              <tr>
+                <td>Возврат</td>
+                <td>Бесплатный, в том же Фирменном магазине</td>
+                <td colspan="2">Бесплатный, через пункты выдачи заказов СДЭК</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="delivery__descr text">
+            В случае отказа покупателя от товара при получении или после передачи товара в доставку
+            предоплата доставки не возвращается в связи с тем, что расходы продавца на транспортировку
+            возвращенного товара подлежат компенсации на основании ст. 26.1 "Закона о защите прав
+            потребителей".
+          </p>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+

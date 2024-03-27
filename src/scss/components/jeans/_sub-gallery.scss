@@ -3,15 +3,16 @@
 
 .gallery-list {
   margin-bottom: 110px;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   &__item {
     margin-bottom: 57px;
   }
 
-  &__item:not(:nth-child(3n)) {
-    margin-right: 34px;
-  }
+  // &__item:not(:nth-child(3n)) {
+  //   margin-right: 34px;
+  // }
 
   &__top {
     position: relative;

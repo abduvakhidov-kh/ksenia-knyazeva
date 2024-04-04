@@ -1,5 +1,5 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .delivery {
   &__title {
@@ -25,7 +25,9 @@
     margin-bottom: 68px;
   }
 
-  table, th, td {
+  table,
+  th,
+  td {
     border: 1px solid $mainColor;
     border-collapse: collapse;
   }
@@ -48,5 +50,15 @@
   tbody {
     @include montserrat(500, 24px);
     text-align: center;
+  }
+}
+
+.delivery-table__region {
+  width: 100%;
+  max-width: 1214px;
+  margin: 0 auto;
+
+  th {
+    margin: 0 8px;
   }
 }

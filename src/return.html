@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - обмен</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/header.html')
+    <main class="main">
+      <section class="filters return__filters">
+        <div class="container">
+          <div class="tags">
+            <a href="index.html" class="tags__link">Главная</a>
+          </div>
+        </div>
+      </section>
+      <section class="return">
+        <div class="container">
+          <div class="return__rules">
+            <h2 class="return__title">ПРАВИЛА ВОЗВРАТА</h2>
+            <p class="return__descr">
+              Вы можете вернуть товар при покупке на нашем сайте в течение 7
+              дней с момента получения и в течение 14 дней при покупке в
+              Фирменном магазине. Для этого напишите нам в любой мессенджер или
+              чат на сайте и мы поможем все оформить.
+            </p>
+          </div>
+          <div class="return__conditions">
+            <h3 class="return__subtitle">Возврат товара, приобретенного </br> в интернет-магазине</h3>
+            <div class="return-process">
+              <div class="step">
+                  <div class="step-number">1</div>
+                  <div class="step-description">Зайдите в ваш Личный кабинет на сайте.</div>
+              </div>
+              <div class="step">
+                  <div class="step-number">2</div>
+                  <div class="step-description">В списке заказов выберите тот, который хотите вернуть и нажмите кнопку «Оформить возврат».</div>
+              </div>
+              <div class="step">
+                  <div class="step-number">3</div>
+                  <div class="step-description">Отметьте галочками те товары, которые хотите вернуть и укажите причину возврата.</div>
+              </div>
+            </div>          
+          </div>
+          <div class="return__conditions">
+            <h3 class="return__subtitle">УСЛОВИЯ</h3>
+            <p class="return__subdescr">
+              Товар должен быть надлежащего качества (не был в употреблении,
+              сохранены его товарный вид, потребительские свойства, оригинальная
+              упаковка, а также чеки, подтверждающие покупку в нашем магазине).
+              Понадобится Ваш паспорт. Если Вы приобретали товар в розничном
+              магазине, обменять его вы можете только в магазине.
+            </p>
+            <h4 class="return-list__title">Не подлежат обмену:</h4>
+            <ul class="return-list list-reset">
+              <li class="return-list__item">боди</li>
+              <li class="return-list__item">купальники</li>
+              <li class="return-list__item">чулочно-носочные изделия</li>
+              <li class="return-list__item">
+                предметы личной гигиены (заколки, расчески и тд)
+              </li>
+            </ul>
+          </div>
+          <div class="return__size">
+            <h3 class="return__subtitle">Сроки</h3>
+            <p class="return__subdescr">
+              Вы можете вернуть товар надлежащего качества в течение 14 дней с
+              момента покупки в Фирменном магазине и в течение 7 дней с момента
+              получения заказа при покупке в интернет-магазине, если он не был в
+              употреблении, сохранены его товарный вид, потребительские
+              свойства, оригинальная упаковка а также чеки, подтверждающие
+              покупку в нашем магазине.
+            </p>
+          </div>
+          <div class="return__item">
+            <h3 class="return__subtitle">Когда вернутся деньги</h3>
+            <p class="return__subdescr">
+              При покупке в Фирменном магазине с использованием банковской карты
+              необходимо предъявить ту же банковскую карту для осуществления
+              операции по возврату на нее денежных средств (срок возврата
+              денежных средств зависит от банка и занимает от 1 до 35 рабочих
+              дней).
+            </p>
+            <p class="return__subdescr">
+              При покупке в интернет-магазине после получения возвращаемого
+              товара мы осуществим перевод средств по реквизитам, указанным в
+              заявлении на возврат. Информация о возврате стоимости товара также
+              отображается в Личном кабинете в разделе "Мои возвраты" При Вашем
+              отказе от товара мы возвращаем денежную сумму, уплаченную за
+              заказ, за исключением расходов на транспортировку заказа и
+              возврата, не позднее чем через десять дней со дня предъявления
+              соответствующего требования (по факту получения товара);
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

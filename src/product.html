@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - карточка товара</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/header.html')
+    <main class="main">
+      <section class="filters">
+        <div class="container">
+          <div class="tags">
+            <a href="index.html" class="tags__link">Главная</a>
+            <a href="index.html" class="tags__link">ОДЕЖДА</a>
+            <a href="index.html" class="tags__link">ВЕРХНЯЯ ОДЕЖДА</a>
+            <a href="index.html" class="tags__link">ПАЛЬТО КРАСНОЕ</a>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="product-images">
+          <!-- images -->
+          <div class="swiper news-swiper">
+            <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper list-reset news-swiper__list">
+              <!-- Slides -->
+              <li class="swiper-slide product-swiper__item">
+                <img
+                  src="img/product/image1.png"
+                  alt="Изображение товара"
+                  class="product-swiper__img"
+                />
+              </li>
+              <li class="swiper-slide product-swiper__item">
+                <img
+                  src="img/product/image2.png"
+                  alt="Изображение товара"
+                  class="product-swiper__img"
+                />
+              </li>
+              <li class="swiper-slide product-swiper__item">
+                <img
+                  src="img/product/image3.png"
+                  alt="Изображение товара"
+                  class="product-swiper__img"
+                />
+              </li>
+              <li class="swiper-slide product-swiper__item">
+                <img
+                  src="img/product/image4.png"
+                  alt="Изображение товара"
+                  class="product-swiper__img"
+                />
+              </li>
+              <li class="swiper-slide product-swiper__item">
+                <img
+                  src="img/product/image5.png"
+                  alt="Изображение товара"
+                  class="product-swiper__img"
+                />
+              </li>
+              <li class="swiper-slide product-swiper__item">
+                <img
+                  src="img/product/image6.png"
+                  alt="Изображение товара"
+                  class="product-swiper__img"
+                />
+              </li>
+              <!-- Add more slides as needed -->
+            </ul>
+            <!-- Add navigation buttons if necessary -->
+          </div>
+        </div>
+        <div class="container" id="info">
+          <div class="product-info">
+            <div class="product-info__head">
+              <div>
+                <h2 class="product-info__title">Пальто красное</h2>
+                <span class="product-info__title-type">NEW</span>
+              </div>
+              <div class="product-info__price price">
+                <p class="price__full">19'990 руб.</p>
+                <p class="price__partial">
+                  <img src="img//product/parts-amount.jpg" alt="parts amount" />
+                  <span class="price__parts"> 4 платежа по 8’750 руб. </span>
+                </p>
+              </div>
+            </div>
+            <div class="product-info__bottom">
+              <div class="product-variants variants">
+                <div class="size">
+                  <p class="variants__title">Выбрать размер:</p>
+                  <ul class="size__list list-reset">
+                    <li class="size__item">42-43</li>
+                    <li class="size__item">41-42</li>
+                  </ul>
+                  <a class="size__table-link"> Таблица размеров </a>
+                </div>
+                <div class="color">
+                  <p class="variants__title">Доступные цвета:</p>
+                  <ul class="color__list list-reset">
+                    <li class="color__item" data-color="#b30e1f"></li>
+                    <li class="color__item" data-color="#000000"></li>
+                    <li class="color__item" data-color="#FFF7EC"></li>
+                    <li class="color__item" data-color="#676767"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn-reset product-actions__icon">
+                  <img src="img/icons/bookmark.svg" />
+                </button>
+                <!-- <button class="btn btn-bookmark">Bookmark</button> -->
+                <button class="btn-reset product-actions__add">ДОБАВИТЬ</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-articul">Артикул: 9124-31003</div>
+          @include('./partials/components/tabs.html')
+        </div>
+      </section>
+      <!-- <section class="product-similar container">
+        <h3 class="product-similar__title">Similar products</h3>
+        <ul class="product-similar__list list-reset">
+          <li class="product-similar__item">Similar product 1</li>
+        </ul>
+      </section> -->
+      <section class="news product-similar">
+        <div class="container">
+          <h2 class="product-similar__title">Новинки</h2>
+          @include('./partials/components/news-swiper.html')
+        </div>
+      </section>
+      <section class="news product-similar">
+        <div class="container">
+          <h2 class="product-similar__title">С ЧЕМ НОСИТЬ</h2>
+          <ul class="gallery-list list-reset d-flex-between">
+            <li class="gallery-list__item">
+              <div class="gallery-list__top">
+                <img src="img/dresses/sub-3.png" class="gallery-list__img">
+                <span>NEW</span>
+                <button class="btn-reset gallery-list__icon">
+                  <img src="img/news/icon.png">
+                </button>
+              </div>
+              <div class="d-flex-between">
+                <div class="gallery-list__info d-flex-column">
+                  <p>Платье серебристое</p>
+                  <span>9’990 руб.</span>
+                </div>
+                <button class="gallery-list__btn btn-reset">Добавить</button>
+              </div>
+            </li>
+            <li class="gallery-list__item">
+              <div class="gallery-list__top">
+                <img src="img/dresses/sub-2.1.png" class="gallery-list__img">
+                <span>NEW</span>
+                <button class="btn-reset gallery-list__icon">
+                  <img src="img/news/icon.png">
+                </button>
+              </div>
+              <div class="d-flex-between">
+                <div class="gallery-list__info d-flex-column">
+                  <p>Платье голубое</p>
+                  <span>17’990 руб.</span>
+                </div>
+                <button class="gallery-list__btn btn-reset">Добавить</button>
+              </div>
+            </li>
+            <li class="gallery-list__item">
+              <div class="gallery-list__top">
+                <img src="img/dresses/sub-2.2.png" class="gallery-list__img">
+                <span>NEW</span>
+                <button class="btn-reset gallery-list__icon">
+                  <img src="img/news/icon.png">
+                </button>
+              </div>
+              <div class="d-flex-between">
+                <div class="gallery-list__info d-flex-column">
+                  <p>Платье черное</p>
+                  <span>9’990 руб.</span>
+                </div>
+                <button class="gallery-list__btn btn-reset">Добавить</button>
+              </div>
+            </li>
+          </ul>
+          <!-- @include('./partials/components/dresses/sub-gallery-2.html') -->
+        </div>
+      </section>
+      @include('./partials/footer.html')
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

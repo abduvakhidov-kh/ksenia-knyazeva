@@ -1,3 +1,4 @@
+// accordion logic
 const acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
@@ -15,3 +16,40 @@ for (let i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+// variant colors logic product page
+let colorItems = document.querySelectorAll('.color__item');
+
+colorItems.forEach(function(colorItem) {
+  let dataColor = colorItem.getAttribute('data-color');
+  colorItem.style.backgroundColor = dataColor;
+});
+
+// tabs logic
+document.addEventListener("DOMContentLoaded", function() {
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      const tabId = button.getAttribute("data-tab");
+
+      // Hide all tab contents
+      tabContents.forEach(content => {
+        content.style.display = "none";
+      });
+
+      // Remove active class from all buttons
+      tabButtons.forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+      // Show the selected tab content
+      document.getElementById(tabId).style.display = "block";
+
+      // Add active class to the clicked button
+      button.classList.add("active");
+    });
+  });
+});
+

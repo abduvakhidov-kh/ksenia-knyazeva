@@ -1,0 +1,134 @@
+@import "_mixin.scss";
+
+.product {
+  letter-spacing: 0.03em;
+
+  &-articul {
+    @include raleway(400, 24px);
+    margin-bottom: 4px;
+  }
+
+  #info {
+    margin: 0 36px;
+  }
+
+  &-info {
+    margin-bottom: 180px;
+    &__bottom,
+    &__head {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__head {
+      margin-top: 58px;
+      margin-bottom: 51px;
+      width: 100%;
+    }
+
+    &__title {
+      @include montserrat(400, 36px);
+      margin-bottom: 13px;
+
+      &-type {
+        @include raleway(400, 36px);
+      }
+    }
+
+    .price {
+      &__full {
+        @include montserrat(400, 50px);
+        text-align: right;
+      }
+
+      &__partial {
+        display: flex;
+        align-items: center;
+
+        & img {
+          margin-right: 10px;
+        }
+      }
+
+      &__parts {
+        @include montserrat(500, 18px);
+      }
+    }
+
+    .variants {
+      &__title {
+        @include raleway(400, 24px);
+        margin-bottom: 12px;
+      }
+
+      .size__table-link {
+        display: inline-block;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-actions {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon img {
+      height: 80px;
+      width: 115px;
+    }
+
+    &__add {
+      @include raleway(400, 32px);
+      font-variant: small-caps;
+      background-color: #02133e !important;
+      padding: 8px 24px !important;
+      color: #fff;
+    }
+  }
+}
+
+.size {
+  margin-bottom: 52px;
+
+  &__list {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 24px !important;
+  }
+
+  .size__item {
+    padding: 4px 36px;
+    border: 1px solid #000;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e3e3e3;
+    }
+
+    @include montserrat(500, 22px);
+    text-align: center;
+  }
+}
+
+.color {
+  &__list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__item {
+    width: 80px;
+    height: 12px;
+    cursor: pointer;
+  }
+}
+
+.product-similar {
+  margin-top: 100px;
+  &__title {
+    @include montserrat(400, 40px);
+    margin-bottom: 44px;
+  }
+}

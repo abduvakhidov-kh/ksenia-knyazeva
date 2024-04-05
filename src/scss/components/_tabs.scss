@@ -1,0 +1,33 @@
+@import "../_mixin.scss";
+
+.tabs {
+  width: 100%;
+}
+
+.tab-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.tab-button {
+  @include montserrat(300, 28px);
+  background-color: transparent;
+  border: none;
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  font-weight: bold;
+}
+
+.tab-content {
+  @include montserrat(400, 24px);
+  padding: 15px;
+  padding-left: 0;
+  max-width: 800px;
+  line-height: 33px;
+}

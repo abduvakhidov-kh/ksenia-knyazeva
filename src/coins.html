@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - монеты</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/header.html')
+    <main class="main">
+      <section class="filters score__filters">
+        <div class="container">
+          <div class="tags">
+            <a href="index.html" class="tags__link">Главная</a>
+          </div>
+        </div>
+      </section>
+      <section class="score">
+        <div class="container">
+          <div class="score__rules">
+            <h2 class="score__title">ПРОГРАММА ЛОЯЛЬНОСТИ</h2>
+            <p class="score__descr">
+              На нашем сайте действует гибкая программа лояльности, состоящая из
+              трёх больших разделов. Благодаря этой программе, вы можете
+              получать существенные скидки, оплачивая до 30% стоимости товаров в
+              заказе баллами. Благодаря программе лояльности вы можете также
+              зарабатывать на покупках ваших друзей, подруг, коллег, клиентах и
+              даже подписчиках. Расскажем подробнее о программе в формате
+              «Вопрос — ответ».
+            </p>
+          </div>
+          <div class="score__faq">
+            <h3 class="score__subtitle">"МОНЕТЫ"</h3>
+            <h4 class="score__caption">Ответы на самые главные вопросы</h4>
+            @include('./partials/faq.html')
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

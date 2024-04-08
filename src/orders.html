@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - баллы</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/account-header.html')
+    <main class="main">
+      <section class="container">
+        <div class="orders-container">
+          <header class="orders-header">
+            <h1 class="orders-title">МОИ ЗАКАЗЫ</h1>
+            <p class="orders-question">
+              ОСТАЛИСЬ ВОПРОСЫ? <br />
+              <a href="#" class="ask-link">Спросить</a>
+            </p>
+          </header>
+          <p class="orders-empty">ЗАКАЗОВ ЕЩЕ НЕТ</p>
+          <div class="orders-cta">
+            <p class="orders-cta-text">Здесь будут отражаться Ваши будущие покупки</p>
+            <button class="orders-cta-button">СМОТРЕТЬ КАТАЛОГ</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

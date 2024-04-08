@@ -1,0 +1,186 @@
+// Variables
+$order-info-label-width: 39%; // Width of the labels column
+$order-info-values-width: 61%; // Width of the values column
+
+// Mixin for flex centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles
+.order-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding-left: 55px;
+
+  @media (max-width: 991px) {
+    padding-left: 20px;
+  }
+}
+
+.order-title {
+  color: #02133e;
+  text-align: center;
+  letter-spacing: 1.2px;
+  font: 600 40px Raleway, sans-serif;
+  margin: 42px auto 0;
+
+  @media (max-width: 991px) {
+    margin-left: 10px;
+  }
+}
+
+.order-header {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 1048px;
+  gap: 20px;
+  margin-top: 101px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.72px;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+.order-number {
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  flex: 1;
+  margin: auto 0;
+}
+
+.order-help {
+  color: #02133e;
+  font-family: Raleway, sans-serif;
+  text-decoration: underline;
+  flex: 1;
+  align-self: end;
+}
+
+.order-help-link {
+  font-weight: 600;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto !important;
+  margin-top: 26px !important;
+  width: 754px;
+  max-width: 100%;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.order-info-labels {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: $order-info-label-width;
+  margin-left: 0;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.order-info-label {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  margin-top: 24px;
+  flex: 1;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.order-info-values {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: $order-info-values-width;
+  margin-left: 20px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.order-info-value {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  flex: 1;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.order-info-email,
+.order-info-phone,
+.order-info-number {
+  font-family: Montserrat, sans-serif;
+}
+
+.order-info-delivery {
+  font-weight: 500;
+}
+
+.order-info-address {
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.48px;
+  font: 500 16px/18px Raleway, sans-serif;
+}
+
+.order-info-cost {
+  letter-spacing: 0.6px;
+  font: 20px Montserrat, sans-serif;
+}
+
+.order-info-total {
+  letter-spacing: 0.6px;
+  font: 500 20px Montserrat, sans-serif;
+}
+
+.order-items-title {
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.72px;
+  margin: 83px auto;
+  font: 500 24px Raleway, sans-serif;
+
+  @media (max-width: 991px) {
+    margin: 40px 0 0 10px;
+  }
+}
+
+.order-info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}

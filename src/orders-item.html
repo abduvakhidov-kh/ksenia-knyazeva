@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - баллы</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/account-header.html')
+    <main class="main">
+      <section class="container">
+        <section class="order-details">
+          <h1 class="order-title">МОИ ЗАКАЗЫ</h1>
+          
+          <header class="order-header">
+            <p class="order-number">ЗАКАЗ №40511 от 29.11.2021</p>
+          </header>
+          <p class="order-help">
+            ОСТАЛИСЬ ВОПРОСЫ?
+            <a href="#" class="order-help-link">Спросить</a>
+          </p>
+        
+          <ul class="order-info list-reset">
+            <li class="order-info-item">
+              <p class="order-info-label">Статус</p>
+              <p class="order-info-value">Выполнен</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">ФИО получателя</p>
+              <p class="order-info-value">Иванова Наталья Алексеевна</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Электронная почта</p>
+              <p class="order-info-value order-info-email">ivanova2001@mail.ru</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Номер телефона</p>
+              <p class="order-info-value order-info-phone">8(965)373-09-21</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Номер заказа</p>
+              <p class="order-info-value order-info-number">123456789</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Способ доставки</p>
+              <p class="order-info-value order-info-delivery">Пункт выдачи СДЭК</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Адрес доставки</p>
+              <p class="order-info-value order-info-address">
+                г. Санкт-Петербург, ул, Восстания 42, 191123
+                <br />
+                вход с торца здания, с Манежного переулка вход с Манежного.
+              </p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Стоимость доставки</p>
+              <p class="order-info-value order-info-cost">450 руб.</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Стоимость товара</p>
+              <p class="order-info-value order-info-cost">6'490 руб.</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Стоимость заказа</p>
+              <p class="order-info-value order-info-total">6'940 руб.</p>
+            </li>
+            <li class="order-info-item">
+              <p class="order-info-label">Способ оплаты</p>
+              <p class="order-info-value">Онлайн оплата картой</p>
+            </li>
+          </ul>
+        
+          <h2 class="order-items-title">СОСТАВ ЗАКАЗА</h2>
+        </section>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

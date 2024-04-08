@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - вход или регистрация</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    <header class="header login-header">
+      @include('./partials/components/header-top.html')
+    </header>
+    <main class="main">
+      <div class="login-container">
+        <div class="login-title">ВХОД ИЛИ РЕГИСТРАЦИЯ</div>
+        <div class="phone">
+          <select class="country-code">
+            <option value="+7">+7</option>
+            <option value="+7 531">+7 531</option>
+          </select>
+          <!-- <img loading="lazy" srcset="..." alt="Country Flag" class="flag-img"> -->
+          <input type="phone" class="phone-input code-input" placeholder="Номер телефона"/>
+        </div>
+        <input type="text" placeholder="Введите отправленный код" class="code-input" />
+        <div class="code-info">
+          Получить новый код можно через
+          <span class="code-timer">1:36</span>
+        </div>
+        <button class="login-button">ВОЙТИ</button>
+        <div class="alternative-login">Войти по паролю</div>
+        <div class="terms">При входе или регистрации вы соглашаетесь с <span class="terms-link">Условиями</span></div>
+      </div>
+      
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

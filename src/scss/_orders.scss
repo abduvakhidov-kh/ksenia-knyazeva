@@ -1,0 +1,113 @@
+// Define variables
+$primary-color: #02133e;
+$secondary-color: rgba(0, 0, 0, 0.6);
+$button-border-color: #000;
+
+// Define mixins for flex centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+  margin-bottom: 100px;
+
+  .orders-header {
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+
+    @media (max-width: 991px) {
+      padding-left: 20px;
+    }
+
+    .orders-title {
+      letter-spacing: 1.2px;
+      font: 600 40px Raleway, sans-serif;
+
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+
+    .orders-question {
+      letter-spacing: 0.72px;
+      text-decoration-line: underline;
+      align-self: end;
+      margin-top: 101px;
+      font: 500 24px Raleway, sans-serif;
+
+      @media (max-width: 991px) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .orders-empty {
+    color: #000;
+    letter-spacing: 1.2px;
+    margin-top: 82px;
+    width: 100%;
+    font: 500 40px/87.5% Raleway, sans-serif;
+    @include flex-center; // Center vertically and horizontally
+
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+  }
+
+  .orders-cta {
+    margin-top: 36px;
+    width: 326px;
+    max-width: 100%;
+    flex-direction: column;
+    font-weight: 500;
+    @include flex-center;
+    margin: 24px auto 0;
+
+    @media (max-width: 991px) {
+      margin-left: 8px;
+    }
+
+    .orders-cta-text {
+      color: $secondary-color;
+      letter-spacing: 0.72px;
+      font: 24px/30px Raleway, sans-serif;
+      margin-bottom: 60px;
+    }
+
+    .orders-cta-button {
+      border: 1px solid $button-border-color;
+      background-color: #fff;
+      margin-top: 20px;
+      color: #000;
+      letter-spacing: 0.66px;
+      padding: 17px 48px;
+      font: 22px/136% Raleway, sans-serif;
+      cursor: pointer;
+      text-wrap: nowrap;
+
+      @media (max-width: 991px) {
+        margin-top: 20px; // Adjust as needed
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.order-info {
+
+}
+
+.ask-link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: $primary-color;
+}

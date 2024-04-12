@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - профиль</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/account-header.html')
+    <main class="main">
+      <section class="container">
+        <header class="section-header">
+          <h1 class="section-header__title">ПРОФИЛЬ</h1>
+        </header>
+        <section class="profile">
+          <div class="form">
+            <div class="form-title">УЧЕТНАЯ ЗАПИСЬ</div>
+            <div class="input">
+              <label for="input" class="input-label">Телефон</label>
+              <input
+                type="text"
+                id="input"
+                class="input-field"
+                placeholder="Номер для входа"
+              />
+            </div>
+            <div class="input">
+              <label for="input" class="input-label">Эл. почта</label>
+              <input
+                type="text"
+                id="input"
+                class="input-field"
+                placeholder="Input Phone number"
+              />
+            </div>
+            <div class="input">
+              <label for="input" class="input-label">Пароль</label>
+              <input
+                type="text"
+                id="input"
+                class="input-field"
+                placeholder="Input Phone number"
+              />
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="html" />
+              <label class="form-checkbox__label" for="html"
+                >Быть в курсе новинок и акций от Ksenia Knyazeva</label
+              >
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <label for="fullName" class="input-label">ФИО</label>
+              <input
+                type="text"
+                id="fullName"
+                class="input-field"
+                placeholder="Введите ФИО"
+              />
+            </div>
+
+            <div class="input">
+              <label for="dob" class="input-label">Дата рождения</label>
+              <input
+                type="text"
+                id="dob"
+                class="input-field"
+                placeholder="Укажите дату рождения"
+              />
+            </div>
+
+            <div class="input">
+              <label for="gender" class="input-label">Пол</label>
+              <div class="gender-checkbox">
+                <div class="form-checkbox">
+                  <input type="checkbox" id="man" />
+                  <label class="form-checkbox__label" for="man">Man</label>
+                </div>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="women" />
+                  <label class="form-checkbox__label" for="women">Women</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input">
+              <label for="address" class="input-label">Мои адреса</label>
+              <input
+                type="text"
+                id="address"
+                class="input-field"
+                placeholder="Укажите Ваш основной адрес для доставки"
+              />
+            </div>
+          </div>
+          <div class="form">
+            <div class="form-title">ПАРАМЕТРЫ ФИГУРЫ</div>
+            <div class="input">
+              <label for="height" class="input-label">Рост</label>
+              <input
+                type="text"
+                id="height"
+                class="input-field"
+                placeholder="Введите ФИО"
+              />
+            </div>
+
+            <div class="input">
+              <label for="chest" class="input-label">Обхват груди</label>
+              <input
+                type="text"
+                id="chest"
+                class="input-field"
+                placeholder="Укажите дату рождения"
+              />
+            </div>
+
+            <div class="input">
+              <label for="waist" class="input-label">Обхват талии</label>
+              <input
+                type="text"
+                id="waist"
+                class="input-field"
+                placeholder="Введите ФИО"
+              />
+            </div>
+
+            <div class="input">
+              <label for="shoeSize" class="input-label">Размер обуви</label>
+              <input
+                type="text"
+                id="shoeSize"
+                class="input-field"
+                placeholder="Укажите дату рождения"
+              />
+            </div>
+
+            <div class="input">
+              <label for="neck" class="input-label">Обхват шеи</label>
+              <input
+                type="text"
+                id="neck"
+                class="input-field"
+                placeholder="Введите ФИО"
+              />
+            </div>
+
+            <div class="input">
+              <label for="weight" class="input-label">Вес</label>
+              <input
+                type="text"
+                id="weight"
+                class="input-field"
+                placeholder="Укажите дату рождения"
+              />
+            </div>
+          </div>
+          <div class="profile-settings profile-settings__upload">
+            <div class="profile-settings__header">
+              <h2 class="profile-settings__title">Ваши фото в полный рост</h2>
+              <p class="profile-settings__subtitle">
+                (Необходимы для работы со стилистом)
+              </p>
+            </div>
+            <button class="button button--primary">ЗАГРУЗИТЬ</button>
+          </div>
+          <div class="profile-settings">
+            <h2 class="profile-settings__title">
+              Выбрать любимый мессенджер для связи:
+            </h2>
+            <div class="messenger">
+              <div class="form-checkbox">
+                <input type="checkbox" id="whatsapp" />
+                <label class="form-checkbox__label" for="whatsapp"
+                  >WhatsApp</label
+                >
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="telegram" />
+                <label class="form-checkbox__label" for="telegram"
+                  >Telegram</label
+                >
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="viber" />
+                <label class="form-checkbox__label" for="viber">Viber</label>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="vk" />
+                <label class="form-checkbox__label" for="vk">VK</label>
+              </div>
+            </div>
+            <button class="button button--save">СОХРАНИТЬ</button>
+          </div>
+        </section>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

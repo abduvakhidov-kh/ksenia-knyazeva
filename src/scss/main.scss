@@ -13,14 +13,17 @@
 @import "_login.scss";
 @import "_orders.scss";
 @import "_orders-item.scss";
+@import "_profile.scss";
 @import "_score.scss";
 @import "_delivery-payment.scss";
+@import "_loyalty-points";
+@import "_favorites.scss";
+@import "_accordion.scss";
 @import "_libs.scss";
 @import "_fonts.scss";
 @import "_common.scss";
 @import "_animation.scss";
 @import "_uikit.scss";
-@import "_accordion.scss";
 @import "_media.scss";
 
 @import "components/header.scss";
@@ -30,6 +33,8 @@
 @import "components/product-swiper.scss";
 @import "components/signup-modal.scss";
 @import "components/tabs.scss";
+@import "components/credit-card.scss";
 @import "components/jeans/filters.scss";
+@import "components/orders/table.scss";
 @import "components/jeans/main-gallery.scss";
 @import "components/jeans/sub-gallery.scss";

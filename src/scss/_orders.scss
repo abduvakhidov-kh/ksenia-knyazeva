@@ -27,27 +27,6 @@ $button-border-color: #000;
     @media (max-width: 991px) {
       padding-left: 20px;
     }
-
-    .orders-title {
-      letter-spacing: 1.2px;
-      font: 600 40px Raleway, sans-serif;
-
-      @media (max-width: 991px) {
-        max-width: 100%;
-      }
-    }
-
-    .orders-question {
-      letter-spacing: 0.72px;
-      text-decoration-line: underline;
-      align-self: end;
-      margin-top: 101px;
-      font: 500 24px Raleway, sans-serif;
-
-      @media (max-width: 991px) {
-        margin-top: 40px;
-      }
-    }
   }
 
   .orders-empty {
@@ -100,14 +79,4 @@ $button-border-color: #000;
       }
     }
   }
-}
-
-.order-info {
-
-}
-
-.ask-link {
-  font-weight: 600;
-  text-decoration: underline;
-  color: $primary-color;
 }

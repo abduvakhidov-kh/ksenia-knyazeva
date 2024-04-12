@@ -1,0 +1,141 @@
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.order-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-history {
+  border: 2px solid rgba(2, 19, 62, 1);
+  width: 100%;
+
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+
+  &-header {
+    background-color: #02133e;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    th {
+      border-right: 1px solid white;
+      padding: 20px;
+      font-size: 30px;
+      font-family: Raleway, sans-serif;
+    }
+
+    &-points {
+      background-color: #02133e;
+      width: 404px;
+      max-width: 100%;
+    }
+  }
+
+  &-content {
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+
+  &-row {
+    @media (max-width: 991px) {
+      display: block;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    td {
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      color: #000;
+      font-weight: 500;
+      letter-spacing: 0.72px;
+      font-family: Montserrat, sans-serif;
+
+      @media (max-width: 991px) {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 5px 0;
+
+        &:before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &-date-column {
+    width: 18%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &-number-column {
+    width: 17%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    .order-history-number {
+      text-decoration: underline;
+    }
+  }
+
+  &-status-column {
+    width: 19%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &-points-column {
+    width: 46%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+
+.order-return-button {
+  background-color: #02133e;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.72px;
+  justify-content: center;
+  padding: 15px 36px;
+  font: 500 24px Raleway, sans-serif;
+  border: none;
+  cursor: pointer;
+  margin: 40px auto;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - баллы</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/account-header.html')
+    <main class="main">
+      <section class="container">
+        <header class="section-header">
+          <h1 class="section-header__title">МОИ БАЛЛЫ</h1>
+          <p class="section-header__help">
+            ОСТАЛИСЬ ВОПРОСЫ? <br />
+            <a href="#">Спросить</a>
+          </p>
+        </header>
+        <section class="loyalty-points">
+          <table class="loyalty-points__table">
+            <tr>
+              <td class="loyalty-points__item">
+                <div class="loyalty-points__value">0</div>
+                <div class="loyalty-points__description">
+                  накоплено
+                  <br />
+                  1 балл = 1 рубль
+                </div>
+              </td>
+              <td class="loyalty-points__item">
+                <div class="loyalty-points__value">0</div>
+                <div class="loyalty-points__description">
+                  будет начислено
+                  <br />
+                  в течение 14 дней
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="loyalty-points__rules">
+            <div class="loyalty-points__rules-text">Правила программы лояльности</div>
+            <img
+              loading="lazy"
+              src="./img/icons/arrow.png"
+              class="loyalty-points__image"
+            />
+          </div>
+          <div class="loyalty-points__history">
+            ИСТОРИЯ НАЧИСЛЕНИЙ
+          </div>
+        </section>        
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

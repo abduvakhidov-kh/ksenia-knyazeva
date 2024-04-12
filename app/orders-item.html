@@ -79,16 +79,18 @@
     <main class="main">
       <section class="container">
         <section class="order-details">
-          <h1 class="order-title">МОИ ЗАКАЗЫ</h1>
-          
+          <header class="section-header">
+            <h1 class="section-header__title">МОИ ЗАКАЗЫ</h1>
+            <p class="section-header__help">
+              ОСТАЛИСЬ ВОПРОСЫ? <br />
+              <a href="#">Спросить</a>
+            </p>
+          </header>
+
           <header class="order-header">
             <p class="order-number">ЗАКАЗ №40511 от 29.11.2021</p>
           </header>
-          <p class="order-help">
-            ОСТАЛИСЬ ВОПРОСЫ?
-            <a href="#" class="order-help-link">Спросить</a>
-          </p>
-        
+
           <ul class="order-info list-reset">
             <li class="order-info-item">
               <p class="order-info-label">Статус</p>
@@ -100,7 +102,9 @@
             </li>
             <li class="order-info-item">
               <p class="order-info-label">Электронная почта</p>
-              <p class="order-info-value order-info-email">ivanova2001@mail.ru</p>
+              <p class="order-info-value order-info-email">
+                ivanova2001@mail.ru
+              </p>
             </li>
             <li class="order-info-item">
               <p class="order-info-label">Номер телефона</p>
@@ -112,7 +116,9 @@
             </li>
             <li class="order-info-item">
               <p class="order-info-label">Способ доставки</p>
-              <p class="order-info-value order-info-delivery">Пункт выдачи СДЭК</p>
+              <p class="order-info-value order-info-delivery">
+                Пункт выдачи СДЭК
+              </p>
             </li>
             <li class="order-info-item">
               <p class="order-info-label">Адрес доставки</p>
@@ -139,9 +145,254 @@
               <p class="order-info-value">Онлайн оплата картой</p>
             </li>
           </ul>
-        
-          <h2 class="order-items-title">СОСТАВ ЗАКАЗА</h2>
+
+          <h2 class="order-items-title">
+            СОСТАВ ЗАКАЗА
+            <hr style="width: 100%" />
+          </h2>
+          <ul class="list-reset orders-item__list">
+            <li class="order-item-container">
+              <div class="order-item-layout">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/12442a1ee1e07c98ea401942fc1c3041d012584b9f6348132ad0e3e1823cd3b9?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  alt="order-item Image"
+                  class="order-item-image"
+                />
+                <div class="order-item-details-column">
+                  <div class="order-item-details-wrapper">
+                    <div class="order-item-info">
+                      <div class="order-item-name">
+                        <div class="order-item-name-wrapper">
+                          <button class="order-item-name-text">
+                            Капюшон черный <br />
+                          </button>
+                          <button class="order-item-color-indicator"></button>
+                        </div>
+                        <div class="order-item-size">
+                          <div class="order-item-size-label">
+                            <span>Размер:</span>
+                          </div>
+                          <button class="order-item-size-value">
+                            one size
+                          </button>
+                        </div>
+                        <div class="order-item-color-wrapper">
+                          <div class="order-item-color-label">
+                            <span>Цвет:</span>
+                          </div>
+                          <button class="order-item-color-value">черный</button>
+                        </div>
+                      </div>
+                      <div class="order-item-price">
+                        <span style="font-weight: 600; font-size: 26px"
+                          >6'490</span
+                        >
+                        <span style="font-size: 20px">руб.</span>
+                      </div>
+                    </div>
+                    <div class="order-item-meta">
+                      <div class="order-item-sku">
+                        <div class="order-item-sku-label">
+                          <span>Артикул:</span>
+                        </div>
+                        <div class="order-item-sku-value">17.133.1-30202</div>
+                      </div>
+                      <button class="order-item-delivery-info">
+                        УЗНАТЬ <br />
+                        О ДОСТАВКЕ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="order-item-container">
+              <div class="order-item-layout">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/12442a1ee1e07c98ea401942fc1c3041d012584b9f6348132ad0e3e1823cd3b9?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  alt="order-item Image"
+                  class="order-item-image"
+                />
+                <div class="order-item-details-column">
+                  <div class="order-item-details-wrapper">
+                    <div class="order-item-info">
+                      <div class="order-item-name">
+                        <div class="order-item-name-wrapper">
+                          <button class="order-item-name-text">
+                            Капюшон черный <br />
+                          </button>
+                          <button class="order-item-color-indicator"></button>
+                        </div>
+                        <div class="order-item-size">
+                          <div class="order-item-size-label">
+                            <span>Размер:</span>
+                          </div>
+                          <button class="order-item-size-value">
+                            one size
+                          </button>
+                        </div>
+                        <div class="order-item-color-wrapper">
+                          <div class="order-item-color-label">
+                            <span>Цвет:</span>
+                          </div>
+                          <button class="order-item-color-value">черный</button>
+                        </div>
+                      </div>
+                      <div class="order-item-price">
+                        <span style="font-weight: 600; font-size: 26px"
+                          >6'490</span
+                        >
+                        <span style="font-size: 20px">руб.</span>
+                      </div>
+                    </div>
+                    <div class="order-item-meta">
+                      <div class="order-item-sku">
+                        <div class="order-item-sku-label">
+                          <span>Артикул:</span>
+                        </div>
+                        <div class="order-item-sku-value">17.133.1-30202</div>
+                      </div>
+                      <button class="order-item-delivery-info">
+                        УЗНАТЬ <br />
+                        О ДОСТАВКЕ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
+        <section class="order-history-container">
+  <table class="order-history">
+    <thead class="order-history-header">
+      <tr>
+        <th class="order-history-header-date">ДАТА</th>
+        <th class="order-history-header-order-number">
+          НОМЕР<br />
+          ЗАКАЗА
+        </th>
+        <th class="order-history-header-status">СТАТУС</th>
+        <th class="order-history-header-points">БАЛЛЫ</th>
+      </tr>
+    </thead>
+    <tbody class="order-history-content">
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-12-29">29.12.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">39910197</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">В процессе</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">В процессе</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-12-18">18.12.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">91034185</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Выполнен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислены баллы</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-11-13">13.11.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">61209371</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Отменен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислений баллов не ожидается</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-10-26">26.10.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">26739901</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Выполнен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислены баллы</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-09-01">01.09.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">82724320</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Выполнен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислены баллы</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-06-22">22.06.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">12830301</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Выполнен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислены баллы</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-06-05">05.06.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">72652423</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Выполнен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислены баллы</div>
+        </td>
+      </tr>
+      <tr class="order-history-row">
+        <td class="order-history-date-column">
+          <time class="order-history-date" datetime="2023-04-18">18.04.2023</time>
+        </td>
+        <td class="order-history-number-column">
+          <div class="order-history-number">72784013</div>
+        </td>
+        <td class="order-history-status-column">
+          <div class="order-history-status">Отменен</div>
+        </td>
+        <td class="order-history-points-column">
+          <div class="order-history-points">Начислений баллов не ожидается</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="order-return-button">ОФОРМИТЬ ВОЗВРАТ</button>
+</section>
       </section>
     </main>
     <footer class="footer">

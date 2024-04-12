@@ -1,0 +1,178 @@
+@import "./mixin.scss";
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+
+  .favorites-product__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 56px;
+  }
+
+  .favorites-product__item {
+    flex: 1 0 calc(25% - 2em); /* 4 cards per row on laptop */
+    /* For tablets */
+    @media (max-width: 1024px) {
+      flex: 1 0 calc(50% - 2em); /* 2 cards per row */
+    }
+    /* For mobile */
+    @media (max-width: 600px) {
+      flex: 1 0 calc(100% - 2em); /* 1 card per row */
+    }
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 367px;
+    width: 100%;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 18px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid black;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__image-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      aspect-ratio: 0.76;
+
+      .product-card__image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .product-card__badge {
+        aspect-ratio: 0.97;
+        margin: 10px;
+        width: 39px;
+        align-self: end;
+        z-index: 10;
+      }
+
+      .product-card__overlay {
+        @include raleway(500, 24px);
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: white;
+        padding: 4px 8px;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .product-card__type {
+        color: #000;
+        letter-spacing: 0.66px;
+        font: 22px Montserrat, sans-serif;
+      }
+
+      .product-card__options {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        .product-card__option {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .product-card__option-label {
+            color: rgba(0, 0, 0, 0.6);
+            letter-spacing: 0.54px;
+            font: 18px Montserrat, sans-serif;
+          }
+
+          .product-card__option-link {
+            display: block;
+            margin-left: auto;
+            text-decoration: underline;
+          }
+
+          .product-card__option-value {
+            color: #000;
+            font-size: 22px;
+            letter-spacing: 0.66px;
+          }
+        }
+      }
+
+      .product-card__sku {
+        display: flex;
+        gap: 8px;
+
+        .product-card__sku-label {
+          color: rgba(0, 0, 0, 0.6);
+          letter-spacing: 0.54px;
+          font: 18px Montserrat, sans-serif;
+          flex-grow: 1;
+        }
+
+        .product-card__sku-value {
+          color: rgba(0, 0, 0, 0.8);
+          letter-spacing: 0.48px;
+          flex-grow: 1;
+          flex-basis: auto;
+          margin: auto 0;
+          font: 16px Montserrat, sans-serif;
+        }
+      }
+
+      .product-card__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .product-card__price-value {
+          font-weight: 500;
+          font-size: 26px;
+          letter-spacing: 0.78px;
+          font-family: Raleway, sans-serif;
+        }
+
+        .product-card__price-currency {
+          font-size: 20px;
+          font-family: Montserrat, sans-serif;
+        }
+      }
+
+      .product-card__add-to-cart {
+        border: 1px solid rgba(124, 124, 124, 1);
+        background-color: #02133e;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.48px;
+        justify-content: center;
+        padding: 9px 23px;
+        font: 400 16px Raleway, sans-serif;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.loyalty-points {
+  display: flex;
+  flex-direction: column;
+  max-width: 948px;
+  margin: 64px auto;
+  color: #000;
+  font-weight: 500;
+
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__image {
+    transform: rotate(-90deg);
+  }
+
+  &__item {
+    padding: 20px;
+    border: 1px solid #000;
+  }
+
+  &__value {
+    letter-spacing: 1.8px;
+    font: 60px Montserrat, sans-serif;
+
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    letter-spacing: 0.6px;
+    margin-top: 32px;
+    font: 20px Montserrat, sans-serif;
+  }
+
+  &__border {
+    border-right: 1px solid #000;
+  }
+
+  &__rules {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 0;
+    gap: 19px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.6px;
+
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+
+    &-text {
+      font-family: Montserrat, sans-serif;
+    }
+
+    &-img {
+      aspect-ratio: 0.57;
+      object-fit: auto;
+      object-position: center;
+      width: 20px;
+    }
+  }
+
+  &__history {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.6px;
+    margin-top: 22px;
+    width: 100%;
+    font: 20px Montserrat, sans-serif;
+    border-top: 1px solid black;
+    padding-top: 12px;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,3 +1,6 @@
+@import "mixin.scss";
+@import "_variables.scss";
+
 .score {
   @include raleway(400, 32px);
 

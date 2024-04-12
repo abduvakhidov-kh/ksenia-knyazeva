@@ -1,0 +1,101 @@
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  min-height: 464px;
+  max-width: 739px;
+  font-size: 24px;
+  color: #000;
+  letter-spacing: 0.72px;
+  padding: 80px 50px 45px;
+  margin: 0 auto 56px;
+
+  @media (max-width: 991px) {
+    padding: 0 20px;
+  }
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    position: relative;
+    color: #02133e;
+    text-align: center;
+    letter-spacing: 1.2px;
+    align-self: center;
+    margin-top: 10px;
+    font: 500 40px Montserrat, sans-serif;
+  }
+
+  &__number {
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    margin-top: 156px;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  &__points {
+    position: relative;
+    display: flex;
+    margin-top: 63px;
+    gap: 20px;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    stroke-width: 1px;
+    border-color: rgba(2, 19, 62, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 37px;
+    justify-content: center;
+    height: 37px;
+    padding: 0 17px;
+
+    @media (max-width: 991px) {
+      white-space: initial;
+    }
+  }
+
+  &__info {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    align-self: start;
+    margin-top: 12px;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  &__info-label {
+    font-size: 16px;
+  }
+
+  &__info-value {
+    font-size: 36px;
+  }
+}

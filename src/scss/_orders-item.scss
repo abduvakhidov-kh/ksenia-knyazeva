@@ -11,26 +11,14 @@ $order-info-values-width: 61%; // Width of the values column
 
 // Styles
 .order-details {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 100%;
-  padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding-left: 55px;
 
   @media (max-width: 991px) {
     padding-left: 20px;
-  }
-}
-
-.order-title {
-  color: #02133e;
-  text-align: center;
-  letter-spacing: 1.2px;
-  font: 600 40px Raleway, sans-serif;
-  margin: 42px auto 0;
-
-  @media (max-width: 991px) {
-    margin-left: 10px;
   }
 }
 
@@ -58,18 +46,6 @@ $order-info-values-width: 61%; // Width of the values column
   font-family: Montserrat, sans-serif;
   flex: 1;
   margin: auto 0;
-}
-
-.order-help {
-  color: #02133e;
-  font-family: Raleway, sans-serif;
-  text-decoration: underline;
-  flex: 1;
-  align-self: end;
-}
-
-.order-help-link {
-  font-weight: 600;
 }
 
 .order-info {
@@ -168,10 +144,11 @@ $order-info-values-width: 61%; // Width of the values column
 }
 
 .order-items-title {
+  width: 100%;
   color: #000;
   text-align: center;
   letter-spacing: 0.72px;
-  margin: 83px auto;
+  margin: 83px 0 40px;
   font: 500 24px Raleway, sans-serif;
 
   @media (max-width: 991px) {
@@ -183,4 +160,224 @@ $order-info-values-width: 61%; // Width of the values column
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+}
+
+// order item
+
+ul.orders-item__list {
+  display: flex;
+  margin-bottom: 80px;
+  flex-direction: column;
+  width: 100%;
+  gap: 48px;
+}
+
+.order-item {
+  &-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 775px;
+  }
+
+  &-layout {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    gap: 20px;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  &-image {
+      object-position: center;
+      flex-grow: 1;
+      max-width: 156px;
+  }
+
+  &-details {
+    &-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 80%;
+      margin-left: 20px;
+      
+      @media (max-width: 991px) {
+        margin-left: 10px;
+        width: 100%;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      font-weight: 500;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    gap: 24px;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    letter-spacing: 0.66px;
+
+    &-wrapper {
+      display: flex;
+      gap: 20px;
+      font-size: 24px;
+      color: #000;
+      justify-content: space-between;
+    }
+
+    &-text {
+      font-family: Raleway, sans-serif;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  &-color {
+    &-indicator {
+      background-color: #000;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    &-wrapper {
+      display: flex;
+      margin-top: 7px;
+      gap: 17px;
+    }
+
+    &-label {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: Montserrat, sans-serif;
+    }
+
+    &-value {
+      color: #000;
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+      line-height: 109%;
+      flex-grow: 1;
+      flex-basis: auto;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  &-size {
+    display: flex;
+    margin-top: 11px;
+    gap: 19px;
+
+    &-label {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: Montserrat, sans-serif;
+      flex-grow: 1;
+    }
+
+    &-value {
+      color: #000;
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+      line-height: 109%;
+      flex-grow: 1;
+      flex-basis: auto;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  &-price {
+    color: #000;
+    letter-spacing: 0.72px;
+    font: 24px/24px Montserrat, sans-serif;
+  }
+
+  &-meta {
+    display: flex;
+    // margin-top: 81px;
+    align-self: end;
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  &-sku {
+    align-self: end;
+    display: flex;
+    margin-top: 30px;
+    gap: 3px;
+    padding: 0 20px;
+
+    &-label {
+      color: rgba(0, 0, 0, 0.6);
+      letter-spacing: 0.54px;
+      flex-grow: 1;
+      font: 18px Montserrat, sans-serif;
+    }
+
+    &-value {
+      color: rgba(0, 0, 0, 0.8);
+      letter-spacing: 0.48px;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+      font: 16px Montserrat, sans-serif;
+    }
+  }
+
+  &-delivery-info {
+    background-color: #02133e;
+    align-self: start;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.48px;
+    justify-content: center;
+    padding: 6px 36px;
+    font: 16px Raleway, sans-serif;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
 }

@@ -6,7 +6,15 @@
   border-bottom: 1px solid #000;
 
   &-item {
-    width: 100%;
+    max-width: 80px;
+
+    img {
+      max-width: 80px;
+    }
+
+    &__search {
+      display: block !important;
+    }
   }
 
   @media (max-width: $containerMaxWidthTablet) {
@@ -14,6 +22,21 @@
       width: auto;
       &__btn {
         width: 75%;
+      }
+
+      &__search {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    padding: 16px 0;
+
+    &-item {
+      max-width: 26px;
+      &__btn {
+        width: 100%;
       }
     }
   }
@@ -39,6 +62,15 @@
       width: 350px;
     }
   }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    margin: 0;
+
+    &__logo {
+      margin-right: 32px;
+      width: 123px;
+    }
+  }
 }
 
 .header-bottom {
@@ -58,6 +90,10 @@
       gap: 24px;
       @include raleway(400, 18px);
     }
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    display: none;
   }
 }
 

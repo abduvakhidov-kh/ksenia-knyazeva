@@ -24,13 +24,33 @@
     <header class="header account-header">
   <div class="container">
     <div class="header-top d-flex-center">
+  <nav role="navigation" class="mobile-menu">
+  <div class="menu-toggle">
+    <input type="checkbox" class="menu-toggle__input" />
+
+    <span class="menu-toggle__icon"></span>
+    <span class="menu-toggle__icon"></span>
+    <span class="menu-toggle__icon"></span>
+
+    <ul class="menu menu__list list-reset">
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Каталог</a></li>
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Хиты продаж</a></li>
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">О дизайнере</a></li>
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Покупателям</a></li>
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Магазины</a></li>
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Оплата</a></li>
+      <li class="menu__list__item"><a href="#" class="menu__list__item__link">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</a></li>
+    </ul>
+  </div>
+</nav>
+
   <a href="index.html" class="header-top__logo">
     <img src="img/logo.svg" alt="logo" />
   </a>
   <nav class="header-nav">
     <ul class="header-list list-reset d-flex-center">
       <li class="header-item">
-        <button class="header-item__btn btn-reset">
+        <button class="header-item__btn btn-reset header-item__search">
           <img src="img/navigation/search.png" alt="Поиск" />
         </button>
       </li>
@@ -290,7 +310,7 @@
           </li>
           <li class="footer-list__item">
             <h3 class="footer-list__title">О бренде</h3>
-              <ul class="footer-list__sublist list-reset">
+            <ul class="footer-list__sublist list-reset">
               <li class="footer-list__subitem">
                 <a href="#" class="footer-list__link">История бренда</a>
               </li>
@@ -305,7 +325,7 @@
               </li>
             </ul>
           </li>
-          <li class="footer-list__item">
+          <li class="footer-list__item footer-list__socials">
             <h3 class="footer-list__title">Мы в соцсетях</h3>
             <ul class="list-reset footer-list__sublist list-reset">
               <li class="footer-list__subitem">
@@ -329,10 +349,14 @@
             <h3 class="footer-list__title">Контакты</h3>
             <ul class="list-reset footer-list__sublist list-reset">
               <li class="footer-list__subitem">
-                <a class="footer-list__link" href="tel:+8 800 511 94 70">8 (800) 511 94 70</a>
+                <a class="footer-list__link" href="tel:+8 800 511 94 70"
+                  >8 (800) 511 94 70</a
+                >
               </li>
               <li class="footer-list__subitem">
-                <a class="footer-list__link" href="mailto:store@knyazeva.ru">store@knyazeva.ru</a>
+                <a class="footer-list__link" href="mailto:store@knyazeva.ru"
+                  >store@knyazeva.ru</a
+                >
               </li>
             </ul>
           </li>
@@ -340,25 +364,51 @@
       </li>
       <li class="container-list__item">
         <ul class="list-reset footer-list footer-bottom">
-          <li class="footer-list__item">
-              <ul class="footer-list__sublist list-reset">
-                <li class="footer-list__subitem">
-                  <a href="#" class="footer-list__link">Вопросы и ответы</a>
-                </li>
-                <li class="footer-list__subitem">
-                  <a href="#" class="footer-list__link">Оферта</a>
-                </li>
-                <li class="footer-list__subitem">
-                  <a href="#" class="footer-list__link">Правовая информация</a>
-                </li>
-                <li class="footer-list__subitem">
-                  <a href="#" class="footer-list__link">Размеры</a>
-                </li>
+          <li class="footer-list__item footer-bottom__faq">
+            <ul class="footer-list__sublist list-reset">
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Вопросы и ответы</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Оферта</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Правовая информация</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Размеры</a>
+              </li>
             </ul>
           </li>
+          <li class="footer-list__item footer-list__socials-mobile">
+            <h3 class="footer-list__title">Мы в соцсетях</h3>
+            <div class="d-flex">
+              <ul class="footer-list__sublist list-reset">
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">YouTube</a>
+                </li>
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Telegram</a>
+                </li>
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Instagram</a>
+                </li>
+              </ul>
+              <ul class="footer-list__sublist list-reset">
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">VK</a>
+                </li>
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Tik-Tok</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li class="footer-list__item footer-list__form">
-            <h3 class="footer-list__title form-title">Узнавать первой о новиньках и скидках</h3>
-            <input type="email" placeholder="Email">
+            <h3 class="footer-list__title form-title">
+              Узнавать первой о новиньках и скидках
+            </h3>
+            <input type="email" placeholder="Email" />
           </li>
         </ul>
       </li>

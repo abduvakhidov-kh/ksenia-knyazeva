@@ -1,5 +1,5 @@
-@import '../../_variables.scss';
-@import '../../_mixin.scss';
+@import "../../_variables.scss";
+@import "../../_mixin.scss";
 
 .gallery-list {
   margin-bottom: 110px;
@@ -9,10 +9,6 @@
   &__item {
     margin-bottom: 57px;
   }
-
-  // &__item:not(:nth-child(3n)) {
-  //   margin-right: 34px;
-  // }
 
   &__top {
     position: relative;
@@ -56,6 +52,8 @@
   }
 
   @media (max-width: $containerMaxWidthTablet) {
+    margin-bottom: 90px;
+
     &__img {
       max-width: 296px;
     }
@@ -68,5 +66,53 @@
       padding: 6px 12px;
       @include raleway(400, 12px);
     }
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    margin-bottom: 80px;
+
+    &__item {
+      max-width: 136px;
+
+      img {
+        max-width: 136px;
+      }
+    }
+
+    &__top {
+      & span {
+        padding: 3px;
+        @include raleway(400, 7px);
+        bottom: 13px;
+      }
+    }
+
+    &__btn {
+      padding: 3px;
+      font-size: 7px;
+    }
+
+    &__icon {
+      img {
+        max-width: 30px;
+      }
+    }
+
+    &__info {
+      @include montserrat(600, 9px);
+      
+      & span span {
+        @include montserrat(500, 9px);
+        text-decoration: line-through;
+      }
+    }
+
+    .d-flex-between {
+      flex-wrap: nowrap;
+    }
+    // display: grid;
+    // grid-auto-rows: 1fr;
+    // grid-template-columns: 1fr 1fr;
+    // gap: 0px 0px;
   }
 }

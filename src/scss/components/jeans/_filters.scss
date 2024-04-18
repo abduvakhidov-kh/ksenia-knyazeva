@@ -40,7 +40,12 @@
     }
   }
 
+  &__btn {
+    display: none;
+  }
+
   @media (max-width: $containerMaxWidthTablet) {
+    padding: 64px 0;
     .tags__link {
       @include raleway(400, 20px);
     }
@@ -68,6 +73,29 @@
           margin-right: 43px;
         }
       }
+    }
+  }
+
+  @media (max-width: $containerMaxWidthMobile ) {
+    padding: 28px 0 24px 0;
+
+    .second-container {
+      padding: 0 32px;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .tags, .filters-list {
+      display: none;
+    }
+
+    &__title {
+    @include raleway(500, 16px);
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      display: block;
     }
   }
 }

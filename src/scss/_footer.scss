@@ -4,10 +4,22 @@
 .footer {
   padding-top: 40px;
   border-top: 1px solid $mainColor;
+
+  @media (max-width: $containerMaxWidthTablet) {
+    padding-top: 24px;
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    padding-top: 14px;
+  }
 }
 
 .footer-container {
   margin-bottom: 50px !important;
+
+  @media (max-width: $containerMaxWidthMobile) {
+    margin-bottom: 12px !important;
+  }
 }
 
 .container-list {
@@ -17,12 +29,28 @@
   &__item:nth-child(1) {
     margin-bottom: 50px;
   }
+
+  @media (max-width: $containerMaxWidthTablet) {
+    &__item:nth-child(1) {
+      margin-bottom: 28px;
+    }
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    &__item:nth-child(1) {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .footer-list {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  &__socials-mobile {
+    display: none !important;
+  }
 
   &__title {
     margin-bottom: 43px;
@@ -59,10 +87,98 @@
     margin-bottom: 0;
     margin-right: 60px;
   }
+
+  @media (max-width: $containerMaxWidthTablet) {
+    &__item {
+      margin-right: 108px;
+    }
+
+    &__title {
+      @include raleway(500, 18px);
+      margin-bottom: 23px;
+    }
+
+    &__form {
+      flex-wrap: nowrap;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &__link {
+      @include raleway(500, 14px);
+      margin-bottom: 10px;
+    }
+
+    .form-title {
+      @include raleway(500, 18px);
+      margin-right: 28px;
+      max-width: 236px;
+    }
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    &__item {
+      margin-right: 24px;
+
+      input {
+        width: 100%;
+        font-size: 7px;
+        outline: none;
+      }
+    }
+
+    &__socials {
+      display: none;
+    }
+
+    &__socials-mobile {
+      display: block !important;
+      width: 100%;
+      max-width: 90px;
+
+      .d-flex {
+        gap: 8px;
+      }
+    }
+
+    &__link {
+      margin-bottom: 4px;
+    }
+
+    &__title {
+      @include raleway(500, 9px);
+      margin-bottom: 8px;
+    }
+
+    &__form {
+      width: fit-content;
+      flex-wrap: wrap;
+      margin: 0;
+      max-width: 88px;
+    }
+
+    &__link {
+      @include raleway(500, 7px);
+      width: 100%;
+    }
+
+    .form-title {
+      @include raleway(500, 6px);
+      margin-right: 0;
+      max-width: 118px;
+    }
+  }
 }
 
 .footer-bottom {
   align-items: flex-end;
+
+  @media (max-width: $containerMaxWidthMobile) {
+    &__faq {
+      margin-bottom: 8px;
+      margin-right: auto;
+    }
+  }
 }
 
 .sub-footer {
@@ -75,5 +191,21 @@
 
   &__text {
     @include montserrat(400, 20px);
+  }
+
+  @media (max-width: $containerMaxWidthTablet) {
+    padding: 10px 0;
+
+    &__text {
+      @include montserrat(400, 12px);
+    }
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    padding: 4px 0;
+
+    &__text {
+      @include montserrat(400, 6px);
+    }
   }
 }

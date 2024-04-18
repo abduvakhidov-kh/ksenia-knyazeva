@@ -25,7 +25,7 @@
       }
 
       &__search {
-        display: none;
+        display: none !important;
       }
     }
   }
@@ -37,7 +37,7 @@
       max-width: 26px;
 
       img {
-        max-width: 26px;
+        max-width: 26px !important;
       }
       &__btn {
         width: 100%;

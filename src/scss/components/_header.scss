@@ -35,6 +35,10 @@
 
     &-item {
       max-width: 26px;
+
+      img {
+        max-width: 26px;
+      }
       &__btn {
         width: 100%;
       }

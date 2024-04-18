@@ -54,4 +54,19 @@
     color: $gray;
     border: 1px solid $gray;
   }
+
+  @media (max-width: $containerMaxWidthTablet) {
+    &__img {
+      max-width: 296px;
+    }
+
+    &__info {
+      @include montserrat(500, 17px);
+    }
+
+    &__btn {
+      padding: 6px 12px;
+      @include raleway(400, 12px);
+    }
+  }
 }

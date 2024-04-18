@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - корзина</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/account-header.html')
+    <main class="main">
+      <section class="container">
+        <div class="cart">
+          <header class="section-header">
+            <h1 class="section-header__title">КОРЗИНА</h1>
+          </header>
+            <div class="share-link">
+              <a href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1" class="share-link__url">https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a>
+              <div class="share-link__description">
+                Выше твоя уникальная ссылка, благодаря которой ты можешь
+                поделиться своими избранными товарами с другим человеком!
+              </div>
+            </div>
+          <div class="cart__content">
+            <ul class="cart__list list-reset">
+              <li class="cart__list-item">
+                @include('./partials/components/cart-item.html')
+              </li>
+              <li class="cart__list-item">
+                @include('./partials/components/cart-item.html')
+              </li>
+              <li class="cart__list-item">
+                @include('./partials/components/cart-item.html')
+              </li>
+            </ul>
+            <div class="checkout">
+              <div class="checkout__summary">
+                <div class="checkout__total">
+                  <div class="checkout__total-label">ИТОГО:</div>
+                  <div class="checkout__total-items">Товары, 3 штуки</div>
+                </div>
+                <div class="checkout__amount">
+                  <span class="checkout__amount-value">49’065</span>
+                  <span class="checkout__amount-currency">руб.</span>
+                </div>
+              </div>
+              <div class="checkout__promo">ВВЕСТИ ПРОМОКОД</div>
+              <button class="btn checkout__submit">ОФОРМИТЬ ЗАКАЗ</button>
+              <div class="form-checkbox checkout__terms">
+                <input type="checkbox" id="telegram" />
+                <label class="form-checkbox__label checkout__terms-text" for="telegram">
+                  Согласен с условиями
+                  <span class="checkout__terms-link">публичной оферты</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <section class="news product-similar">
+            <div class="container">
+              <h2 class="product-similar__title">ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТьСЯ</h2>
+              @include('./partials/components/similars-swipter.html')
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

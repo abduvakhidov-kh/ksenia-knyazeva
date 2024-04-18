@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - корзина</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    <header class="header account-header">
+  <div class="container">
+    <div class="header-top d-flex-center">
+  <a href="index.html" class="header-top__logo">
+    <img src="img/logo.svg" alt="logo" />
+  </a>
+  <nav class="header-nav">
+    <ul class="header-list list-reset d-flex-center">
+      <li class="header-item">
+        <button class="header-item__btn btn-reset">
+          <img src="img/navigation/search.png" alt="Поиск" />
+        </button>
+      </li>
+      <li class="header-item">
+        <button class="header-item__btn btn-reset">
+          <img src="img/navigation/note.png" alt="Избранные" />
+        </button>
+      </li>
+      <li class="header-item">
+        <button class="header-item__btn btn-reset">
+          <img src="img/navigation/cart.png" alt="Корзина" />
+        </button>
+      </li>
+      <li class="header-item">
+        <button class="header-item__btn btn-reset">
+          <img src="img/navigation/profile.png" alt="Профиль" />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <div class="header-bottom">
+      <nav class="header-nav">
+        <ul class="header-list list-reset d-flex-between">
+          <li class="haeader-item">
+            <a href="#" class="header-item__link">Мои заказы</a>
+          </li>
+          <li class="haeader-item">
+            <a href="#" class="header-item__link">Мои баллы</a>
+          </li>
+          <li class="haeader-item">
+            <a href="#" class="header-item__link">Мои монеты</a>
+          </li>
+          <li class="haeader-item">
+            <a href="#" class="header-item__link">Мои возвраты</a>
+          </li>
+          <li class="haeader-item">
+            <a href="#" class="header-item__link">Приведи подругу</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="container">
+        <div class="orders-checkout">
+          <header class="section-header">
+            <h1 class="section-header__title uppercase">ОФОРМЛЕНИЕ <br> ЗАКАЗА</h1>
+          </header>
+          <div class="orders-checkout__content">
+            <div class="orders-checkout__forms">
+              <div class="personal-data__container">
+                <h2 class="personal-data__title">ЛИЧНЫЕ ДАННЫЕ</h2>
+                <div class="personal-data__info">
+                  <div class="input">
+                    <label for="phone" class="input-label">Телефон</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="input-field"
+                      placeholder="Номер для входа"
+                      pattern="[+]{1}[0-9]{11,14}"
+                      required
+                    />
+                  </div>
+                  <div class="input">
+                    <label for="email" class="input-label">Эл. почта</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="input-field"
+                      placeholder="Электронная почта"
+                      required
+                    />
+                  </div>
+                  <div class="input">
+                    <label for="password" class="input-label">Пароль</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="input-field"
+                      placeholder="Введите пароль"
+                      required
+                    />
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="updates" />
+                    <label class="form-checkbox__label" for="updates">
+                      Быть в курсе новинок и акций от Ksenia Knyazeva
+                    </label>
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="attach-receiver" />
+                    <label class="form-checkbox__label" for="attach-receiver">
+                      Получение заказа <strong>другим</strong> человеком
+                    </label>
+                  </div>
+                  <div class="personal-data__info personal-data__receiver">
+                    <div class="input">
+                      <label for="receiver-phone" class="input-label">Телефон</label>
+                      <input
+                        type="tel"
+                        id="receiver-phone"
+                        name="receiver-phone"
+                        class="input-field"
+                        placeholder="Номер для входа"
+                        pattern="[+]{1}[0-9]{11,14}"
+                        required
+                      />
+                    </div>
+                    <div class="input">
+                      <label for="receiver-email" class="input-label">Эл. почта</label>
+                      <input
+                        type="email"
+                        id="receiver-email"
+                        name="receiver-email"
+                        class="input-field"
+                        placeholder="Электронная почта"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="personal-data__container">
+                <h2 class="personal-data__title">ДОСТАВКА</h2>
+                <div class="personal-data__info">
+                  <div class="input orders-checkout__location">
+                    <label for="options" class="input-label">Локация</label>
+                    <div class="orders-checkout__location-wrapper">
+                      <div
+                        class="custom-select input-field orders-checkout__location-select"
+                      >
+                        <select name="options" id="options" class="w-full">
+                          <option value="option1">Moscow</option>
+                          <option value="option2">Option 2</option>
+                          <option value="option3">Option 3</option>
+                          <option value="option4">Option 4</option>
+                        </select>
+                        <img class="arrow-down" src="./img/icons/arrow.png" />
+                      </div>
+                      <p class="orders-checkout__location-subtitle">
+                        Выбрать сохраненный адрес
+                      </p>
+                    </div>
+                  </div>
+                  <div class="orders-checkout__delivery">
+                    <div class="input-label orders-checkout__delivery__label">
+                      Способ доставки
+                    </div>
+                    <div class="orders-checkout__delivery-options">
+                      <label
+                        class="radio-button-container orders-checkout__delivery-courier"
+                        for="by-courier"
+                      >
+                        <div class="pickup">
+                          <div class="pickup__info">
+                            <h2 class="pickup__title">Доставка курьером</h2>
+                            <p class="pickup__description">
+                              Время доставки 2-3 рабочих дня
+                            </p>
+                            <input
+                              type="text"
+                              id="courier-address"
+                              class="input-field"
+                              placeholder="Улица, дом, квартира/офис"
+                            />
+                          </div>
+                          <div class="pickup__price">от 390 руб.</div>
+                        </div>
+                        <input type="radio" name="delivery-method" id="by-courier" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-button-container" for="pickup-point">
+                        <div class="pickup">
+                          <div class="pickup__info">
+                            <h2 class="pickup__title">Пункт выдачи СДЭК</h2>
+                            <p class="pickup__description">
+                              На примерку в СДЭК дается 15 минут, нужно
+                              обязательно уложиться в это время
+                            </p>
+                            <button class="pickup__button btn-reset">
+                              Выбрать пункт СДЭК
+                            </button>
+                          </div>
+                          <div class="pickup__price">от 390 руб.</div>
+                        </div>
+                        <input type="radio" name="delivery-method" id="pickup-point" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-button-container" for="self-pickup">
+                        <div class="pickup">
+                          <div class="pickup__info">
+                            <h2 class="pickup__title">Самовывоз из магазина</h2>
+                            <p class="pickup__description">
+                              Вы можете оплатить товар и забрать его
+                              самостоятельно из любимого магазина по удобному
+                              адресу
+                            </p>
+                          </div>
+                          <div class="pickup__price">Бесплатно</div>
+                        </div>
+                        <input type="radio" name="delivery-method" id="self-pickup" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label for="comment" class="input-label">Комментарий к заказу</label>
+                    <textarea
+                      rows="5"
+                      id="comment"
+                      class="input-field orders-checkout__comment"
+                      placeholder="Ваш комментарий к заказу"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="personal-data__container">
+                <h2 class="personal-data__title">ОПЛАТА</h2>
+                <div class="personal-data__info">
+                  <div class="orders-checkout__delivery">
+                    <div class="input-label orders-checkout__delivery__label">
+                      Способы оплаты 
+                    </div>
+                    <div class="orders-checkout__delivery-options">
+                      <label
+                        class="radio-button-container orders-checkout__delivery-courier"
+                        for="onplace-payment"
+                      >
+                        <div class="pickup">
+                          <div class="pickup__info">
+                            <h2 class="pickup__title">Банковской картой</h2>
+                            <p class="pickup__description">
+                              Предоплата доставки. Остальное при получении.
+                            </p>
+                          </div>
+                        </div>
+                        <input type="radio" name="delivery-method" id="onplace-payment" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-button-container" for="online-payment">
+                        <div class="pickup">
+                          <div class="pickup__info">
+                            <h2 class="pickup__title">Онлайн оплата картой</h2>
+                          </div>
+                        </div>
+                        <input type="radio" name="delivery-method" id="online-payment" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-button-container" for="partial-payment">
+                        <div class="pickup">
+                          <div class="pickup__info">
+                            <h2 class="pickup__title">Оплата через сервис Долями</h2>
+                            <p class="pickup__description">
+                              Сначала 25%, остальное потом. Оплата четырьмя равными платежами. Заберите товар сразу, а платите за него по 25% от цены каждые две недели. Без комиссий и переплат.
+                            </p>
+                          </div>
+                        </div>
+                        <input type="radio" name="delivery-method" id="partial-payment" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-settings profile-settings__upload">
+                <div class="form-checkbox">
+                  <input type="checkbox" id="need-help" />
+                  <label class="form-checkbox__label" for="need-help">Нужна консультация по телефону</label>
+                </div>
+              </div>
+              <div class="profile-settings">
+                <h2 class="profile-settings__title">
+                  Выбрать любимый мессенджер для связи:
+                </h2>
+                <div class="messenger">
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="whatsapp" />
+                    <label class="form-checkbox__label" for="whatsapp"
+                      >WhatsApp</label
+                    >
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="telegram" />
+                    <label class="form-checkbox__label" for="telegram"
+                      >Telegram</label
+                    >
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="viber" />
+                    <label class="form-checkbox__label" for="viber">Viber</label>
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="vk" />
+                    <label class="form-checkbox__label" for="vk">VK</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout">
+              <div class="checkout__summary">
+                <div class="checkout__total">
+                  <div class="checkout__total-label">ИТОГО:</div>
+                  <div class="checkout__total-items">Товары, 3 штуки</div>
+                </div>
+                <div class="checkout__amount">
+                  <span class="checkout__amount-value">49’065</span>
+                  <span class="checkout__amount-currency">руб.</span>
+                </div>
+              </div>
+              <div class="checkout__promo">ВВЕСТИ ПРОМОКОД</div>
+              <button class="btn checkout__submit">ОФОРМИТЬ ЗАКАЗ</button>
+              <div class="form-checkbox checkout__terms">
+                <input type="checkbox" id="terms" />
+                <label
+                  class="form-checkbox__label checkout__terms-text"
+                  for="terms"
+                >
+                  Согласен с условиями
+                  <span class="checkout__terms-link">публичной оферты</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container footer-container">
+    <ul class="container-list list-reset">
+      <li class="container-list__item">
+        <ul class="list-reset footer-list">
+          <li class="footer-list__item">
+            <h3 class="footer-list__title">Покупателям</h3>
+            <ul class="footer-list__sublist list-reset">
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Доставка и оплата</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Обмен и возврат</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Программа лояльности</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Подарочная карта</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-list__item">
+            <h3 class="footer-list__title">О бренде</h3>
+              <ul class="footer-list__sublist list-reset">
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">История бренда</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Магазины</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Карьера</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Консультация стилиста</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-list__item">
+            <h3 class="footer-list__title">Мы в соцсетях</h3>
+            <ul class="list-reset footer-list__sublist list-reset">
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">YouTube</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Telegram</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Instagram</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">VK</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a href="#" class="footer-list__link">Tik-Tok</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-list__item">
+            <h3 class="footer-list__title">Контакты</h3>
+            <ul class="list-reset footer-list__sublist list-reset">
+              <li class="footer-list__subitem">
+                <a class="footer-list__link" href="tel:+8 800 511 94 70">8 (800) 511 94 70</a>
+              </li>
+              <li class="footer-list__subitem">
+                <a class="footer-list__link" href="mailto:store@knyazeva.ru">store@knyazeva.ru</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="container-list__item">
+        <ul class="list-reset footer-list footer-bottom">
+          <li class="footer-list__item">
+              <ul class="footer-list__sublist list-reset">
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Вопросы и ответы</a>
+                </li>
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Оферта</a>
+                </li>
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Правовая информация</a>
+                </li>
+                <li class="footer-list__subitem">
+                  <a href="#" class="footer-list__link">Размеры</a>
+                </li>
+            </ul>
+          </li>
+          <li class="footer-list__item footer-list__form">
+            <h3 class="footer-list__title form-title">Узнавать первой о новиньках и скидках</h3>
+            <input type="email" placeholder="Email">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="sub-footer">
+  <div class="container">
+    <p class="sub-footer__text">&copy;&nbsp;2010-2024. Интернет магазин Ksenia Knyazeva. Все права защищены.</p>
+  </div>
+</div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

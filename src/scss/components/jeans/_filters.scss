@@ -1,5 +1,5 @@
-@import '_variables.scss';
-@import '_mixin.scss';
+@import "_variables.scss";
+@import "_mixin.scss";
 
 .filters {
   padding: 83px 0 133px 0;
@@ -25,7 +25,6 @@
   }
 
   .filters-list {
-
     &__btn {
       margin-right: 5px;
     }
@@ -37,6 +36,37 @@
 
       &:not(:last-child) {
         margin-right: 86px;
+      }
+    }
+  }
+
+  @media (max-width: $containerMaxWidthTablet) {
+    .tags__link {
+      @include raleway(400, 20px);
+    }
+
+    &__title {
+      margin-bottom: 60px;
+      @include raleway(500, 32px);
+    }
+
+    .filters-list {
+      &__btn {
+        margin-right: 5px;
+      }
+  
+      &__item {
+        display: flex;
+        align-items: center;
+        @include raleway(400, 28px);
+
+        img {
+          width: 26px;
+        }
+  
+        &:not(:last-child) {
+          margin-right: 43px;
+        }
       }
     }
   }

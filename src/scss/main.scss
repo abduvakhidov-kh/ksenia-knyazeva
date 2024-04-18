@@ -18,6 +18,9 @@
 @import "_delivery-payment.scss";
 @import "_loyalty-points";
 @import "_favorites.scss";
+@import "_cart.scss";
+@import "_orders-checkout.scss";
+@import "_gift-cards.scss";
 @import "_accordion.scss";
 @import "_libs.scss";
 @import "_fonts.scss";
@@ -29,6 +32,7 @@
 @import "components/header.scss";
 @import "components/hero-nav.scss";
 @import "components/swiper.scss";
+@import "components/cart-item.scss";
 @import "components/news-swiper.scss";
 @import "components/product-swiper.scss";
 @import "components/signup-modal.scss";

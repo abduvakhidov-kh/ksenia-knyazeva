@@ -1,0 +1,143 @@
+.cart {
+  margin: 56px 0;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 160px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    :last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__list-item {
+    border-bottom: 1px solid black;
+    padding: 28px 0;
+    width: 100%;
+  }
+}
+
+.checkout {
+  border: 1px solid rgba(2, 19, 62, 1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 492px;
+  width: 100%;
+  height: fit-content;
+  font-weight: 500;
+  padding: 22px 25px 11px;
+
+  @media (max-width: 991px) {
+    padding: 0 20px;
+  }
+
+  &__summary {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &-label {
+      color: #000;
+      letter-spacing: 0.72px;
+      font: 24px Raleway, sans-serif;
+    }
+
+    &-items {
+      color: rgba(0, 0, 0, 0.8);
+      letter-spacing: 0.54px;
+      margin-top: 26px;
+      font: 18px Montserrat, sans-serif;
+      font-family: Montserrat;
+    }
+  }
+
+  &__amount {
+    color: #000;
+    letter-spacing: 0.72px;
+    width: fit-content;
+    align-self: start;
+    text-align: end;
+    font: 24px Montserrat, sans-serif;
+
+    &-value {
+      font-weight: bold;
+    }
+  }
+
+  &__promo {
+    color: #02133e;
+    letter-spacing: 0.6px;
+    text-decoration-line: underline;
+    margin-top: 56px;
+    font: 20px Raleway, sans-serif;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  &__submit {
+    background-color: #02133e;
+    margin-top: 22px;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.72px;
+    justify-content: center;
+    padding: 15px 60px;
+    font: 24px Raleway, sans-serif;
+    border: none;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  &__terms {
+    align-self: center;
+    display: flex;
+    margin-top: 19px;
+    gap: 5px;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.42px;
+    line-height: 14px;
+
+    label:before {
+      margin-right: 8px;
+    }
+
+    &-icon {
+      aspect-ratio: 1;
+      object-fit: auto;
+      object-position: center;
+      width: 12px;
+      align-self: start;
+    }
+
+    &-text {
+      font-family: Raleway, sans-serif;
+      font-size: 14px !important;
+    }
+
+    &-link {
+      text-decoration-line: underline;
+    }
+  }
+}

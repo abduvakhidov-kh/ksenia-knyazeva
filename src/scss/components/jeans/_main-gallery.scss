@@ -54,12 +54,12 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   &__title,
   &__price {
     @include montserrat(400, 40px);
   }
-  
+
   &__amount {
     font-weight: bold;
   }
@@ -70,6 +70,66 @@
     text-transform: uppercase;
     color: $gray;
     border: 1px solid $gray;
+  }
+
+  @media (max-width: $containerMaxWidthTablet) {
+    margin-bottom: 0;
+
+    .gallery-left {
+      span {
+        font-size: 36px;
+        bottom: 28px;
+      }
+
+      &__icon img {
+        width: 120px;
+        height: 84px;
+      }
+    }
+
+    .gallery-right {
+      height: fit-content;
+
+      &__img {
+        // max-height: 297px;
+        max-width: 463px;
+      }
+
+      .gallery-bottom__img {
+        max-width: 226px;
+      }
+    }
+
+    .gallery__title,
+    .gallery__price {
+      font-size: 24px;
+    }
+
+    .gallery__btn {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+    img {
+      max-width: 455px;
+    }
+  }
+
+  .collage {
+    .gallery-left {
+      span {
+        font-size: 24px;
+      }
+    }
+
+    .gallery-right {
+      display: block;
+    }
+
+    .gallery__btn {
+      padding: 6px 15px;
+      font-size: 16px;
+    }
   }
 }
 

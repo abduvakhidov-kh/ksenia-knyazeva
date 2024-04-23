@@ -11,6 +11,7 @@
   .gallery-left {
     margin-right: 14px;
     position: relative;
+    width: calc(50% - 14px);
 
     & span {
       padding: 8px 10px;
@@ -40,9 +41,14 @@
   .gallery-right {
     display: flex;
     flex-direction: column;
-
+    width: 50%;
+    
     &__img {
       margin-bottom: 14px;
+    }
+
+    .gallery-bottom__img {
+      width: 50%;
     }
 
     .gallery-bottom__img:not(:last-child) {
@@ -72,7 +78,7 @@
     border: 1px solid $gray;
   }
 
-  @media (max-width: $containerMaxWidthTablet) {
+  @include tablet {
     margin-bottom: 0;
 
     .gallery-left {

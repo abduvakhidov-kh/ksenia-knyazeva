@@ -84,12 +84,12 @@ picture {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media (max-width: containerMaxWidthTablet) {
+  @media screen and (min-width: $containerMaxWidthMobile) and (max-width: $containerMaxWidthTablet) {
     max-width: $containerMaxWidthTablet;
     padding: 0 10px;
   }
 
-  @media (max-width: containerMaxWidthMobile) {
+  @media (max-width: $containerMaxWidthMobile) {
     max-width: $containerMaxWidthMobile;
     padding: 0 5px;
   }
@@ -114,6 +114,16 @@ picture {
 .section-title {
   margin-bottom: 47px;
   @include raleway(600, 55px);
+
+  @media (max-width: $containerMaxWidthTablet) {
+    margin-bottom: 24px;
+    @include raleway(600, 32px);
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    margin-bottom: 8px;
+    @include raleway(600, 24px);
+  }
 }
 
 .form {

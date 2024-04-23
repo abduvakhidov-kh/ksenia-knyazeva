@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .categories {
   padding: 170px 0;
   text-transform: uppercase;
@@ -14,11 +16,11 @@
   .categories-list {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     flex-wrap: wrap;
 
     &__item {
       margin-bottom: 56px;
+      width: calc(33% - 44px);
 
       &:not(:nth-child(3n)) {
         margin-right: 72px;
@@ -33,7 +35,7 @@
       &__title {
         margin-bottom: 10px;
         max-width: 425px;
-        text-align:center;
+        text-align: center;
         @include raleway(400, 40px);
         text-transform: uppercase;
       }
@@ -45,6 +47,82 @@
         color: $gray;
         border: 1px solid $gray;
       }
+    }
+  }
+
+  @include tablet {
+    padding: 95px 0;
+
+    .categories-list {
+      .categories-item {
+        &__title {
+          font-size: 22px;
+        }
+
+        &__link {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+
+      &__item {
+        margin-bottom: 28px;
+        width: calc(33% - 24px);
+
+        &:not(:nth-child(3n)) {
+          margin-right: 40px;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      @include raleway(400, 32px);
+    }
+  }
+
+  @include mobile {
+    padding: 35px 0;
+
+    .categories-list {
+      .categories-item {
+        &__img {
+          margin-bottom: 4px;
+        }
+
+        &__title {
+          margin-bottom: 4px;
+          font-size: 11px;
+        }
+
+        &__link {
+          padding: 4px 8px;
+          font-size: 7px;
+        }
+      }
+
+      &__item {
+        margin-bottom: 11px;
+        width: calc(50% - 9px);
+
+        &:not(:nth-child(even)) {
+          margin-right: 18px;
+        }
+
+        &:not(:nth-child(odd)) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .section-title {
+      text-align: center;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 20px;
+      @include raleway(400, 16px);
     }
   }
 }

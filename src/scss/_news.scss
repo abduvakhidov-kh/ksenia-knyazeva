@@ -1,3 +1,11 @@
 .news {
   margin-bottom: 97px;
+
+  @media (max-width: $containerMaxWidthTablet) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    margin-bottom: 24px;
+  }
 }

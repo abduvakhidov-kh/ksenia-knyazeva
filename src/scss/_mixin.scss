@@ -36,3 +36,14 @@
   cursor: pointer;
 }
 
+@mixin tablet {
+  @media (min-width: calc($containerMaxWidthMobile + 1px)) and (max-width: $containerMaxWidthTablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $containerMaxWidthMobile) {
+    @content;
+  }
+}

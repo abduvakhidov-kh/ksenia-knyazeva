@@ -18,6 +18,11 @@
   border: none;
   padding: 18px 0;
   cursor: pointer;
+
+  @include mobile {
+    font-size: 8px;
+    padding: 8px 0;
+  }
 }
 
 .tab-button.active {
@@ -30,4 +35,18 @@
   padding-left: 0;
   max-width: 800px;
   line-height: 33px;
+
+  &__bottom {
+    margin-top: 40px;
+  }
+  
+  @include mobile {
+    &__bottom {
+      margin-top: 20px;
+    }
+
+    font-size: 8px;
+    line-height: 1.5em;
+    padding: 0;
+  }
 }

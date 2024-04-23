@@ -33,6 +33,7 @@
     &__title {
       @include montserrat(400, 36px);
       margin-bottom: 13px;
+      text-transform: uppercase;
 
       &-type {
         @include raleway(400, 36px);
@@ -70,6 +71,123 @@
         text-decoration: underline;
       }
     }
+
+    @include tablet {
+      margin-bottom: 24px;
+
+      &__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 8px;
+
+        &-type {
+          font-size: 30px;
+          display: block;
+        }
+      }
+
+      &__head {
+        margin: 12px 0;
+      }
+
+      .price {
+        margin-top: 24px;
+        margin-bottom: 12px;
+
+        &__full {
+          @include raleway(600, 36px);
+          text-align: center;
+          margin-bottom: 8px;
+        }
+
+        &__partial {
+          justify-content: center;
+
+          & img {
+            margin-right: 5px;
+            width: 20%;
+          }
+        }
+
+        &__parts {
+          @include montserrat(500, 14px);
+        }
+      }
+
+      .variants {
+        &__title {
+          @include raleway(400, 16px);
+          margin-bottom: 6px;
+        }
+
+        .size__table-link {
+          font-size: 10px;
+        }
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+
+      &__title {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 4px;
+
+        &-type {
+          font-size: 12px;
+          display: block;
+          text-align: center;
+        }
+
+        &-wrapper {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+
+      &__head {
+        flex-direction: column;
+        justify-content: center;
+        margin: 12px 0;
+      }
+
+      .price {
+        margin-top: 24px;
+        margin-bottom: 12px;
+
+        &__full {
+          @include raleway(600, 14px);
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+
+        &__partial {
+          justify-content: center;
+
+          & img {
+            margin-right: 5px;
+            width: 20%;
+          }
+        }
+
+        &__parts {
+          @include montserrat(500, 8px);
+        }
+      }
+
+      .variants {
+        &__title {
+          @include raleway(400, 10px);
+          margin-bottom: 6px;
+        }
+
+        .size__table-link {
+          font-size: 6px;
+        }
+      }
+    }
   }
 
   &-actions {
@@ -90,6 +208,34 @@
       padding: 8px 24px !important;
       color: #fff;
     }
+
+    @include mobile {
+      &__icon img {
+        height: 18px;
+        width: 100%;
+        margin-right: 6px;
+      }
+
+      &__add {
+        @include raleway(400, 9px);
+        font-variant: small-caps;
+        padding: 4px 24px !important;
+      }
+    }
+  }
+
+  @include mobile {
+    &-similar {
+      margin-top: 50px !important;
+
+      &__title {
+        font-size: 10px !important;
+        margin-bottom: 12px !important;
+      }
+    }
+    &-articul {
+      @include montserrat(400, 6px)
+    }
   }
 }
 
@@ -102,7 +248,7 @@
     margin-bottom: 24px !important;
   }
 
-  .size__item {
+  &__item {
     padding: 4px 36px;
     border: 1px solid #000;
     cursor: pointer;
@@ -113,6 +259,32 @@
 
     @include montserrat(500, 22px);
     text-align: center;
+  }
+
+  @include tablet {
+    margin-bottom: 24px;
+
+    &__list {
+      margin-bottom: 4px !important;
+    }
+
+    &__item {
+      @include montserrat(500, 18px);
+      padding: 6px 18px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 16px;
+
+    &__list {
+      margin-bottom: 2px !important;
+    }
+
+    &__item {
+      @include montserrat(500, 9px);
+      padding: 4px 13px;
+    }
   }
 }
 
@@ -126,6 +298,12 @@
     width: 80px;
     height: 12px;
     cursor: pointer;
+  }
+
+  @include mobile {
+    &__item {
+      width: 50%;
+    }
   }
 }
 

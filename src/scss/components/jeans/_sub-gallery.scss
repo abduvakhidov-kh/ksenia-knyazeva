@@ -12,7 +12,7 @@
 
   &__top {
     position: relative;
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
 
     & span {
       padding: 8px 10px;
@@ -38,6 +38,7 @@
     @include montserrat(400, 28px);
 
     & span span {
+      display: inline-block;
       text-decoration: line-through;
       font-size: 19px;
     }
@@ -51,8 +52,12 @@
     border: 1px solid $gray;
   }
 
-  @media (max-width: $containerMaxWidthTablet) {
+  @include tablet {
     margin-bottom: 90px;
+
+    &__item {
+      margin-bottom: 28px;
+    }
 
     &__img {
       max-width: 296px;
@@ -68,15 +73,12 @@
     }
   }
 
-  @media (max-width: $containerMaxWidthMobile) {
+  @include mobile {
     margin-bottom: 80px;
 
     &__item {
-      max-width: 136px;
-
-      img {
-        max-width: 136px;
-      }
+      margin-bottom: 16px;
+      width: 48%;
     }
 
     &__top {
@@ -103,6 +105,7 @@
       
       & span span {
         @include montserrat(500, 9px);
+        margin-right: 4px;
         text-decoration: line-through;
       }
     }
@@ -110,9 +113,5 @@
     .d-flex-between {
       flex-wrap: nowrap;
     }
-    // display: grid;
-    // grid-auto-rows: 1fr;
-    // grid-template-columns: 1fr 1fr;
-    // gap: 0px 0px;
   }
 }

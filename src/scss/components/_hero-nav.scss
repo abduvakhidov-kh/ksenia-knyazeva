@@ -5,15 +5,30 @@
     @include raleway(400, 27px);
   }
 
-  &__item:not(:last-child) {
-      margin-right: 39px;
+  &__item {
+    width: 12%;
   }
 
+  // &__item:not(:last-child) {
+      // margin-right: 39px;
+  // }
+
   &__img {
-    width: 197px;
-    height: 197px;
+    // width: 197px;
+    width: 100%;
+    // height: 197px;
     margin-bottom: 39px;
     border-radius: 50%;
     background-color: #E5E5E5;
+  }
+
+  @include tablet {
+    &__item span {
+      @include raleway(400, 20px);
+    }
+  }
+
+  @include mobile {
+    display: none;
   }
 }

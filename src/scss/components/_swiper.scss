@@ -23,6 +23,15 @@
     right: 45%;
     transform: translate(50%, -50%);
   }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    width: 23px;
+    height: 23px;
+    
+    &::before {
+      font-size: 1em;
+    }
+  }
 }
 
 .swiper-button-next::after {

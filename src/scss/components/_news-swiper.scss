@@ -37,8 +37,12 @@
   }
   &__icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 4px;
+    right: 8px;
+
+    @media (max-width: $containerMaxWidthMobile) {
+      width: calc(1rem + 100vw / 100 );
+    }
   }
 
   &__info {
@@ -52,6 +56,39 @@
     text-transform: uppercase;
     color: $gray;
     border: 1px solid $gray;
+  }
+
+  @media (max-width: $containerMaxWidthMobile) {
+    &__item--last {
+      height: auto !important;
+    }
+
+    &__item {
+      .d-flex-between {
+        flex-wrap: nowrap;
+      }
+    }
+
+    &__btn {
+      padding: 4px 8px;
+      @include raleway(400, 7px);
+      align-self: start;
+    }
+
+    &__top span {
+      padding: 4px;
+      font-size: 7px;
+      bottom: 10px;
+    }
+
+    &__info {
+      font-size: 10px;
+    }
+
+    .swiper-slide {
+      width: 40% !important;
+      margin-right: 10px !important;
+    }
   }
 }
 

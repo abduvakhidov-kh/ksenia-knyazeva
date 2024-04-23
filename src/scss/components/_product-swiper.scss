@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 .product-swiper {
-  &__item {
+  li.product-swiper__item {
     margin-right: 0 !important;
   }
 
@@ -51,5 +51,13 @@
     text-transform: uppercase;
     color: $gray;
     border: 1px solid $gray;
+  }
+}
+
+@media (max-width: $containerMaxWidthMobile) {
+  .product-swiper .news-swiper .swiper-slide {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+    margin-right: 0 !important;
   }
 }

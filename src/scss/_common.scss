@@ -372,3 +372,17 @@ picture {
 .w-full {
   width: 100%;
 }
+
+body {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@include mobile {
+  html {
+    touch-action: manipulation;
+  }
+}
+

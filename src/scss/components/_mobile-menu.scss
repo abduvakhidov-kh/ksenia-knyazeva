@@ -84,10 +84,9 @@ $menuToggleIconOpacity: 0;
 /* Menu */
 .menu {
   position: absolute;
-  width: $menuWidth;
-  margin: -100px 0 0 -50px;
-  top: 38px;
-  left: -30px;
+  width: 100vw;
+  top: 36px;
+  left: -18px;
   padding: $menuPadding;
   padding-top: $menuPaddingTop;
   background: $menuBgColor;

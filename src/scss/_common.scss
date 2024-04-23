@@ -115,12 +115,12 @@ picture {
   margin-bottom: 47px;
   @include raleway(600, 55px);
 
-  @media (max-width: $containerMaxWidthTablet) {
+  @include tablet {
     margin-bottom: 24px;
     @include raleway(600, 32px);
   }
 
-  @media (max-width: $containerMaxWidthMobile) {
+  @include mobile {
     margin-bottom: 8px;
     @include raleway(600, 24px);
   }

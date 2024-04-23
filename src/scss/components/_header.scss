@@ -56,12 +56,15 @@
 }
 
 .header-top {
+  position: relative;
   margin-bottom: 88px;
   justify-content: center;
 
   &__logo {
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @include tablet {
@@ -75,6 +78,7 @@
   @include mobile {
     margin: 0;
     justify-content: space-between;
+    padding: 0 12px;
 
     &__logo {
       width: 123px;

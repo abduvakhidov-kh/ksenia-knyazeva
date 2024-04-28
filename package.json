@@ -33,7 +33,6 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "node-normalize-scss": "^8.1.2",
-    "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1",
     "sass": "^1.49.7",
     "webpack": "^5.68.0",

@@ -1,3 +1,5 @@
+@import '_mixin.scss';
+
 // Define variables
 $primary-color: #02133e;
 $secondary-color: rgba(0, 0, 0, 0.6);
@@ -35,11 +37,7 @@ $button-border-color: #000;
     margin-top: 82px;
     width: 100%;
     font: 500 40px/87.5% Raleway, sans-serif;
-    @include flex-center; // Center vertically and horizontally
-
-    @media (max-width: 991px) {
-      margin-top: 40px;
-    }
+    @include flex-center;
   }
 
   .orders-cta {
@@ -51,14 +49,10 @@ $button-border-color: #000;
     @include flex-center;
     margin: 24px auto 0;
 
-    @media (max-width: 991px) {
-      margin-left: 8px;
-    }
-
     .orders-cta-text {
       color: $secondary-color;
       letter-spacing: 0.72px;
-      font: 24px/30px Raleway, sans-serif;
+      font: 24px Raleway, sans-serif;
       margin-bottom: 60px;
     }
 
@@ -72,10 +66,29 @@ $button-border-color: #000;
       font: 22px/136% Raleway, sans-serif;
       cursor: pointer;
       text-wrap: nowrap;
+    }
+  }
 
-      @media (max-width: 991px) {
-        margin-top: 20px; // Adjust as needed
-        padding: 0 20px;
+  @include mobile {
+    .orders-empty {
+      font-size: 13px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+
+    .orders-cta {
+      margin: 0 auto;
+      width: 50%;
+  
+      .orders-cta-text {
+        font-size: 10px;
+        margin-bottom: 17px;
+      }
+      
+      .orders-cta-button {
+        margin-top: 0;
+        padding: 4px 12px;
+        font-size: 10px;
       }
     }
   }

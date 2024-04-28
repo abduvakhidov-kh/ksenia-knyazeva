@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>KSENIA KNYAZEVA - моя карта</title>
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
+    @include('./partials/components/account-header.html')
+    <main class="main">
+      <section class="container">
+        <header class="section-header">
+          <h1 class="section-header__title">МОЯ КАРТА</h1>
+          <p class="section-header__help">
+            ОСТАЛИСЬ ВОПРОСЫ? <br />
+            <a href="#">Спросить</a>
+          </p>
+        </header>
+        <section class="shops">
+          <div class="contacts">
+            <div class="contacts__heading">КОНТАКТЫ</div>
+            <div class="contacts__phones">
+              <span class="contacts__label">Телефоны:</span>
+              <br />
+              <a
+                href="tel:+78005119470"
+                class="contacts__phone-link"
+                target="_blank"
+              >
+                8 800 511 94 70
+              </a>
+              <span class="contacts__phone-description"
+                >(звонок бесплатный)</span
+              >
+              <br />
+              <a
+                href="tel:+74993489470"
+                class="contacts__phone-link"
+                target="_blank"
+              >
+                +7 499 348 94 70
+              </a>
+              <br />
+            </div>
+            <div class="contacts__emails">
+              <span class="contacts__label">Почта и мессенджеры:</span>
+              <br />
+              <span class="contacts__email-label">Почта для покупателей:</span>
+              <a
+                href="mailto:store@knyazeva.ru"
+                class="contacts__email-link"
+                target="_blank"
+              >
+                store@knyazeva.ru
+              </a>
+              <br />
+              <span class="contacts__email-label">Почта для предложений:</span>
+              <a
+                href="mailto:pr@knyazeva.ru"
+                class="contacts__email-link"
+                target="_blank"
+              >
+                pr@knyazeva.ru
+              </a>
+              <br />
+              <span class="contacts__messengers-label"
+                >Ссылки на все мессенджеры:</span
+              >
+              <br />
+              <span class="contacts__messengers-description">
+                представлены в нижнем правом углу экрана.
+              </span>
+              <br />
+            </div>
+          </div>
+          <div class="location">
+            <div class="location__name">ТЦ "Павелецкая Плаза"</div>
+            <div class="location__details">
+              <div class="location__icon"></div>
+              <div class="location__station">м. Павелецкая</div>
+            </div>
+            <div class="location__info">
+              <div class="location__address">Москва, Павелецкая площадь, 2, стр. 1</div>
+              <div class="location__hours">Время работы:</div>
+              <div class="location__timing">Пн-Вс: с 10:00 до 22:00</div>
+              <div class="location__route">МАРШРУТ</div>
+              <div class="location__view">СМОТРЕТЬ МАГАЗИН</div>
+            </div>
+          </div>          
+        </section>
+      </section>
+    </main>
+    @include('./partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

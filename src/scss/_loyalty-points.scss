@@ -50,10 +50,6 @@
     text-align: center;
     letter-spacing: 0.6px;
 
-    @media (max-width: 991px) {
-      margin-top: 40px;
-    }
-
     &-text {
       font-family: Montserrat, sans-serif;
     }
@@ -77,6 +73,44 @@
 
     @media (max-width: 991px) {
       max-width: 100%;
+    }
+  }
+
+  @include tablet {
+    padding: 24px;
+    &__value {
+      font-size: 40px;
+    }
+
+    &__description, &__rules-text, &__history {
+      font-size: 16px;
+    }
+
+    &__rules {
+      margin: 30px;
+    }
+
+    &__image {
+      width: 24px;
+    }
+  }
+
+  @include mobile {
+    padding: 12px;
+    &__value {
+      font-size: 40px;
+    }
+
+    &__description, &__rules-text, &__history {
+      font-size: 8px;
+    }
+
+    &__rules {
+      margin: 15px;
+    }
+
+    &__image {
+      width: 12px;
     }
   }
 }

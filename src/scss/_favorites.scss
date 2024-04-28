@@ -10,17 +10,25 @@
     flex-wrap: wrap;
     gap: 2em;
     margin-bottom: 56px;
+
+    @include tablet {
+      gap: 1.5em;
+    }
+
+    @include mobile {
+      gap: 1em;
+    }
   }
 
   .favorites-product__item {
-    flex: 1 0 calc(25% - 2em); /* 4 cards per row on laptop */
+    width: calc(25% - 2em); /* 4 cards per row on laptop */
     /* For tablets */
-    @media (max-width: 1024px) {
-      flex: 1 0 calc(50% - 2em); /* 2 cards per row */
+    @include tablet {
+      flex: 1 0 calc(33.33% - 1em); /* 3 cards per row */
     }
     /* For mobile */
-    @media (max-width: 600px) {
-      flex: 1 0 calc(100% - 2em); /* 1 card per row */
+    @include mobile {
+      width: calc(50% - .8em) !important; /* 2 cards per row */
     }
   }
 
@@ -90,7 +98,7 @@
       .product-card__type {
         color: #000;
         letter-spacing: 0.66px;
-        font: 22px Montserrat, sans-serif;
+        @include montserrat(500, 22px);
       }
 
       .product-card__options {
@@ -129,9 +137,12 @@
 
         .product-card__sku-label {
           color: rgba(0, 0, 0, 0.6);
-          letter-spacing: 0.54px;
           font: 18px Montserrat, sans-serif;
           flex-grow: 1;
+
+          &::after {
+            content: 'Артикул:';
+          }
         }
 
         .product-card__sku-value {
@@ -170,9 +181,155 @@
         letter-spacing: 0.48px;
         justify-content: center;
         padding: 9px 23px;
-        font: 400 16px Raleway, sans-serif;
+        @include raleway(400, 16px);
         cursor: pointer;
       }
+    }
+
+    @include tablet {
+      &__header {
+        margin-top: 16px;
+      }
+
+      &__image-container {
+        .product-card__badge {
+          width: 32px;
+        }
+
+        .product-card__overlay {
+          font-size: 6px;
+          bottom: 24px;
+        }
+      }
+
+      &__details {
+        gap: 16px;
+
+        .product-card__type {
+          @include montserrat(500, 18px);
+        }
+
+        .product-card__price {
+          &-value,
+          &-currency {
+            font-family: Montserrat, sans-serif !important;
+            font-size: 24px !important;
+          }
+          &-value {
+            font-weight: bold !important;
+          }
+        }
+      }
+
+      &__options {
+        .product-card__option {
+          &-label,
+          &-value {
+            font-size: 18px !important;
+          }
+        }
+      }
+
+      &__bottom {
+        .product-card__sku {
+          gap: 6px !important;
+          &-label,
+          &-value {
+            font-size: 16px !important;
+          }
+
+          &-label {
+            &::after {
+              content: "Арт." !important;
+            }
+          }
+        }
+      }
+
+      &__add-to-cart {
+        padding: 8px 16px !important;
+        font-size: 16px !important;
+      }
+    }
+
+    @include mobile {
+      &__header {
+        margin-top: 6px;
+      }
+
+      &__image-container {
+        .product-card__badge {
+          width: 17px;
+        }
+
+        .product-card__overlay {
+          font-size: 8px;
+          bottom: 12px;
+        }
+      }
+
+      &__details {
+        gap: 7px;
+
+        .product-card__type {
+          @include montserrat(500, 11px);
+        }
+
+        .product-card__price {
+          &-value,
+          &-currency {
+            font-family: Montserrat, sans-serif !important;
+            font-size: 12px !important;
+          }
+          &-value {
+            font-weight: bold !important;
+          }
+        }
+      }
+
+      &__options {
+        .product-card__option {
+          &-label,
+          &-value {
+            font-size: 9px !important;
+          }
+        }
+      }
+
+      &__bottom {
+        .product-card__sku {
+          gap: 4px !important;
+          &-label,
+          &-value {
+            font-size: 7px !important;
+          }
+
+          &-label {
+            &::after {
+              content: "Арт." !important;
+            }
+          }
+        }
+      }
+
+      &__add-to-cart {
+        padding: 4px 8px !important;
+        font-size: 8px !important;
+      }
+    }
+  }
+
+  @include tablet {
+    margin-top: 0;
+    &-header {
+      margin-bottom: 40px !important;
+    }
+  }
+
+  @include mobile {
+    margin-top: 0;
+    &-header {
+      margin-bottom: 28px !important;
     }
   }
 }

@@ -1,4 +1,7 @@
-table, td {
+@import "_mixin.scss";
+
+table,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -13,20 +16,11 @@ table, td {
   border: 2px solid rgba(2, 19, 62, 1);
   width: 100%;
 
-
-  @media (max-width: 991px) {
-    display: block;
-  }
-
   &-header {
     background-color: #02133e;
     color: #fff;
     font-weight: 600;
     text-align: center;
-
-    @media (max-width: 991px) {
-      display: none;
-    }
 
     th {
       border-right: 1px solid white;
@@ -42,24 +36,7 @@ table, td {
     }
   }
 
-  &-content {
-    @media (max-width: 991px) {
-      display: block;
-    }
-  }
-
   &-row {
-    @media (max-width: 991px) {
-      display: block;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-bottom: 1px solid #ccc;
-
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-
     td {
       padding: 20px;
       text-align: center;
@@ -68,38 +45,15 @@ table, td {
       font-weight: 500;
       letter-spacing: 0.72px;
       font-family: Montserrat, sans-serif;
-
-      @media (max-width: 991px) {
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 5px 0;
-
-        &:before {
-          content: attr(data-label);
-          float: left;
-          font-weight: bold;
-          text-transform: uppercase;
-          margin-right: 10px;
-        }
-      }
     }
   }
 
   &-date-column {
     width: 18%;
-
-    @media (max-width: 991px) {
-      width: 100%;
-    }
   }
 
   &-number-column {
     width: 17%;
-
-    @media (max-width: 991px) {
-      width: 100%;
-    }
 
     .order-history-number {
       text-decoration: underline;
@@ -108,17 +62,41 @@ table, td {
 
   &-status-column {
     width: 19%;
-
-    @media (max-width: 991px) {
-      width: 100%;
-    }
   }
 
   &-points-column {
     width: 46%;
+  }
 
-    @media (max-width: 991px) {
-      width: 100%;
+  @include tablet {
+    &-header {
+      th {
+        padding: 16px 20px;
+        font-size: 20px;
+      }
+    }
+
+    &-row {
+      td {
+        padding: 12px 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include mobile {
+    &-header {
+      th {
+        padding: 8px 10px;
+        font-size: 6px;
+      }
+    }
+
+    &-row {
+      td {
+        padding: 6px 10px;
+        font-size: 7px;
+      }
     }
   }
 }
@@ -131,11 +109,20 @@ table, td {
   justify-content: center;
   padding: 15px 36px;
   font: 500 24px Raleway, sans-serif;
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
   margin: 40px auto;
 
-  @media (max-width: 991px) {
-    width: 100%;
+  @include mobile {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 20px auto;
+  }
+
+  @include mobile {
+    padding: 5px 10px;
+    font-size: 10px;
+    margin: 10px auto;
   }
 }

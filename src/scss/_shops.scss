@@ -1,0 +1,145 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.shops {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.96px;
+    gap: 40px;
+    padding: 0 20px;
+
+    &__label {
+      font-weight: 600;
+    }
+
+    &__phone-link,
+    &__email-link {
+      font-family: Montserrat, sans-serif;
+      text-decoration: underline;
+    }
+
+    &__heading {
+      color: #02133e;
+      letter-spacing: 1.08px;
+      width: 100%;
+      @include raleway(600, 36px);
+    }
+
+    &__phones,
+    &__emails {
+      font-family: Raleway, sans-serif;
+      width: 100%;
+
+      &__label {
+        font-weight: 600;
+      }
+
+      &__phone-description {
+        font-family: Montserrat, sans-serif;
+      }
+
+      &__email-label {
+        font-family: Montserrat, sans-serif;
+      }
+
+      &__messengers-label,
+      &__messengers-description {
+        font-family: Montserrat, sans-serif;
+      }
+    }
+  }
+
+  .location {
+    display: flex;
+    max-width: 472px;
+    flex-direction: column;
+    color: #000;
+    font-weight: 400;
+    padding: 0 20px;
+
+    &__name {
+      color: #02133e;
+      text-align: center;
+      letter-spacing: 1.08px;
+      text-transform: uppercase;
+      width: 100%;
+      font: 500 36px Raleway, sans-serif;
+    }
+
+    &__details {
+      align-self: center;
+      display: flex;
+      margin-top: 53px;
+      gap: 13px;
+      font-size: 32px;
+      letter-spacing: 0.96px;
+
+      &__icon {
+        background-color: #4bba5c;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+      }
+
+      &__station {
+        font-family: Raleway, sans-serif;
+        flex-grow: 1;
+        flex-basis: auto;
+      }
+    }
+
+    &__info {
+      display: flex;
+      margin-top: 16px;
+      width: 100%;
+      padding-left: 12px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__address {
+        letter-spacing: 0.72px;
+        align-self: stretch;
+        font: 24px Raleway, sans-serif;
+      }
+
+      &__hours {
+        color: rgba(48, 48, 48, 0.6);
+        letter-spacing: 0.6px;
+        margin-top: 26px;
+        font: 20px Raleway, sans-serif;
+      }
+
+      &__timing {
+        letter-spacing: 0.66px;
+        margin-top: 9px;
+        font: 22px Raleway, sans-serif;
+      }
+
+      &__route {
+        letter-spacing: 0.72px;
+        text-decoration-line: underline;
+        margin-top: 38px;
+        font: 500 24px Raleway, sans-serif;
+      }
+
+      &__view {
+        border-color: rgba(2, 19, 62, 1);
+        border-style: solid;
+        border-width: 1px;
+        background-color: #fff;
+        margin-top: 52px;
+        color: #02133e;
+        letter-spacing: 0.84px;
+        justify-content: center;
+        padding: 23px 36px;
+        font: 500 28px Raleway, sans-serif;
+      }
+    }
+  }
+}

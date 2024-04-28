@@ -131,6 +131,90 @@
       padding-left: 26px;
     }
   }
+
+  &__consulting {
+    margin: 0px;
+  }
+
+  &__socials {
+    margin-top: 0px;
+  }
+
+  @include tablet {
+    &__content {
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 100px;
+    }
+
+    &__forms {
+      gap: 30px;
+      margin-bottom: 24px;
+    }
+
+    .personal-data {
+      &__title {
+        font-size: 16px;
+        padding: 14px 30px;
+      }
+
+      &__info {
+        padding: 36px;
+        gap: 30px;
+      }
+    }
+
+    &__location-subtitle {
+      font-size: 14px;
+    }
+
+    &__delivery-options {
+      gap: 30px;
+    }
+
+    &__comment-label {
+      align-self: flex-start;
+    }
+  }
+
+  @include mobile {
+    &__content {
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 50px;
+    }
+
+    &__forms {
+      gap: 15px;
+    }
+
+    .personal-data {
+      width: 70%;
+      &__title {
+        font-size: 8px;
+        padding: 7px 15px;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+
+      &__info {
+        padding: 18px;
+        gap: 15px;
+      }
+    }
+
+    &__location-subtitle {
+      font-size: 7px;
+    }
+
+    &__delivery-options {
+      gap: 15px;
+    }
+
+    &__comment-label {
+      align-self: flex-start;
+    }
+  }
 }
 
 .pickup {
@@ -173,6 +257,54 @@
       background-color: #05102c;
     }
   }
+
+  @include tablet {
+    padding: 0;
+    line-height: normal;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__description {
+      font-size: 10px;
+      margin-top: 16px;
+    }
+
+    &__price {
+      font-size: 12px;
+    }
+
+    button.pickup__button {
+      margin-top: 16px;
+      padding: 8px !important;
+      font-size: 14px;
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+    line-height: normal;
+
+    &__title {
+      font-size: 9px;
+    }
+
+    &__description {
+      font-size: 5px;
+      margin-top: 8px;
+    }
+
+    &__price {
+      font-size: 6px;
+    }
+
+    button.pickup__button {
+      margin-top: 8px;
+      padding: 4px !important;
+      font-size: 7px;
+    }
+  }
 }
 
 .custom-select {
@@ -190,6 +322,7 @@
     font-size: 16px;
     color: #333;
     outline: none;
+    background-color: #fff;
 
     &:focus {
       border-color: #000;
@@ -202,5 +335,27 @@
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
+  }
+
+  @include tablet {
+    select {
+      font-size: 16px;
+      padding: 12px 8px;
+    }
+
+    .arrow-down {
+      width: 24px;
+    }
+  }
+
+  @include mobile {
+    select {
+      font-size: 8px;
+      padding: 6px 4px;
+    }
+
+    .arrow-down {
+      width: 12px;
+    }
   }
 }

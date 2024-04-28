@@ -1,5 +1,7 @@
+@import "_mixin.scss";
+
 .cart {
-  margin: 56px 0;
+  // margin: 56px 0;
 
   &__content {
     display: flex;
@@ -23,6 +25,26 @@
     padding: 28px 0;
     width: 100%;
   }
+
+  @include tablet {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__list-item {
+      padding: 28px 0;
+    }
+  }
+
+  @include mobile {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__list-item {
+      padding: 14px 0;
+    }
+  }
 }
 
 .checkout {
@@ -35,10 +57,6 @@
   height: fit-content;
   font-weight: 500;
   padding: 22px 25px 11px;
-
-  @media (max-width: 991px) {
-    padding: 0 20px;
-  }
 
   &__summary {
     display: flex;
@@ -138,6 +156,114 @@
 
     &-link {
       text-decoration-line: underline;
+    }
+  }
+
+  @include tablet {
+    padding: 24px 20px 11px;
+    margin: 0 auto;
+
+    &__summary {
+      gap: 14px;
+    }
+
+    &__total {
+      &-label {
+        font-size: 26px;
+      }
+
+      &-items {
+        margin-top: 18px;
+        font-size: 16px;
+      }
+    }
+
+    &__amount {
+      font-size: 28px;
+    }
+
+    &__promo {
+      margin-top: 32px;
+      font-size: 20px;
+    }
+
+    &__submit {
+      margin-top: 22px;
+      padding: 16px 60px;
+      font-size: 26px;
+    }
+
+    &__terms {
+      margin-top: 18px;
+      gap: 10px;
+      font-size: 28px;
+
+      label:before {
+        margin-right: 8px;
+      }
+
+      &-icon {
+        width: 10px;
+      }
+
+      &-text {
+        font-family: Raleway, sans-serif;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 14px 20px 11px;
+    margin: 0 auto;
+
+    &__summary {
+      gap: 7px;
+    }
+
+    &__total {
+      &-label {
+        font-size: 13px;
+      }
+
+      &-items {
+        margin-top: 9px;
+        font-size: 8px;
+      }
+    }
+
+    &__amount {
+      font-size: 15px;
+    }
+
+    &__promo {
+      margin-top: 18px;
+      font-size: 10px;
+    }
+
+    &__submit {
+      margin-top: 11px;
+      padding: 8px 60px;
+      font-size: 13px;
+    }
+
+    &__terms {
+      margin-top: 9px;
+      gap: 5px;
+      font-size: 14px;
+
+      label:before {
+        margin-right: 4px;
+      }
+
+      &-icon {
+        width: 5px;
+      }
+
+      &-text {
+        font-family: Raleway, sans-serif;
+        font-size: 8px !important;
+      }
     }
   }
 }

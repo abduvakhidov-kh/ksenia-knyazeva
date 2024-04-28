@@ -1,5 +1,7 @@
-.return,
-.return-process {
+@import "variables.scss";
+@import "mixin.scss"; 
+
+.return {
   @include raleway(400, 32px);
 
   &__filters {
@@ -49,6 +51,96 @@
   &__subdescr {
     margin-bottom: 50px;
   }
+
+  @include tablet {
+    &__title {
+      font-size: 26px;
+      margin-bottom: 52px;
+    }
+
+    &__conditions,
+    &__size,
+    &__item {
+      margin-bottom: 92px;
+    }
+
+    &__rules {
+      margin-bottom: 64px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    &__descr {
+      font-size: 20px;
+      margin-bottom: 22px;
+
+      &.text {
+        margin-bottom: 136px;
+      }
+    }
+
+    &__subdescr {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+    &-list {
+      font-size: 20px;
+      padding-left: 36px !important;
+
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @include mobile {
+    &__title {
+      font-size: 13px;
+      margin-bottom: 26px;
+    }
+
+    &__conditions,
+    &__size,
+    &__item {
+      margin-bottom: 46px;
+    }
+
+    &__rules {
+      margin-bottom: 32px;
+    }
+
+    &__subtitle {
+      font-size: 10px;
+      margin-bottom: 16px;
+    }
+
+    &__descr {
+      font-size: 10px;
+      margin-bottom: 11px;
+
+      &.text {
+        margin-bottom: 68px;
+      }
+    }
+
+    &__subdescr {
+      font-size: 8px;
+      margin-bottom: 16px;
+    }
+
+    &-list {
+      font-size: 8px;
+      padding-left: 16px !important;
+
+      &__title {
+        font-size: 8px;
+      }
+    }
+  }
 }
 
 .return-process {
@@ -86,13 +178,52 @@
     letter-spacing: 0.03em;
     line-height: 1;
     text-align: left;
+    max-width: 100%;
   }
 
-  @media (max-width: 767px) {
+  @include tablet {
+    width: 60%;
+    gap: 16px;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .step {
+      display: flex;
+      justify-content: center;
+    }
+
+    .step-number {
+      font-size: 24px;
+      width: 49px;
+      height: 49px;
+    }
+
+    .step-description {
+      font-size: 16px;
+      max-width: 50%;
+    }
+  }
+
+  @include mobile {
     flex-wrap: wrap;
+    width: 60%;
+    gap: 16px;
+    margin: 0 auto;
+
+    .step-number {
+      font-size: 12px;
+      width: 25px;
+      height: 25px;
+    }
+
+    .step-description {
+      font-size: 8px;
+      line-height: 13px;
+    }
 
     .step {
       flex-basis: 100%;
+      margin-bottom: 0;
     }
   }
 }

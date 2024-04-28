@@ -1,138 +1,157 @@
-@import "_mixin.scss";
 
-.product {
-  letter-spacing: 0.03em;
+.certificates {
+  margin-bottom: 180px;
 
-  &-articul {
-    @include raleway(400, 24px);
-    margin-bottom: 4px;
+  &__header {
+    margin-bottom: 178px !important;
   }
 
-  &-matching__item {
-    width: 24%;
+  .certificates__grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 80px;
   }
 
-  #info {
-    margin: 0 36px;
-  }
+  .certificates__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    line-height: 81%;
 
-  &-info {
-    margin-bottom: 180px;
-    &__bottom,
-    &__head {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__head {
-      margin-top: 58px;
-      margin-bottom: 51px;
+    &-image {
+      aspect-ratio: 1.56;
+      object-fit: auto;
+      object-position: center;
       width: 100%;
     }
 
-    &__title {
-      @include montserrat(400, 36px);
-      margin-bottom: 13px;
-
-      &-type {
-        @include raleway(400, 36px);
-      }
-    }
-
-    .price {
-      &__full {
-        @include montserrat(400, 50px);
-        text-align: right;
-      }
-
-      &__partial {
-        display: flex;
-        align-items: center;
-
-        & img {
-          margin-right: 10px;
-        }
-      }
-
-      &__parts {
-        @include montserrat(500, 18px);
-      }
-    }
-
-    .variants {
-      &__title {
-        @include raleway(400, 24px);
-        margin-bottom: 12px;
-      }
-
-      .size__table-link {
-        display: inline-block;
-        text-decoration: underline;
-      }
-    }
-  }
-
-  &-actions {
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__icon img {
-      height: 80px;
-      width: 115px;
-    }
-
-    &__add {
-      @include raleway(400, 32px);
-      font-variant: small-caps;
-      background-color: #02133e !important;
-      padding: 8px 24px !important;
+    &-label {
+      font-family: Raleway, sans-serif;
+      background-color: #000;
       color: #fff;
+      align-self: center;
+      justify-content: center;
+      padding: 9px 26px;
     }
   }
-}
 
-.size {
-  margin-bottom: 52px;
-
-  &__list {
+  .certificates-info {
     display: flex;
-    gap: 17px;
-    margin-bottom: 24px !important;
-  }
-
-  .size__item {
-    padding: 4px 36px;
-    border: 1px solid #000;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #e3e3e3;
-    }
-
-    @include montserrat(500, 22px);
+    flex-direction: column;
     text-align: center;
-  }
-}
+    padding: 0 20px;
 
-.color {
-  &__list {
-    display: flex;
-    gap: 8px;
+    &__title {
+      color: #000;
+      letter-spacing: 0.96px;
+      text-transform: uppercase;
+      align-self: center;
+      width: 711px;
+      font: 400 32px/42px Raleway, sans-serif;
+
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+
+    &__description {
+      color: rgba(0, 0, 0, 0.9);
+      letter-spacing: 0.72px;
+      margin-top: 89px;
+      width: 100%;
+      font: 500 24px/31px Raleway, sans-serif;
+
+      @media (max-width: 991px) {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
   }
 
-  &__item {
-    width: 80px;
-    height: 12px;
-    cursor: pointer;
-  }
-}
+  @include tablet {
+    margin-bottom: 70px;
 
-.product-similar {
-  margin-top: 100px;
-  &__title {
-    @include montserrat(400, 40px);
-    margin-bottom: 44px;
+    &__header {
+      margin-bottom: 64px !important;
+    }
+
+    .certificates__grid {
+      gap: 28px;
+      margin-bottom: 70px;
+    }
+
+    .certificates__item {
+      width: calc(50% - 14px);
+
+      &-label {
+        margin-top: 16px;
+        padding: 8px 24px;
+        font-size: 16px;
+      }
+    }
+
+    .certificates-info {
+      &__title {
+        font-size: 20px;
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: normal;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+
+    &__header {
+      margin-bottom: 32px !important;
+    }
+
+    .certificates__grid {
+      gap: 14px;
+      margin-bottom: 60px;
+      .certificates__item:last-child {
+        margin-right: auto;
+      }
+    }
+
+    .certificates__item {
+      width: calc(50% - 14px);
+
+      &-label {
+        margin-top: 8px;
+        padding: 4px 12px;
+        font-size: 8px;
+      }
+    }
+
+    .certificates-info {
+      &__title {
+        font-size: 10px;
+        line-height: 18px;
+      }
+
+      &__description {
+        font-size: 8px;
+        line-height: normal;
+        margin-top: 10px;
+      }
+    }
   }
 }

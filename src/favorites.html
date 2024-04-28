@@ -24,7 +24,7 @@
     @include('./partials/components/account-header.html')
     <main class="main">
       <section class="container">
-        <header class="section-header">
+        <header class="section-header favorites-header">
           <h1 class="section-header__title">ИЗБРАННЫЕ 1</h1>
           <p class="section-header__help">
             ОСТАЛИСЬ ВОПРОСЫ? <br />
@@ -33,7 +33,11 @@
         </header>
         <section class="favorites">
           <div class="share-link">
-            <a href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1" class="share-link__url">https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a>
+            <a
+              href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1"
+              class="share-link__url"
+              >https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a
+            >
             <div class="share-link__description">
               Выше твоя уникальная ссылка, благодаря которой ты можешь
               поделиться своими избранными товарами с другим человеком!
@@ -44,21 +48,37 @@
               <div class="product-card__image-container">
                 <img
                   loading="lazy"
-                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  srcset="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&
+                  "
                   class="product-card__image"
                 />
                 <img
                   loading="lazy"
-                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  srcset="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&
+                  "
                   class="product-card__badge"
                 />
                 <div class="product-card__overlay">NEW</div>
               </div>
               <div class="product-card__details">
                 <div class="product-card__header">
-                  <p class="product-card__type">
-                    Аксессуар
-                  </p>
+                  <p class="product-card__type">Аксессуар</p>
                   <p class="product-card__price">
                     <span class="product-card__price-value">3’290</span>
                     <span class="product-card__price-currency">руб.</span>
@@ -76,7 +96,7 @@
                 </div>
                 <div class="product-card__bottom">
                   <div class="product-card__sku">
-                    <p class="product-card__sku-label">Артикул:</p>
+                    <p class="product-card__sku-label"></p>
                     <p class="product-card__sku-value">17.133.1-30202</p>
                   </div>
                   <button class="product-card__add-to-cart">В КОРЗИНУ</button>
@@ -87,21 +107,24 @@
               <div class="product-card__image-container">
                 <img
                   loading="lazy"
-                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  srcset="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&
+                  "
                   class="product-card__image"
                 />
-                <img
-                  loading="lazy"
-                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
-                  class="product-card__badge"
-                />
+                <img loading="lazy" src="img/icons/trash.png" class="product-card__badge" />
                 <div class="product-card__overlay">NEW</div>
               </div>
               <div class="product-card__details">
                 <div class="product-card__header">
-                  <p class="product-card__type">
-                    Аксессуар
-                  </p>
+                  <p class="product-card__type">Аксессуар</p>
                   <p class="product-card__price">
                     <span class="product-card__price-value">3’290</span>
                     <span class="product-card__price-currency">руб.</span>
@@ -119,7 +142,7 @@
                 </div>
                 <div class="product-card__bottom">
                   <div class="product-card__sku">
-                    <p class="product-card__sku-label">Артикул:</p>
+                    <p class="product-card__sku-label"></p>
                     <p class="product-card__sku-value">17.133.1-30202</p>
                   </div>
                   <button class="product-card__add-to-cart">В КОРЗИНУ</button>
@@ -130,21 +153,37 @@
               <div class="product-card__image-container">
                 <img
                   loading="lazy"
-                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  srcset="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/de481dd65c7e77e3a8f2da6b477fc12d448300b465fa8d3216c628fb8d2cd420?apiKey=271f7d0f9b55459d8a0930adb083f30a&
+                  "
                   class="product-card__image"
                 />
                 <img
                   loading="lazy"
-                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&"
+                  srcset="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&
+                  "
                   class="product-card__badge"
                 />
                 <div class="product-card__overlay">NEW</div>
               </div>
               <div class="product-card__details">
                 <div class="product-card__header">
-                  <p class="product-card__type">
-                    Аксессуар
-                  </p>
+                  <p class="product-card__type">Аксессуар</p>
                   <p class="product-card__price">
                     <span class="product-card__price-value">3’290</span>
                     <span class="product-card__price-currency">руб.</span>
@@ -153,8 +192,7 @@
                 <div class="product-card__options">
                   <div class="product-card__option">
                     <div class="product-card__option-label">Размер:</div>
-                    <div class="product-card__option-value">49</div>
-                    <a href="#" class="product-card__option-link">Таблица размеров</a>
+                    <div class="product-card__option-value">one size</div>
                   </div>
                   <div class="product-card__option">
                     <div class="product-card__option-label">Цвет:</div>
@@ -163,7 +201,7 @@
                 </div>
                 <div class="product-card__bottom">
                   <div class="product-card__sku">
-                    <p class="product-card__sku-label">Артикул:</p>
+                    <p class="product-card__sku-label"></p>
                     <p class="product-card__sku-value">17.133.1-30202</p>
                   </div>
                   <button class="product-card__add-to-cart">В КОРЗИНУ</button>

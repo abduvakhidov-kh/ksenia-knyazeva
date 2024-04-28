@@ -26,13 +26,16 @@
     margin-top: 50px;
 
     .country-code {
+      @include montserrat(500, 40px);
       height: 100%;
       font-size: 40px;
       color: rgba(0, 0, 0, 0.6);
       white-space: nowrap;
       text-align: center;
-      letter-spacing: 1.2px;
-      font-family: Montserrat, sans-serif;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      border: 1px solid black;
     }
 
     .flag-img {
@@ -44,7 +47,6 @@
       @include raleway(500, 24px);
       width: 100%;
       color: rgba(0, 0, 0, 0.4);
-      font: 24px Raleway, sans-serif;
     }
   }
 
@@ -64,7 +66,7 @@
     margin-left: 8px;
 
     .code-timer {
-      font-weight: 600;
+      @include montserrat(500, 24px);
     }
   }
 
@@ -113,4 +115,108 @@
       text-decoration: underline;
     }
   }
+
+  @include tablet {
+    .login-title {
+      font-size: 26px;
+    }
+
+    .phone-input,
+    .code-input {
+      padding: 20px;
+      font-size: 20px !important;
+    }
+
+    .phone {
+      margin-top: 24px;
+    }
+
+    .phone .country-code {
+      margin-top: 13px;
+      font-size: 16px;
+      padding: 20px 10px;
+    }
+
+    .code-info {
+      @include raleway(500, 16px);
+      margin-top: 14px;
+      margin-left: 6px;
+
+      .code-timer {
+        @include montserrat(500, 16px);
+      }
+    }
+
+    .login-button {
+      border-radius: 4px;
+      margin-top: 24px;
+      width: fit-content;
+      font-size: 16px;
+      padding: 10px 44px;
+      margin: 24px auto;
+    }
+
+    .alternative-login {
+      margin-top: 24px;
+      font-size: 16px;
+    }
+    .terms {
+      font-size: 14px;
+      margin-top: 14px;
+    }
+  }
+
+  @include mobile {
+    .login-title {
+      font-size: 13px;
+    }
+
+    .phone-input,
+    .code-input {
+      padding: 10px;
+      font-size: 10px !important;
+    }
+
+    .phone {
+      margin-top: 12px;
+    }
+
+    .phone .country-code {
+      margin-top: 13px;
+      font-size: 8px;
+      padding: 10px 5px;
+    }
+
+    .code-info {
+      @include raleway(500, 8px);
+      margin-top: 7px;
+      margin-left: 3px;
+
+      .code-timer {
+        @include montserrat(500, 8px);
+      }
+    }
+
+    .login-button {
+      border-radius: 4px;
+      margin-top: 12px;
+      width: fit-content;
+      font-size: 8px;
+      padding: 5px 22px;
+      margin: 12px auto;
+    }
+
+    .alternative-login {
+      margin-top: 8px;
+      font-size: 8px;
+    }
+    .terms {
+      font-size: 7px;
+      margin-top: 7px;
+    }
+  }
+}
+
+.login {
+  margin: auto 0;
 }

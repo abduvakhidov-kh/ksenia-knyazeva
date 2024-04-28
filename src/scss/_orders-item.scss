@@ -1,8 +1,8 @@
-// Variables
-$order-info-label-width: 39%; // Width of the labels column
-$order-info-values-width: 61%; // Width of the values column
+@import "_mixin.scss";
 
-// Mixin for flex centering
+$order-info-label-width: 39%;
+$order-info-values-width: 61%;
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -11,20 +11,17 @@ $order-info-values-width: 61%; // Width of the values column
 
 // Styles
 .order-details {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    padding-left: 55px;
-
-  @media (max-width: 991px) {
-    padding-left: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding-left: 0 auto;
 }
 
 .order-header {
   align-self: center;
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1048px;
   gap: 20px;
@@ -34,10 +31,10 @@ $order-info-values-width: 61%; // Width of the values column
   text-align: center;
   letter-spacing: 0.72px;
 
-  @media (max-width: 991px) {
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin-top: 40px;
+  @include mobile {
+    font-size: 11px;
+    gap: 10px;
+    margin-top: 0;
   }
 }
 
@@ -57,109 +54,104 @@ $order-info-values-width: 61%; // Width of the values column
   width: 754px;
   max-width: 100%;
 
-  @media (max-width: 991px) {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+  @include tablet {
+    margin-top: 30px !important;
+    gap: 30px;
+    width: 90%;
+
+    &-label,
+    &-value,
+    &-address,
+    &-cost,
+    &-total {
+      font-size: 16px !important;
+    }
+
+    &-item {
+      margin-top: 0px !important;
+    }
   }
-}
 
-.order-info-labels {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: $order-info-label-width;
-  margin-left: 0;
+  @include mobile {
+    margin-top: 15px !important;
+    gap: 15px;
+    width: 90%;
 
-  @media (max-width: 991px) {
+    &-label,
+    &-value,
+    &-address,
+    &-cost,
+    &-total {
+      font-size: 8px !important;
+    }
+
+    &-item {
+      margin-top: 0px !important;
+    }
+  }
+
+  &-label {
+    @include raleway(400, 24px);
+    color: #000;
+    margin-top: 24px;
+    flex: 1;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &-value {
+    @include raleway(400, 24px);
+    color: #000;
+    letter-spacing: 0.72px;
+    flex: 1;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &-email,
+  &-phone,
+  &-number {
+    font-family: Montserrat, sans-serif;
+  }
+
+  &-delivery {
+    font-weight: 500;
+  }
+
+  &-address {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.48px;
+    @include raleway(500, 16px);
+  }
+
+  &-cost {
+    letter-spacing: 0.6px;
+    @include montserrat(500, 20px);
+  }
+
+  &-total {
+    letter-spacing: 0.6px;
+    @include montserrat(500, 20px);
+  }
+
+  .order-items-title {
     width: 100%;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.72px;
+    margin: 83px 0 40px;
+    @include raleway(500, 24px);
   }
-}
 
-.order-info-label {
-  font-family: Raleway, sans-serif;
-  font-size: 24px;
-  color: #000;
-  font-weight: 400;
-  letter-spacing: 0.72px;
-  margin-top: 24px;
-  flex: 1;
-
-  &:first-child {
-    margin-top: 0;
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
   }
-}
-
-.order-info-values {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: $order-info-values-width;
-  margin-left: 20px;
-
-  @media (max-width: 991px) {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-.order-info-value {
-  font-family: Raleway, sans-serif;
-  font-size: 24px;
-  color: #000;
-  font-weight: 400;
-  letter-spacing: 0.72px;
-  flex: 1;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
-.order-info-email,
-.order-info-phone,
-.order-info-number {
-  font-family: Montserrat, sans-serif;
-}
-
-.order-info-delivery {
-  font-weight: 500;
-}
-
-.order-info-address {
-  color: rgba(0, 0, 0, 0.6);
-  letter-spacing: 0.48px;
-  font: 500 16px/18px Raleway, sans-serif;
-}
-
-.order-info-cost {
-  letter-spacing: 0.6px;
-  font: 20px Montserrat, sans-serif;
-}
-
-.order-info-total {
-  letter-spacing: 0.6px;
-  font: 500 20px Montserrat, sans-serif;
-}
-
-.order-items-title {
-  width: 100%;
-  color: #000;
-  text-align: center;
-  letter-spacing: 0.72px;
-  margin: 83px 0 40px;
-  font: 500 24px Raleway, sans-serif;
-
-  @media (max-width: 991px) {
-    margin: 40px 0 0 10px;
-  }
-}
-
-.order-info-item {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 24px;
 }
 
 // order item
@@ -170,9 +162,23 @@ ul.orders-item__list {
   flex-direction: column;
   width: 100%;
   gap: 48px;
+
+  @include mobile {
+    gap: 16px;
+    margin-bottom: 27px;
+  }
+
+  @include tablet {
+    gap: 28px;
+    margin-bottom: 40px;
+  }
 }
 
 .order-item {
+  &-title {
+    margin-top: 44px !important;
+  }
+
   &-container {
     margin: 0 auto;
     width: 100%;
@@ -184,18 +190,12 @@ ul.orders-item__list {
     width: 100%;
     flex-grow: 1;
     gap: 20px;
-
-    @media (max-width: 991px) {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
-    }
   }
 
   &-image {
-      object-position: center;
-      flex-grow: 1;
-      max-width: 156px;
+    object-position: center;
+    flex-grow: 1;
+    width: 30%;
   }
 
   &-details {
@@ -203,13 +203,8 @@ ul.orders-item__list {
       display: flex;
       flex-direction: column;
       line-height: normal;
-      width: 80%;
+      width: 70%;
       margin-left: 20px;
-      
-      @media (max-width: 991px) {
-        margin-left: 10px;
-        width: 100%;
-      }
     }
 
     &-wrapper {
@@ -227,11 +222,6 @@ ul.orders-item__list {
     width: 100%;
     gap: 24px;
     justify-content: space-between;
-
-    @media (max-width: 991px) {
-      max-width: 100%;
-      flex-wrap: wrap;
-    }
   }
 
   &-name {
@@ -321,7 +311,12 @@ ul.orders-item__list {
   &-price {
     color: #000;
     letter-spacing: 0.72px;
-    font: 24px/24px Montserrat, sans-serif;
+    @include montserrat(500, 20px);
+
+    &-amount {
+      font-weight: 600;
+      font-size: 26px;
+    }
   }
 
   &-meta {
@@ -332,12 +327,6 @@ ul.orders-item__list {
     align-items: flex-start;
     gap: 20px;
     justify-content: space-between;
-
-    @media (max-width: 991px) {
-      max-width: 100%;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
   }
 
   &-sku {
@@ -351,7 +340,7 @@ ul.orders-item__list {
       color: rgba(0, 0, 0, 0.6);
       letter-spacing: 0.54px;
       flex-grow: 1;
-      font: 18px Montserrat, sans-serif;
+      @include montserrat(500, 18px);
     }
 
     &-value {
@@ -360,7 +349,7 @@ ul.orders-item__list {
       flex-grow: 1;
       flex-basis: auto;
       margin: auto 0;
-      font: 16px Montserrat, sans-serif;
+      @include montserrat(500, 16px);
     }
   }
 
@@ -372,12 +361,142 @@ ul.orders-item__list {
     letter-spacing: 0.48px;
     justify-content: center;
     padding: 6px 36px;
-    font: 16px Raleway, sans-serif;
+    @include raleway(500, 16px);
     border: none;
     cursor: pointer;
+  }
 
-    @media (max-width: 991px) {
-      padding: 0 20px;
+  @include tablet {
+    &-layout {
+      gap: 20px;
+    }
+
+    &-details {
+      &-column {
+        margin-left: 0;
+      }
+    }
+
+    &-name {
+      &-wrapper {
+        width: fit-content;
+      }
+
+      &-text {
+        font-size: 16px;
+      }
+    }
+
+    &-color {
+      &-indicator {
+        width: 16px;
+        height: 16px;
+      }
+
+      &-wrapper {
+        font-size: 16px;
+        width: fit-content;
+      }
+    }
+
+    &-size {
+      font-size: 16px;
+      width: fit-content;
+    }
+
+    &-price {
+      font-size: 20px !important;
+      text-wrap: nowrap;
+
+      &-amount {
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+
+    &-sku {
+      padding: 0;
+      margin-top: 0;
+
+      &-label {
+        font-size: 16px;
+      }
+
+      &-value {
+        font-size: 16px;
+      }
+    }
+
+    &-delivery-info {
+      padding: 8px 20px;
+      font-size: 16px;
+    }
+  }
+
+  @include mobile {
+    &-layout {
+      gap: 10px;
+    }
+
+    &-details {
+      &-column {
+        margin-left: 0;
+      }
+    }
+
+    &-name {
+      &-wrapper {
+        width: fit-content;
+      }
+
+      &-text {
+        font-size: 8px;
+      }
+    }
+
+    &-color {
+      &-indicator {
+        width: 8px;
+        height: 8px;
+      }
+
+      &-wrapper {
+        font-size: 6px;
+        width: fit-content;
+      }
+    }
+
+    &-size {
+      font-size: 6px;
+      width: fit-content;
+    }
+
+    &-price {
+      font-size: 10px !important;
+      text-wrap: nowrap;
+
+      &-amount {
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    &-sku {
+      padding: 0;
+      margin-top: 0;
+
+      &-label {
+        font-size: 6px;
+      }
+
+      &-value {
+        font-size: 6px;
+      }
+    }
+
+    &-delivery-info {
+      padding: 4px 10px;
+      font-size: 8px;
     }
   }
 }

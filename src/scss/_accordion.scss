@@ -34,20 +34,6 @@
         transition: 0.4s;
       }
 
-      // .accordion:before {
-      //   content: "+";
-      //   @include raleway(100, 24px);
-      //   color: #777;
-      //   line-height: 1;
-      //   float: left;
-      //   margin-right: 5px;
-      // }
-
-      // .active:before {
-      //   content: "\2212";
-      // }
-
-      .active,
       .accordion:hover {
         background-color: #ececec;
       }
@@ -60,6 +46,74 @@
           @include raleway(400, 32px);
           margin-left: 168px;
           padding-top: 14px;
+        }
+      }
+    }
+
+    @include tablet {
+      .icon {
+        width: 26px;
+      }
+
+      .faq-title {
+        @include raleway(600, 20px);
+        margin-left: 20px;
+      }
+
+      .faq-icon {
+        width: 26px;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+
+        .accordion {
+          padding: 28px 20px;
+        }
+
+        .panel {
+          p {
+            font-size: 16px;
+            margin-left: 64px;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+
+    @include mobile {
+      .icon {
+        width: 13px;
+      }
+
+      .faq-title {
+        @include raleway(600, 10px);
+        margin-left: 10px;
+        letter-spacing: 0.03em;
+      }
+
+      .minus-icon line {
+        stroke: #000;
+        stroke-width: 1;
+      }
+
+      .faq-icon {
+        width: 13px;
+      }
+
+      .faq-item {
+        margin-bottom: 10px;
+
+        .accordion {
+          padding: 14px 10px;
+        }
+
+        .panel {
+          p {
+            font-size: 8px;
+            margin-left: 32px;
+            padding-top: 10px;
+          }
         }
       }
     }

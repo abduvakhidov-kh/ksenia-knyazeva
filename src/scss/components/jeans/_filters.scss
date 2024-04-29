@@ -44,7 +44,7 @@
     display: none;
   }
 
-  @media (max-width: $containerMaxWidthTablet) {
+  @include tablet {
     padding: 64px 0;
     .tags__link {
       @include raleway(400, 20px);
@@ -76,8 +76,8 @@
     }
   }
 
-  @media (max-width: $containerMaxWidthMobile ) {
-    padding: 28px 0 24px 0;
+  @include mobile {
+    padding: 0;
 
     .second-container {
       padding: 0 32px;

@@ -55,4 +55,88 @@
   &__subdescr {
     margin-bottom: 50px;
   }
+
+  @include tablet {
+    &__title {
+      font-size: 26px;
+      margin-bottom: 52px;
+    }
+
+    &__conditions,
+    &__size,
+    &__item {
+      margin-bottom: 92px;
+    }
+
+    &__rules {
+      margin-bottom: 64px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    &__descr {
+      font-size: 20px;
+      margin-bottom: 22px;
+
+      &.text {
+        margin-bottom: 136px;
+      }
+    }
+
+    &__subdescr {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+    &-list {
+      font-size: 20px;
+      padding-left: 36px !important;
+
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @include mobile {
+    &__title {
+      font-size: 13px;
+      margin-bottom: 26px;
+    }
+
+    &__rules {
+      margin-bottom: 32px;
+    }
+
+    &__subtitle, &__caption {
+      font-size: 10px;
+      margin-bottom: 16px;
+    }
+
+    &__descr {
+      font-size: 10px;
+      margin-bottom: 11px;
+
+      &.text {
+        margin-bottom: 68px;
+      }
+    }
+
+    &__subdescr {
+      font-size: 8px;
+      margin-bottom: 16px;
+    }
+
+    &-list {
+      font-size: 8px;
+      padding-left: 16px !important;
+
+      &__title {
+        font-size: 8px;
+      }
+    }
+  }
 }

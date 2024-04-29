@@ -42,7 +42,7 @@
 </nav>
 
   <a href="index.html" class="header-top__logo">
-    <img src="img/logo.svg" alt="logo" />
+    <img src="img/logo.png" alt="logo" class="logo" />
   </a>
   <nav class="header-nav">
     <ul class="header-list list-reset d-flex-center">
@@ -73,9 +73,67 @@
     <div class="header-bottom">
       <nav class="header-nav">
         <ul class="header-list list-reset d-flex-between">
-          <li class="haeader-item">
-            <a href="#" class="header-item__link">Каталог</a>
+          <li class="haeader-item dropdown">
+            <a href="#" class="header-item__link dropbtn"
+              >Каталог <i class="fa fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="dropdown-list">
+                  <div class="dropdown-block">
+                    <a href="#">СМОТРЕТЬ ВСЕ</a>
+                    <a href="#">Осень-зима 23/24</a>
+                    <a href="#">Скоро в продаже</a>
+                    <a href="#">Верхняя одежда</a>
+                    <a href="#">Верхняя одежда</a>
+                    <a href="#">Трикотаж</a>
+                    <a href="#">Деним</a>
+                    <a href="#">Костюмы</a>
+                  </div>
+                  <div class="dropdown-block">
+                    <a href="#">Жакеты</a>
+                    <a href="#">БРЮКИ</a>
+                    <a href="#">Платья</a>
+                    <a href="#">Блузы и рубашки</a>
+                    <a href="#">Юбки и шорты</a>
+                    <a href="#">Обувь</a>
+                    <a href="#">Аксессуары</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-right">
+                  <div class="dropdown-img-block">
+                    <img
+                      src="img/menu-dropdown/2.jpg"
+                      alt="2"
+                      class="dropdown-img"
+                    />
+                    <img
+                      src="img/menu-dropdown/2.jpg"
+                      alt="2"
+                      class="dropdown-img"
+                    />
+                    <img
+                      src="img/menu-dropdown/2.jpg"
+                      alt="2"
+                      class="dropdown-img"
+                    />
+                  </div>
+                  <form action="#" class="newsletter">
+                    <h3 class="newsletter-title">
+                      УЗНАВАТЬ ПЕРВОЙ О НОВИНКАХ И СКИДКАХ Ksenia knyazeva
+                    </h3>
+                    <input
+                      type="email"
+                      class="newsletter__input"
+                      placeholder="Email"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
           </li>
+
           <li class="haeader-item">
             <a href="#" class="header-item__link">Хиты продаж</a>
           </li>

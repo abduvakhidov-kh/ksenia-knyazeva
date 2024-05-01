@@ -35,6 +35,7 @@
       outline: none;
       background-color: transparent;
       border: none;
+      padding: 14px;
       border: 1px solid black;
     }
 
@@ -47,13 +48,18 @@
       @include raleway(500, 24px);
       width: 100%;
       color: rgba(0, 0, 0, 0.4);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 1);
+      border-left: none;
+      padding: 24px;
     }
   }
 
   .code-input {
     @include raleway(500, 24px);
-    border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
     background-color: #fff;
     margin-top: 13px;
     padding: 24px;
@@ -129,12 +135,15 @@
 
     .phone {
       margin-top: 24px;
+
+      .phone-input {
+        padding: 20px;
+      }
     }
 
     .phone .country-code {
-      margin-top: 13px;
       font-size: 16px;
-      padding: 20px 10px;
+      padding: 22px 10px;
     }
 
     .code-info {
@@ -179,12 +188,15 @@
 
     .phone {
       margin-top: 12px;
+
+      .phone-input {
+        padding: 10px;
+      }
     }
 
     .phone .country-code {
-      margin-top: 13px;
       font-size: 8px;
-      padding: 10px 5px;
+      padding: 11px 5px;
     }
 
     .code-info {

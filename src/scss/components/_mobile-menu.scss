@@ -7,7 +7,7 @@ $menuToggleIconMarginBottom: 6px;
 $menuWidth: 360px;
 $menuPadding: 50px;
 $menuPaddingTop: 125px;
-$menuBgColor: #ededed;
+$menuBgColor: #fff;
 $menuToggleIconBgColor: #000;
 $menuToggleIconTransition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
   background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -85,7 +85,8 @@ $menuToggleIconOpacity: 0;
 .menu {
   position: absolute;
   width: 100vw;
-  top: 36px;
+  height: 100vh;
+  top: 34px;
   left: -18px;
   padding: $menuPadding;
   padding-top: $menuPaddingTop;

@@ -20,7 +20,7 @@
 
     &__item {
       margin-bottom: 56px;
-      width: calc(33% - 44px);
+      width: calc(33% - 52px);
 
       &:not(:nth-child(3n)) {
         margin-right: 72px;
@@ -36,12 +36,12 @@
         margin-bottom: 10px;
         max-width: 425px;
         text-align: center;
-        @include raleway(400, 40px);
+        @include raleway(500, 40px);
         text-transform: uppercase;
       }
 
       &__link {
-        padding: 16px 30px;
+        padding: 12px 30px;
         @include montserrat(400, 24px);
         text-transform: uppercase;
         color: $gray;
@@ -60,14 +60,14 @@
         }
 
         &__link {
-          padding: 8px 16px;
+          padding: 6px 16px;
           font-size: 14px;
         }
       }
 
       &__item {
         margin-bottom: 28px;
-        width: calc(33% - 24px);
+        width: calc(33% - 32px);
 
         &:not(:nth-child(3n)) {
           margin-right: 40px;
@@ -103,7 +103,7 @@
 
       &__item {
         margin-bottom: 11px;
-        width: calc(50% - 9px);
+        width: calc(50% - 17px);
 
         &:not(:nth-child(even)) {
           margin-right: 18px;

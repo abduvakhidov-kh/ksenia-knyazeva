@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
     <link
       rel="stylesheet"
@@ -29,15 +35,25 @@
     <span class="menu-toggle__icon"></span>
     <span class="menu-toggle__icon"></span>
 
-    <ul class="menu menu__list list-reset">
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Каталог</a></li>
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Хиты продаж</a></li>
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">О дизайнере</a></li>
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Покупателям</a></li>
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Магазины</a></li>
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">Оплата</a></li>
-      <li class="menu__list__item"><a href="#" class="menu__list__item__link">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</a></li>
-    </ul>
+    <div class="menu menu__list">
+      <ul class="list-reset sidebar">
+  <li class="sidebar__item ">
+    <div class="d-flex-between accordion">
+      КАТАЛОГ
+      <img src="img/icons/arrow.png" alt="arrow down icon">
+    </div>
+    <div class="panel sidebar__links">
+      <a class="sidebar__links-item">Смотреть все</a>
+      <a class="sidebar__links-item">Осень-зима</a>
+      <a class="sidebar__links-item">Скоро в продаже</a>
+    </div>
+  </li>
+  <li class="sidebar__item">ХИТЫ ПРОДАЖ</li>
+  <li class="sidebar__item">НОВИНКИ</li>
+  <li class="sidebar__item">О ДИЗАЙНЕРЕ</li>
+</ul>
+
+    </div>
   </div>
 </nav>
 
@@ -166,7 +182,7 @@
       <ul class="hero-nav__list list-reset d-flex-between">
         <li class="hero-nav__item">
           <div class="d-flex-column">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               NEW
             </span>
@@ -174,7 +190,7 @@
         </li>
         <li class="hero-nav__item">
           <a class="d-flex-column" href="/dresses.html">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               Одежда
             </span>
@@ -182,7 +198,7 @@
         </li>
         <li class="hero-nav__item">
           <div class="d-flex-column">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               Обувь
             </span>
@@ -190,7 +206,7 @@
         </li>
         <li class="hero-nav__item">
           <div class="d-flex-column">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               Аксессуары
             </span>
@@ -198,7 +214,7 @@
         </li>
         <li class="hero-nav__item">
           <div class="d-flex-column">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               Доставка
             </span>
@@ -206,7 +222,7 @@
         </li>
         <li class="hero-nav__item">
           <div class="d-flex-column">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               Магазины
             </span>
@@ -214,7 +230,7 @@
         </li>
         <li class="hero-nav__item">
           <div class="d-flex-column">
-            <img class="hero-nav__img" src="img/">
+            <img class="hero-nav__img" src="img/accessories/filters.png">
             <span>
               Отзывы
             </span>
@@ -230,8 +246,7 @@
   <img class="hero-img" src="img/hero/img-3.jpg">
   <img class="hero-img" src="img/hero/img-4.jpg">
 </section>
-
-      <section class="news">
+ <section class="news">
   <div class="container">
     <h2 class="section-title">Новинки</h2>
     <div class="swiper news-swiper">
@@ -750,39 +765,37 @@
 
   </div>
 </section>
-
-      <section class="more">
-  <div class="container">
-    <ul class="list-reset more-list">
-      <li class="more-list__item more-item">
-        <div class="more-item__info">
-          <img src="img/more/image1.png">
-          <h3 class="more-item__title">Платья</h3>
-          <a href="dresses.html" class="more-item__link">Смотреть все</a>
-        </div>
-        <img src="img/more/image2.png">
-      </li>
-      <li class="more-list__item more-item">
-        <div class="more-item__info">
-          <img src="img/more/image4.png">
-          <h3 class="more-item__title">Жакеты</h3>
-          <a href="#" class="more-item__link">Смотреть все</a>
-        </div>
-        <img src="img/more/image3.png">
-      </li>
-      <li class="more-list__item more-item">
-        <div class="more-item__info">
-          <img src="img/more/image5.png">
-          <h3 class="more-item__title">Юбки</h3>
-          <a href="#" class="more-item__link">Смотреть все</a>
-        </div>
-        <img src="img/more/image6.png">
-      </li>
-    </ul>
-  </div>
+ <section class="more">
+  <ul class="list-reset more-list">
+    <li class="more-list__item more-item">
+      <div class="more-item__info">
+        <img src="img/more/image1.png" />
+        <h3 class="more-item__title">Платья</h3>
+        <a href="dresses.html" class="more-item__link">Смотреть все</a>
+      </div>
+      <img src="img/more/image2.png" />
+    </li>
+    <li class="more-list__item more-item">
+      <div class="more-item__info">
+        <img src="img/more/image4.png" />
+        <h3 class="more-item__title">Жакеты</h3>
+        <a href="#" class="more-item__link">Смотреть все</a>
+      </div>
+      <img src="img/more/image3.png" />
+    </li>
+    <li class="more-list__item more-item">
+      <div class="more-item__info">
+        <img src="img/more/image5.png" />
+        <h3 class="more-item__title">Юбки</h3>
+        <a href="#" class="more-item__link">Смотреть все</a>
+      </div>
+      <img src="img/more/image6.png" />
+    </li>
+  </ul>
 </section>
 
-      <section class="categories">
+      <section class="second-container">
+        <section class="categories">
   <div class="container">
     <h2 class="section-title">Категории</h2>
     <h3 class="categories__title">Одежда</h3>
@@ -851,7 +864,7 @@
   </div>
 </section>
 
-      <section class="categories">
+        <section class="categories">
   <div class="container">
     <h2 class="section-title">Категории</h2>
     <h3 class="categories__title">Аксессуары</h3>
@@ -917,6 +930,7 @@
   </div>
 </section>
 
+      </section>
       <section class="about">
   <div class="container d-flex-column">
     <div class="about-top d-flex-column">
@@ -997,7 +1011,8 @@
   </div>
 </section>
 
-      <footer class="footer">
+    </main>
+    <footer class="footer">
   <div class="container footer-container">
     <ul class="container-list list-reset">
       <li class="container-list__item">
@@ -1133,10 +1148,7 @@
 
 </footer>
 
-    </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
-
-

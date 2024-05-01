@@ -9,6 +9,7 @@
     margin: 0 auto;
     margin-bottom: 60px;
     max-width: 762px;
+    color: #02133E;
     text-align: center;
   }
 
@@ -122,13 +123,14 @@
       flex-direction: column;
 
       &__title {
-        @include montserrat(500, 30px);
+        @include montserrat(600, 30px);
         margin-bottom: 5px;
       }
 
       &__descr {
         max-width: 445px;
         @include montserrat(400, 22px);
+        line-height: 1.10;
       }
 
       @include tablet {

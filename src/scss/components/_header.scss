@@ -3,18 +3,19 @@
 @import "dropdown.scss";
 
 .header {
-  padding: 20px 0;
+  padding: 20px 0 12px;
   border-bottom: 1px solid #000;
 
   &-list {
-    gap: 4px;
+    gap: 60px;
     position: relative;
   }
 
   &-item {
     max-width: 80px;
 
-    img {
+    & img {
+      max-height: 40px;
       max-width: 100%;
     }
 
@@ -26,12 +27,16 @@
   }
 
   @include tablet {
+    &-list {
+      gap: 40px;
+    }
+
     &-item {
       width: auto;
       max-width: 100%;
 
       img {
-        max-width: 100%;
+        max-height: 32px;
       }
 
       &__search {
@@ -43,11 +48,15 @@
   @include mobile {
     padding: 16px 0;
 
+    &-list {
+      gap: 16px;
+    }
+
     &-item {
       max-width: 26px;
 
       img {
-        max-width: 100%;
+        max-height: 15px;
       }
 
       &__btn {
@@ -59,8 +68,7 @@
 
 .header-top {
   position: relative;
-  margin-bottom: 88px;
-  padding-top: 17px;
+  margin-bottom: 50px;
   justify-content: center;
 
   &__logo {
@@ -75,7 +83,7 @@
   }
 
   @include tablet {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     &__logo {
       width: 350px;

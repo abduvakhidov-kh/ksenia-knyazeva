@@ -37,10 +37,15 @@
     align-items: flex-start;
     @include montserrat(400, 28px);
 
+    & span {
+      font-weight: 600;
+    }
+
     & span span {
       display: inline-block;
       text-decoration: line-through;
       font-size: 19px;
+      font-weight: 400;
     }
   }
 
@@ -50,6 +55,7 @@
     text-transform: uppercase;
     color: $gray;
     border: 1px solid $gray;
+    align-self: flex-end;
   }
 
   @include tablet {

@@ -118,6 +118,7 @@ picture {
 .section-title {
   margin-bottom: 47px;
   @include raleway(600, 55px);
+  text-transform: uppercase;
 
   @include tablet {
     margin-bottom: 24px;

@@ -48,6 +48,10 @@
   &__info {
     align-items: flex-start;
     @include montserrat(400, 23px);
+
+    span {
+      font-weight: 600;
+    }
   }
 
   &__btn {
@@ -72,7 +76,7 @@
     &__btn {
       padding: 4px 8px;
       @include raleway(400, 7px);
-      align-self: start;
+      align-self: flex-end;
     }
 
     &__top span {

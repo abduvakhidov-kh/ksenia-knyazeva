@@ -67,7 +67,11 @@
 
   &__title,
   &__price {
-    @include montserrat(400, 40px);
+    @include montserrat(600, 40px);
+  }
+  
+  &__price {
+    color: $oceanBlue;
   }
 
   &__amount {
@@ -84,6 +88,7 @@
 
   @include tablet {
     margin-bottom: 0;
+    width: 100% !important;
 
     .gallery-left {
       span {
@@ -123,12 +128,12 @@
     }
   }
 
-  @media (max-width: $containerMaxWidthMobile) {
+  @include mobile {
     margin-bottom: 0;
 
     .gallery__title,
     .gallery__price {
-      @include raleway(500, 9px);
+      @include raleway(600, 9px);
     }
 
     // Additional styles specific to collage layout
@@ -150,6 +155,10 @@
         left: 0;
         border-top: 1px solid $oceanBlue;
         border-bottom: 1px solid $oceanBlue;
+      }
+
+      & img {
+        height: auto;
       }
     }
 

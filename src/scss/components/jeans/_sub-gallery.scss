@@ -1,10 +1,11 @@
-@import "../../_variables.scss";
-@import "../../_mixin.scss";
+@import "variables.scss";
+@import "mixin.scss";
 
 .gallery-list {
   margin-bottom: 110px;
   align-items: flex-start;
   flex-wrap: wrap;
+  display: flex;
 
   &__item {
     margin-bottom: 57px;
@@ -35,15 +36,18 @@
   &__info {
     max-width: 250px;
     align-items: flex-start;
-    @include montserrat(400, 28px);
+    @include montserrat(600, 28px);
 
     & span {
       font-weight: 600;
+      color: $oceanBlue;
     }
 
     & span span {
+      color: #000;
       display: inline-block;
       text-decoration: line-through;
+      margin-right: 8px;
       font-size: 19px;
       font-weight: 400;
     }
@@ -60,17 +64,22 @@
 
   @include tablet {
     margin-bottom: 90px;
+    gap: 21px;
 
     &__item {
       margin-bottom: 28px;
-    }
-
-    &__img {
-      max-width: 296px;
+      width: calc(33% - 12px);
     }
 
     &__info {
-      @include montserrat(500, 17px);
+      & span span {
+        margin-right: 6px;
+        font-size: 12px;
+      }
+    }
+
+    &__info {
+      @include montserrat(600, 17px);
     }
 
     &__btn {
@@ -81,6 +90,7 @@
 
   @include mobile {
     margin-bottom: 80px;
+    justify-content: space-between;
 
     &__item {
       margin-bottom: 16px;
@@ -108,9 +118,9 @@
 
     &__info {
       @include montserrat(600, 9px);
-      
+
       & span span {
-        @include montserrat(500, 9px);
+        font-size: 7px;
         margin-right: 4px;
         text-decoration: line-through;
       }

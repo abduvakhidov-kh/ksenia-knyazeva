@@ -1,4 +1,5 @@
 @import '_variables.scss';
+@import '_mixin.scss';
 
 .news-swiper {
 
@@ -40,7 +41,7 @@
     top: 4px;
     right: 8px;
 
-    @media (max-width: $containerMaxWidthMobile) {
+    @include mobile {
       width: calc(1rem + 100vw / 100 );
     }
   }
@@ -62,7 +63,7 @@
     border: 1px solid $gray;
   }
 
-  @media (max-width: $containerMaxWidthMobile) {
+  @include mobile {
     &__item--last {
       height: auto !important;
     }

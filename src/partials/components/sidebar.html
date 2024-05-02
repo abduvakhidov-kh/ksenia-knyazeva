@@ -1,8 +1,8 @@
 <ul class="list-reset sidebar">
-  <li class="sidebar__item ">
+  <li class="sidebar__item">
     <div class="d-flex-between accordion">
       КАТАЛОГ
-      <img src="img/icons/arrow.png" alt="arrow down icon">
+      <img src="img/icons/arrow.png" alt="arrow down icon" />
     </div>
     <div class="panel sidebar__links">
       <a class="sidebar__links-item">Смотреть все</a>
@@ -10,7 +10,68 @@
       <a class="sidebar__links-item">Скоро в продаже</a>
     </div>
   </li>
-  <li class="sidebar__item">ХИТЫ ПРОДАЖ</li>
-  <li class="sidebar__item">НОВИНКИ</li>
-  <li class="sidebar__item">О ДИЗАЙНЕРЕ</li>
+  <li class="sidebar__item">
+    <div class="d-flex-between accordion">
+      ХИТЫ ПРОДАЖ
+      <img src="img/icons/arrow.png" alt="arrow down icon" />
+    </div>
+    <div class="panel sidebar__links">
+      <a class="sidebar__links-item">Смотреть все</a>
+      <a class="sidebar__links-item">Осень-зима</a>
+      <a class="sidebar__links-item">Скоро в продаже</a>
+    </div>
+  </li>
+  <li class="sidebar__item sidebar__single">НОВИНКИ</li>
+  <li class="sidebar__item sidebar__single">О ДИЗАЙНЕРЕ</li>
+  <li class="sidebar__item">
+    <div class="sidebar__contact-info">
+      <div class="sidebar__phone-numbers">
+        <span class="sidebar__phone-number">
+          8 800 511 94 70
+          <span class="sidebar__phone-number-free">(бесплатно)</span>
+        </span>
+        <span class="sidebar__phone-number">
+          <a href="tel:+74993489470" class="sidebar__phone-number"></a>8 499 348 94 70</a>
+        </span>
+      </div>
+      <div class="sidebar__social-icons">
+        <img
+          src="img/socials/telegram.svg"
+          alt="Social icon 1"
+          class="sidebar__social-icon"
+        />
+        <img
+          src="img/socials/call.svg"
+          alt="Social icon 2"
+          class="sidebar__social-icon"
+        />
+        <img
+          src="img/socials/viber.svg"
+          alt="Social icon 3"
+          class="sidebar__social-icon"
+        />
+      </div>
+    </div>
+  </li>
+  <li class="sidebar__item">
+    <button class="sidebar__login-button btn-reset">ВХОД / РЕГИСТРАЦИЯ</button>
+  </li>
+  <li class="sidebar__item sidebar__newsletter">
+    <h2 class="sidebar__newsletter-heading">
+      УЗНАТЬ ПЕРВОЙ О<br />
+      НОВИНКАХ И СКИДКАХ
+    </h2>
+    <form class="sidebar__newsletter-form">
+      <label for="sidebar-newsletter-email" class="visually-hidden">Введите эл. почту</label>
+      <input
+        type="email"
+        id="sidebar-newsletter-email"
+        class="sidebar__newsletter-input"
+        placeholder="Введите эл. почту"
+      />
+      <button type="submit" class="sidebar__newsletter-submit">
+        <img src="img/icons/arrow.png" alt="Submit newsletter"  />
+      </button>
+    </form>
+  </li>
 </ul>

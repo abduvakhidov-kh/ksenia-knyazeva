@@ -7,8 +7,13 @@
   border-bottom: 1px solid #000;
 
   &-list {
-    gap: 60px;
+    gap: 4px;
     position: relative;
+  }
+
+  &-icons {
+    @extend .header-list;
+    gap: 60px;
   }
 
   &-item {
@@ -27,7 +32,7 @@
   }
 
   @include tablet {
-    &-list {
+    &-icons {
       gap: 40px;
     }
 
@@ -48,7 +53,7 @@
   @include mobile {
     padding: 16px 0;
 
-    &-list {
+    &-icons {
       gap: 16px;
     }
 

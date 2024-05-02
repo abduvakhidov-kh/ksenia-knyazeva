@@ -11,12 +11,17 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
-    padding-top: 18px;
 
     &-item {
       display: block;
       cursor: pointer;
     }
+  }
+
+  &__single {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    padding-top: 0;
   }
 
   &__item {
@@ -35,10 +40,14 @@
       width: 100%;
       outline: none;
       transition: 0.4s;
-      border-bottom: 1px solid rgba(0,0,0, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
       padding: 5px;
+      padding-top: 0;
       @include raleway(500, 18px);
       text-transform: uppercase;
+    }
+    .active {
+      margin-bottom: 18px;
     }
 
     .panel {
@@ -51,4 +60,95 @@
 
     // &:not(:first-child)
   }
+
+  &__contact-info {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    padding: 0 1px;
+    justify-content: space-between;
+  }
+
+  &__phone-numbers {
+    font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__phone-number-free {
+    font-weight: 300;
+    font-size: 10px;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  &__login-button {
+    background-color: #02133e;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.54px;
+    justify-content: center;
+    padding: 7px 21px;
+    font: 400 18px Raleway, sans-serif;
+  }
+
+  &__newsletter {
+    margin-bottom: 34px;
+    &-heading {
+      color: #02133e;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+      font: 500 16px Raleway, sans-serif;
+    }
+  
+    &-form {
+      border-radius: 4px;
+      background-color: rgba(238, 238, 238, 0.6);
+      display: flex;
+      gap: 20px;
+      padding: 3px 18px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 500;
+      letter-spacing: 0.42px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    &-input {
+      font-family: Raleway, sans-serif;
+      font-variant: small-caps;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+      border: none;
+      background: transparent;
+      outline: none;
+    }
+  
+    &-submit {
+      aspect-ratio: 0.8;
+      object-fit: contain;
+      // width: 21px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transform: rotate(-90deg);
+    }
+  }  
 }
+

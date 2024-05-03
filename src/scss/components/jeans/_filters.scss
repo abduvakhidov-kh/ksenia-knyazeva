@@ -59,7 +59,7 @@
       &__btn {
         margin-right: 5px;
       }
-  
+
       &__item {
         display: flex;
         align-items: center;
@@ -68,7 +68,7 @@
         img {
           width: 26px;
         }
-  
+
         &:not(:last-child) {
           margin-right: 43px;
         }
@@ -85,12 +85,13 @@
       display: flex;
     }
 
-    .tags, .filters-list {
+    .tags,
+    .filters-list {
       display: none;
     }
 
     &__title {
-    @include raleway(500, 16px);
+      @include raleway(500, 16px);
       margin-bottom: 0;
     }
 

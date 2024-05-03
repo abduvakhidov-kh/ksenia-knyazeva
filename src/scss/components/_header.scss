@@ -138,7 +138,12 @@
   border: none;
 }
 
-.account-header .header-top {
-  border-bottom: 1px solid #000;
-  margin-bottom: 16px;
+.account-header {
+  hr {
+    width: 100%;
+  }
+
+  .header-top {
+    margin-bottom: 16px;
+  }
 }

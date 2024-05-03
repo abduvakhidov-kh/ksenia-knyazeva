@@ -5,12 +5,46 @@
   padding-top: 40px;
   border-top: 1px solid $mainColor;
 
-  @media (max-width: $containerMaxWidthTablet) {
-    padding-top: 24px;
+  &__logo {
+    margin-bottom: 22px;
+    width: 50%;
   }
 
-  @media (max-width: $containerMaxWidthMobile) {
+  &__brand-description {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  &__payments-list {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @include tablet {
+    padding-top: 24px;
+
+    &__brand-description {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  
+    &__payments-list {
+      margin-top: 36px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  @include mobile {
     padding-top: 14px;
+
+    &__brand-description {
+      font-size: 9px;
+      line-height: 1.2;
+    }
   }
 }
 
@@ -207,6 +241,120 @@
 
     &__text {
       @include montserrat(400, 6px);
+    }
+  }
+}
+
+.second-footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    gap: 54px;
+
+    .footer-list__item:first-child {
+      width: 40%;
+    }
+
+    .footer-list__title {
+      margin-bottom: 20px;
+    }
+
+    .footer-list__item {
+      width: 20%;
+    }
+  }
+
+  .footer-list__item {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-right: 0;
+    height: 100%;
+
+    input {
+      border: none;
+    }
+  }
+
+  .footer-list__sublist {
+    margin-bottom: 24px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__newsletter {
+    margin-top: 65px;
+    width: 100%;
+
+    img {
+      max-width: 40px;
+      transform: rotate(-90deg);
+    }
+
+    &-heading {
+      color: #02133e;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+      font: 500 16px Raleway, sans-serif;
+    }
+  
+    &-form {
+      border-radius: 4px;
+      background-color: rgba(238, 238, 238, 0.6);
+      display: flex;
+      gap: 20px;
+      padding: 8px 4px 8px 18px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 500;
+      letter-spacing: 0.42px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    &-input {
+      font-family: Raleway, sans-serif;
+      font-variant: small-caps;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+      border: none;
+      background: transparent;
+      outline: none;
+    }
+  
+    &-submit {
+      aspect-ratio: 0.8;
+      object-fit: contain;
+      // width: 21px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transform: rotate(-90deg);
+    }
+  }  
+
+  @include tablet {
+    &__container {
+      gap: 32px;
+    }
+
+    &__newsletter {
+      margin-top: 44px;
+    }
+  }
+
+  @include tablet {
+    &__container {
+      gap: 14px;
+    }
+
+    &__newsletter {
+      margin-top: 22px;
     }
   }
 }

@@ -97,3 +97,39 @@ document.addEventListener("DOMContentLoaded", function () {
   //   });
   // });
 });
+
+// Select all elements with class collapsed-gallery
+const galleryItems = document.querySelectorAll('.collapsed-gallery');
+
+// Iterate over each gallery item
+galleryItems.forEach(item => {
+    // Get necessary elements from the original structure
+    const imgSrc = item.querySelector('.gallery-left__img').src;
+    const isNew = item.querySelector('.gallery-left span').textContent;
+    const iconSrc = item.querySelector('.gallery-left__icon img').src;
+    const title = item.querySelector('.gallery__title').textContent;
+    const price = item.querySelector('.gallery__price').textContent;
+
+    // Create new HTML structure
+    const newHtml = `
+        <li class="gallery-list__item">
+            <div class="gallery-list__top">
+                <img src="${imgSrc}" class="gallery-list__img" />
+                <span>${isNew}</span>
+                <button class="btn-reset gallery-list__icon">
+                    <img src="${iconSrc}" />
+                </button>
+            </div>
+            <div class="d-flex-between">
+                <div class="gallery-list__info d-flex-column">
+                    <p>${title}</p>
+                    <span>${price}</span>
+                </div>
+                <button class="gallery-list__btn btn-reset">Добавить</button>
+            </div>
+        </li>
+    `;
+
+    // Replace the original HTML with the new structure
+    item.outerHTML = newHtml;
+});

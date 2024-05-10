@@ -1,15 +1,24 @@
+@import '_variables.scss';
+
 .loyalty-points {
   display: flex;
   flex-direction: column;
   max-width: 948px;
   margin: 64px auto;
-  color: #000;
+  color: $mainColor;
   font-weight: 500;
+
+  &__header {
+    & h1 {
+      letter-spacing: normal;
+    }
+  }
 
   &__table {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
+    box-shadow: 0px 4px 5.2px 0px #00000026;
   }
 
   &__image {
@@ -97,12 +106,24 @@
 
   @include mobile {
     padding: 12px;
+
+    &__header {
+      & h1 {
+        font-weight: 700;
+      }
+    }
+
     &__value {
       font-size: 40px;
     }
 
     &__description, &__rules-text, &__history {
       font-size: 8px;
+    }
+
+    &__description {
+      margin-top: 18px;
+      font-size: 10px;
     }
 
     &__rules {

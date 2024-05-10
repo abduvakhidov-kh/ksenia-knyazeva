@@ -3,6 +3,14 @@
 .cart {
   // margin: 56px 0;
 
+  &__header {
+    margin: 100px 0 76px;
+
+    &-title {
+      margin-top: 0;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: center;
@@ -14,16 +22,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    :last-child {
-      border-bottom: none;
-    }
   }
 
   &__list-item {
     border-bottom: 1px solid black;
     padding: 28px 0;
     width: 100%;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @include tablet {
@@ -34,6 +42,14 @@
     &__list-item {
       padding: 28px 0;
     }
+
+    &__header {
+      margin-top: 64px;
+
+      &-title {
+        margin-top: 0;
+      }
+    }
   }
 
   @include mobile {
@@ -43,6 +59,14 @@
 
     &__list-item {
       padding: 14px 0;
+    }
+
+    &__header {
+      margin: 20px 0 30px !important;
+
+      &-title {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -57,6 +81,7 @@
   height: fit-content;
   font-weight: 500;
   padding: 22px 25px 11px;
+  box-shadow: 0px 4px 4px 0px #000;
 
   &__summary {
     display: flex;
@@ -69,17 +94,16 @@
     flex: 1;
 
     &-label {
-      color: #000;
+      color: $mainColor;
       letter-spacing: 0.72px;
-      font: 24px Raleway, sans-serif;
+      @include raleway(600, 24px);
     }
 
     &-items {
       color: rgba(0, 0, 0, 0.8);
       letter-spacing: 0.54px;
       margin-top: 26px;
-      font: 18px Montserrat, sans-serif;
-      font-family: Montserrat;
+      @include montserrat(500, 18px);
     }
   }
 
@@ -94,6 +118,10 @@
     &-value {
       font-weight: bold;
     }
+
+    &-currency {
+      font-size: 20px;
+    }
   }
 
   &__promo {
@@ -102,11 +130,6 @@
     text-decoration-line: underline;
     margin-top: 56px;
     font: 20px Raleway, sans-serif;
-
-    @media (max-width: 991px) {
-      max-width: 100%;
-      margin-top: 40px;
-    }
   }
 
   &__submit {
@@ -152,6 +175,10 @@
     &-text {
       font-family: Raleway, sans-serif;
       font-size: 14px !important;
+
+      ::after {
+        top: 3px;
+      }
     }
 
     &-link {
@@ -234,6 +261,10 @@
 
     &__amount {
       font-size: 15px;
+
+      &-currency {
+        font-size: 13px;
+      }
     }
 
     &__promo {

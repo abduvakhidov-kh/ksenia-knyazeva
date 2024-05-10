@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -26,16 +25,20 @@
     <main class="main">
       <section class="container">
         <div class="cart">
-          <header class="section-header">
-            <h1 class="section-header__title">КОРЗИНА</h1>
+          <header class="section-header cart__header">
+            <h1 class="section-header__title cart__header-title">КОРЗИНА</h1>
           </header>
-            <div class="share-link">
-              <a href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1" class="share-link__url">https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a>
-              <div class="share-link__description">
-                Выше твоя уникальная ссылка, благодаря которой ты можешь
-                поделиться своими избранными товарами с другим человеком!
-              </div>
+          <a
+            href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1"
+            class="share-link__url"
+            >https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a
+          >
+          <div class="share-link">
+            <div class="share-link__description">
+              Выше твоя уникальная ссылка, благодаря которой ты можешь
+              поделиться своей корзиной с другим человеком!
             </div>
+          </div>
           <div class="cart__content">
             <ul class="cart__list list-reset second-container">
               <li class="cart__list-item">
@@ -63,7 +66,10 @@
               <button class="btn checkout__submit">ОФОРМИТЬ ЗАКАЗ</button>
               <div class="form-checkbox checkout__terms">
                 <input type="checkbox" id="telegram" />
-                <label class="form-checkbox__label checkout__terms-text" for="telegram">
+                <label
+                  class="form-checkbox__label checkout__terms-text"
+                  for="telegram"
+                >
                   Согласен с условиями
                   <span class="checkout__terms-link">публичной оферты</span>
                 </label>
@@ -72,7 +78,9 @@
           </div>
           <section class="news product-similar">
             <div class="container">
-              <h2 class="product-similar__title">ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТьСЯ</h2>
+              <h2 class="product-similar__title">
+                ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТьСЯ
+              </h2>
               @include('./partials/components/similars-swipter.html')
             </div>
           </section>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -173,16 +172,20 @@
     <main class="main">
       <section class="container">
         <div class="cart">
-          <header class="section-header">
-            <h1 class="section-header__title">КОРЗИНА</h1>
+          <header class="section-header cart__header">
+            <h1 class="section-header__title cart__header-title">КОРЗИНА</h1>
           </header>
-            <div class="share-link">
-              <a href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1" class="share-link__url">https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a>
-              <div class="share-link__description">
-                Выше твоя уникальная ссылка, благодаря которой ты можешь
-                поделиться своими избранными товарами с другим человеком!
-              </div>
+          <a
+            href="https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1"
+            class="share-link__url"
+            >https://knyazeva.ru/shop/wish-list/?kk=419117&sort=1</a
+          >
+          <div class="share-link">
+            <div class="share-link__description">
+              Выше твоя уникальная ссылка, благодаря которой ты можешь
+              поделиться своей корзиной с другим человеком!
             </div>
+          </div>
           <div class="cart__content">
             <ul class="cart__list list-reset second-container">
               <li class="cart__list-item">
@@ -190,16 +193,7 @@
   <div class="cart-item__image">
     <img
       loading="lazy"
-      srcset="
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&
-      "
+      srcset="img/dresses/main-3.png"
       alt="cart-item Image"
       class="cart-item__image-img"
     />
@@ -212,21 +206,36 @@
         <div class="cart-item__quantity-value">1</div>
         <div class="cart-item__quantity-control">+</div>
       </div>
-      <div class="cart-item__price">
-        <span class="cart-item__price-value">22’490</span>
-        <span class="cart-item__price-currency">руб.</span>
+      <div class="d-flex">
+        <div class="cart-item__price">
+          <span class="cart-item__price-value">22’490</span>
+          <span class="cart-item__price-currency">руб.</span>
+        </div>
+        <img
+          src="./img/icons/trash.png"
+          alt="delete icon"
+          class="cart-item__icon"
+        />
       </div>
-      <img src="./img/icons/trash.png" alt="delete icon" class="cart-item__icon">
     </div>
     <div class="cart-item__options">
       <div class="cart-item__option">
         <span class="cart-item__option-label">Размер:</span>
         <span class="cart-item__option-label">Цвет:</span>
       </div>
-      <div class="cart-item__option">
+      <div class="cart-item__option-values">
         <span class="cart-item__option-value">
-          46
-          <img src="./img/icons/arrow.png" alt="" width="19" height="10" class="cart-item__icon-select">
+          <select name="size" id="size">
+            <img
+              src="./img/icons/arrow.png"
+              alt=""
+              width="19"
+              height="10"
+              class="cart-item__icon-select"
+            />
+            <option value="46">46</option>
+            <option value="47">47</option>
+          </select>
         </span>
         <span class="cart-item__option-value">молочный</span>
       </div>
@@ -249,16 +258,7 @@
   <div class="cart-item__image">
     <img
       loading="lazy"
-      srcset="
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&
-      "
+      srcset="img/dresses/main-3.png"
       alt="cart-item Image"
       class="cart-item__image-img"
     />
@@ -271,21 +271,36 @@
         <div class="cart-item__quantity-value">1</div>
         <div class="cart-item__quantity-control">+</div>
       </div>
-      <div class="cart-item__price">
-        <span class="cart-item__price-value">22’490</span>
-        <span class="cart-item__price-currency">руб.</span>
+      <div class="d-flex">
+        <div class="cart-item__price">
+          <span class="cart-item__price-value">22’490</span>
+          <span class="cart-item__price-currency">руб.</span>
+        </div>
+        <img
+          src="./img/icons/trash.png"
+          alt="delete icon"
+          class="cart-item__icon"
+        />
       </div>
-      <img src="./img/icons/trash.png" alt="delete icon" class="cart-item__icon">
     </div>
     <div class="cart-item__options">
       <div class="cart-item__option">
         <span class="cart-item__option-label">Размер:</span>
         <span class="cart-item__option-label">Цвет:</span>
       </div>
-      <div class="cart-item__option">
+      <div class="cart-item__option-values">
         <span class="cart-item__option-value">
-          46
-          <img src="./img/icons/arrow.png" alt="" width="19" height="10" class="cart-item__icon-select">
+          <select name="size" id="size">
+            <img
+              src="./img/icons/arrow.png"
+              alt=""
+              width="19"
+              height="10"
+              class="cart-item__icon-select"
+            />
+            <option value="46">46</option>
+            <option value="47">47</option>
+          </select>
         </span>
         <span class="cart-item__option-value">молочный</span>
       </div>
@@ -308,16 +323,7 @@
   <div class="cart-item__image">
     <img
       loading="lazy"
-      srcset="
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
-        https://cdn.builder.io/api/v1/image/assets/TEMP/d413492facb823a673492b401cb90ae4be8a8a065266cc6a765fd37700e39809?apiKey=271f7d0f9b55459d8a0930adb083f30a&
-      "
+      srcset="img/dresses/main-3.png"
       alt="cart-item Image"
       class="cart-item__image-img"
     />
@@ -330,21 +336,36 @@
         <div class="cart-item__quantity-value">1</div>
         <div class="cart-item__quantity-control">+</div>
       </div>
-      <div class="cart-item__price">
-        <span class="cart-item__price-value">22’490</span>
-        <span class="cart-item__price-currency">руб.</span>
+      <div class="d-flex">
+        <div class="cart-item__price">
+          <span class="cart-item__price-value">22’490</span>
+          <span class="cart-item__price-currency">руб.</span>
+        </div>
+        <img
+          src="./img/icons/trash.png"
+          alt="delete icon"
+          class="cart-item__icon"
+        />
       </div>
-      <img src="./img/icons/trash.png" alt="delete icon" class="cart-item__icon">
     </div>
     <div class="cart-item__options">
       <div class="cart-item__option">
         <span class="cart-item__option-label">Размер:</span>
         <span class="cart-item__option-label">Цвет:</span>
       </div>
-      <div class="cart-item__option">
+      <div class="cart-item__option-values">
         <span class="cart-item__option-value">
-          46
-          <img src="./img/icons/arrow.png" alt="" width="19" height="10" class="cart-item__icon-select">
+          <select name="size" id="size">
+            <img
+              src="./img/icons/arrow.png"
+              alt=""
+              width="19"
+              height="10"
+              class="cart-item__icon-select"
+            />
+            <option value="46">46</option>
+            <option value="47">47</option>
+          </select>
         </span>
         <span class="cart-item__option-value">молочный</span>
       </div>
@@ -378,7 +399,10 @@
               <button class="btn checkout__submit">ОФОРМИТЬ ЗАКАЗ</button>
               <div class="form-checkbox checkout__terms">
                 <input type="checkbox" id="telegram" />
-                <label class="form-checkbox__label checkout__terms-text" for="telegram">
+                <label
+                  class="form-checkbox__label checkout__terms-text"
+                  for="telegram"
+                >
                   Согласен с условиями
                   <span class="checkout__terms-link">публичной оферты</span>
                 </label>
@@ -387,8 +411,10 @@
           </div>
           <section class="news product-similar">
             <div class="container">
-              <h2 class="product-similar__title">ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТьСЯ</h2>
-              <div class="swiper news-swiper">
+              <h2 class="product-similar__title">
+                ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТьСЯ
+              </h2>
+              <div class="swiper similars-swiper">
   <!-- Additional required wrapper -->
   <ul class="swiper-wrapper list-reset news-swiper__list">
     <!-- Slides -->

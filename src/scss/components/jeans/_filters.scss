@@ -15,12 +15,21 @@
     display: flex;
     align-items: center;
 
+    &__back {
+      transform: rotate(90deg);
+      margin-right: 25px;
+    }
+
     &__link {
       margin-right: 30px;
       @include raleway(400, 24px);
       color: $gray;
       text-transform: uppercase;
       border-bottom: 1px solid $gray;
+
+      &:last-child {
+        color: $mainColor;
+      }
     }
   }
 

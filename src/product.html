@@ -23,9 +23,12 @@
     <h1 class="visually-hidden">KSENIA KNYAZEVA</h1>
     @include('./partials/components/header.html')
     <main class="main">
-      <section class="filters">
+      <section class="filters product__filters">
         <div class="container">
           <div class="tags">
+            <a href="index.html" class="tags__back">
+              <img src="img/icons/arrow.png" alt="arrow back" />
+            </a>
             <a href="index.html" class="tags__link">Главная</a>
             <a href="index.html" class="tags__link">ОДЕЖДА</a>
             <a href="index.html" class="tags__link">ВЕРХНЯЯ ОДЕЖДА</a>
@@ -95,7 +98,9 @@
                 <span class="product-info__title-type">NEW</span>
               </div>
               <div class="product-info__price price">
-                <p class="price__full">19'990 руб.</p>
+                <p class="price__full">
+                  19'990 <span class="price__full-currency">руб.</span>
+                </p>
                 <p class="price__partial">
                   <img src="img//product/parts-amount.jpg" alt="parts amount" />
                   <span class="price__parts"> 4 платежа по 8’750 руб. </span>
@@ -124,10 +129,25 @@
               </div>
               <div class="product-actions">
                 <button class="btn-reset product-actions__icon">
-                  <img src="img/icons/note.svg" />
+                  <img src="img/icons/bookmark.png" />
                 </button>
-                <!-- <button class="btn btn-bookmark">Bookmark</button> -->
-                <button class="btn-reset product-actions__add">ДОБАВИТЬ</button>
+                <div class="product-actions__group">
+                  <div class="product-actions__gift">
+                    <p class="product-actions__gift-text">
+                      подарить
+                      <img
+                        src="img/icons/gift.svg"
+                        alt="gift image"
+                        class="product-actions__gift-img"
+                      />
+                    </p>
+                    <span class="product-actions__gift-tooltip"></span>
+                  </div>
+                  <!-- <button class="btn btn-bookmark">Bookmark</button> -->
+                  <button class="btn-reset product-actions__add">
+                    ДОБАВИТЬ
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -150,7 +170,9 @@
       <section class="news product-similar">
         <div class="container">
           <h2 class="product-similar__title">С ЧЕМ НОСИТЬ</h2>
-          <ul class="gallery-list list-reset d-flex-between product-matching__list">
+          <ul
+            class="gallery-list list-reset d-flex-between product-matching__list"
+          >
             <li class="gallery-list__item product-matching__item">
               <div class="gallery-list__top">
                 <img src="img/dresses/sub-3.png" class="gallery-list__img" />

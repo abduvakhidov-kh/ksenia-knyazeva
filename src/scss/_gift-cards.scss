@@ -1,9 +1,9 @@
 @import "./mixin";
 
 .main {
-  margin-bottom: 160px;
+  // margin-bottom: 160px;
   .section-header {
-    margin-bottom: 148px !important;
+    margin-bottom: 148px;
   }
   .gift-cards {
     display: flex;
@@ -38,9 +38,9 @@
   }
 
   @include tablet {
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
     .section-header {
-      margin-bottom: 100px !important;
+      margin-bottom: 100px;
     }
     .gift-cards {
       &__item {
@@ -61,9 +61,9 @@
   }
 
   @include mobile {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     .section-header {
-      margin-bottom: 49px !important;
+      margin-bottom: 49px;
     }
     .gift-cards {
       &__item {

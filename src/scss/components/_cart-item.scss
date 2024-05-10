@@ -7,12 +7,11 @@
 
   &__image {
     display: flex;
-    // width: 16%;
   }
 
   &__image-img {
-    width: 100%;
-    border: 0;
+    max-width: 158px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
   }
 
   &__top {
@@ -55,9 +54,9 @@
   &__price {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin: 0 12px;
-    margin-left: auto;
+    // margin-left: auto;
 
     .cart-item__price-value {
       @include montserrat(600, 26px);
@@ -92,6 +91,12 @@
       font-size: 16px;
       color: #000;
     }
+  }
+
+  &__option-values {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &__sku {
@@ -167,6 +172,10 @@
           width: 16px;
         }
       }
+    }
+
+    &__option-values {
+      gap: 12px;
     }
 
     &__sku {
@@ -246,6 +255,10 @@
           width: 8px;
         }
       }
+    }
+
+    &__option-values {
+      gap: 6px;
     }
 
     &__sku {

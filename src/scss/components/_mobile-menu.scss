@@ -62,21 +62,21 @@ $menuToggleIconOpacity: 0;
   }
 
   &__input:checked ~ .menu {
-    transform: translate(0, 0);
+    transform: translate(2px, 2px);
   }
 
   &__input:checked ~ .menu-toggle__icon {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(2px, 2px);
     background: #232323;
-
+    
     &:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
-
+    
     &:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -1px);
+      transform: rotate(-45deg) translate(-4px, 2px);
     }
   }
 }

@@ -1,4 +1,5 @@
 @import "./mixin.scss";
+@import "_variables.scss";
 
 .favorites {
   display: flex;
@@ -43,7 +44,7 @@
       justify-content: space-between;
       margin-top: 18px;
       padding-bottom: 4px;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
     }
 
     &__bottom {
@@ -70,7 +71,7 @@
 
       .product-card__badge {
         aspect-ratio: 0.97;
-        margin: 10px;
+        margin: 26px 28px 0 0;
         width: 39px;
         align-self: end;
         z-index: 10;
@@ -96,9 +97,11 @@
       gap: 20px;
 
       .product-card__type {
+        display: flex;
+        align-items: center;
         color: #000;
         letter-spacing: 0.66px;
-        @include montserrat(500, 22px);
+        @include montserrat(600, 22px);
       }
 
       .product-card__options {
@@ -124,8 +127,8 @@
           }
 
           .product-card__option-value {
-            color: #000;
-            font-size: 22px;
+            @include montserrat(500, 22px);
+            color: $mainColor;
             letter-spacing: 0.66px;
           }
         }
@@ -194,10 +197,11 @@
       &__image-container {
         .product-card__badge {
           width: 32px;
+          margin: 22px 24px 0 0;
         }
 
         .product-card__overlay {
-          font-size: 6px;
+          font-size: 16px;
           bottom: 24px;
         }
       }
@@ -206,7 +210,7 @@
         gap: 16px;
 
         .product-card__type {
-          @include montserrat(500, 18px);
+          @include montserrat(600, 18px);
         }
 
         .product-card__price {
@@ -260,6 +264,7 @@
       &__image-container {
         .product-card__badge {
           width: 17px;
+          margin: 14px 14px 0 0;
         }
 
         .product-card__overlay {
@@ -272,7 +277,7 @@
         gap: 7px;
 
         .product-card__type {
-          @include montserrat(500, 11px);
+          @include montserrat(600, 11px);
         }
 
         .product-card__price {

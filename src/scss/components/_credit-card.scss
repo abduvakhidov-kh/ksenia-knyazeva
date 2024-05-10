@@ -15,7 +15,7 @@
     inset: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
@@ -126,11 +126,10 @@
   }
 
   @include mobile {
-    max-width: 739px;
+    max-width: 277px;
     min-width: 300px;
-    width: 70%;
     font-size: 8px;
-    padding: 27px 14% 15px;
+    padding: 27px 16px 15px;
     margin: 0 auto 18px;
 
     &__title {
@@ -138,7 +137,14 @@
     }
 
     &__number {
-      margin-top: 60px;
+      margin-top: 54px;
+      font-size: 12px;
+
+      &-label {
+        display: inline-block;
+        margin-bottom: 6px;
+        font-size: 8px;
+      }
     }
 
     &__points {
@@ -154,6 +160,7 @@
       width: 16px;
       padding: 6px;
       height: 16px;
+      margin-top: 12px;
     }
 
     &__info {
@@ -161,8 +168,12 @@
       width: fit-content;
       gap: 8px;
       justify-content: flex-end;
-      &-value, &-label {
+      &-label {
         font-size: 8px;
+      }
+
+      &-value {
+        font-size: 16px;
       }
     }
   }

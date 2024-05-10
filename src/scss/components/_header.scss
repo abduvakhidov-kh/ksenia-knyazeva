@@ -25,6 +25,10 @@
     }
 
     @include mobile {
+      &:first-child {
+        display: none;
+      }
+
       &__search {
         display: none;
       }
@@ -82,11 +86,6 @@
     max-width: 536px;
   }
 
-  .header-nav {
-    position: absolute;
-    right: 0;
-  }
-
   @include tablet {
     margin-bottom: 30px;
 
@@ -117,9 +116,6 @@
     text-transform: uppercase;
     @include raleway(400, 24px);
   }
-  .header-item:not(:last-child) {
-    margin-right: 92px;
-  }
 
   @include tablet {
     .header-item__link {
@@ -131,6 +127,10 @@
 
   @include mobile {
     display: none; // Hide header bottom on mobile
+
+    .header-item:first-child {
+      display: none;
+    }
   }
 }
 

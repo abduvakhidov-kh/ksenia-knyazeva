@@ -40,11 +40,11 @@
   }
 
   &__title {
-    @include raleway(500, 45px);
+    @include raleway(600, 45px);
   }
 
   &__subtitle {
-    @include raleway(500, 36px);
+    @include raleway(600, 36px);
   }
 
   .score-list {
@@ -119,6 +119,7 @@
     &__descr {
       font-size: 10px;
       margin-bottom: 11px;
+      margin: 0 25px;
 
       &.text {
         margin-bottom: 68px;

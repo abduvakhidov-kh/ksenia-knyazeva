@@ -209,16 +209,7 @@
                 />
                 <img
                   loading="lazy"
-                  srcset="
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&
-                  "
+                  src="img/icons/trash.svg"
                   class="product-card__badge"
                 />
                 <div class="product-card__overlay">NEW</div>
@@ -266,7 +257,11 @@
                   "
                   class="product-card__image"
                 />
-                <img loading="lazy" src="img/icons/trash.png" class="product-card__badge" />
+                <img
+                  loading="lazy"
+                  src="img/icons/trash.svg"
+                  class="product-card__badge"
+                />
                 <div class="product-card__overlay">NEW</div>
               </div>
               <div class="product-card__details">
@@ -314,16 +309,7 @@
                 />
                 <img
                   loading="lazy"
-                  srcset="
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=100   100w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=200   200w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=400   400w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=800   800w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1200 1200w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=1600 1600w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&width=2000 2000w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/f160344cb173fb774e57303d211165771c5196c06a2f831d26bb2a028e038c29?apiKey=271f7d0f9b55459d8a0930adb083f30a&
-                  "
+                  src="img/icons/trash.svg"
                   class="product-card__badge"
                 />
                 <div class="product-card__overlay">NEW</div>
@@ -339,7 +325,21 @@
                 <div class="product-card__options">
                   <div class="product-card__option">
                     <div class="product-card__option-label">Размер:</div>
-                    <div class="product-card__option-value">one size</div>
+                    <div class="product-card__option-value">
+                      <span class="cart-item__option-value">
+                        <select name="size" id="size">
+                          <img
+                            src="./img/icons/arrow.png"
+                            alt=""
+                            width="19"
+                            height="10"
+                            class="cart-item__icon-select"
+                          />
+                          <option value="46">46</option>
+                          <option value="47">47</option>
+                        </select>
+                      </span>
+                    </div>
                   </div>
                   <div class="product-card__option">
                     <div class="product-card__option-label">Цвет:</div>

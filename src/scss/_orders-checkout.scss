@@ -12,11 +12,19 @@
     margin-top: 0;
   }
 
+  textarea::placeholder {
+    font-size: 20px;
+  }
+
   &__comment {
-    border: 1px solid black !important;
+    border: 1px solid $gray !important;
     padding-top: 16px !important;
     border-radius: 8px;
     width: 75% !important;
+
+    &-label {
+      line-height: 30px;
+    }
   }
 
   &__delivery {
@@ -24,6 +32,10 @@
     gap: 24px;
     align-items: start;
     justify-content: space-between;
+
+    input::placeholder {
+      font-size: 20px;
+    }
 
     &-options {
       width: 75%;
@@ -33,7 +45,7 @@
     }
 
     &__label {
-      line-height: 28px;
+      line-height: 30px;
     }
 
     &-courier {
@@ -63,11 +75,11 @@
     padding: 2px 1px;
 
     &__receiver {
-      padding: 0 0 0 56px !important;
+      padding: 0 0 0 90px !important;
     }
 
     &__container {
-      border: 1px solid rgba(0, 0, 0, 1);
+      border: 1px solid $gray;
       background-color: #fff;
       display: flex;
       width: 100%;
@@ -83,7 +95,7 @@
       color: #02133e;
       letter-spacing: 1.02px;
       justify-content: center;
-      padding: 25px 59px;
+      padding: 25px 56px;
       font: 500 34px Raleway, sans-serif;
     }
 
@@ -117,6 +129,10 @@
   }
 
   &__location {
+    & label.input-label {
+      line-height: 30px;
+    }
+
     &-wrapper {
       width: 65%;
     }
@@ -141,6 +157,10 @@
   }
 
   @include tablet {
+    textarea::placeholder {
+      font-size: 16px;
+    }
+
     &__content {
       flex-direction: column;
       gap: 0;
@@ -155,15 +175,20 @@
     &__comment {
       padding-top: 8px !important;
 
+      ::placeholder {
+        font-size: 20px;
+      }
+
       &-label {
         align-self: flex-start;
+        line-height: 28px;
       }
     }
 
     .personal-data {
       &__title {
         font-size: 16px;
-        padding: 14px 30px;
+        padding: 14px 34px;
       }
 
       &__info {
@@ -172,13 +197,28 @@
       }
     }
 
-    &__location-subtitle {
-      font-size: 14px;
+    &__location {
+      & label.input-label {
+        line-height: 28px;
+      }
+
+      &-wrapper {
+        width: 71.5%;
+      }
+
+      &-subtitle {
+        font-size: 14px;
+        padding-left: 12px;
+      }
     }
 
     &__delivery {
+      input::placeholder {
+        font-size: 14px;
+      }
+
       &__label {
-        line-height: 26px;
+        line-height: 28px;
       }
 
       &-options {
@@ -188,6 +228,10 @@
   }
 
   @include mobile {
+    textarea::placeholder {
+      font-size: 8px;
+    }
+
     &__content {
       flex-direction: column;
       gap: 0;
@@ -197,8 +241,9 @@
     &__comment {
       padding-top: 4px !important;
       border-radius: 4px;
-      
+
       &-label {
+        line-height: 26px;
         align-self: flex-start;
       }
     }
@@ -217,7 +262,7 @@
       width: 70%;
       &__title {
         font-size: 8px;
-        padding: 7px 15px;
+        padding: 7px 17px;
         border: none;
         border-bottom: 1px solid black;
       }
@@ -233,6 +278,10 @@
     }
 
     &__delivery {
+      input::placeholder {
+        font-size: 8px;
+      }
+
       &__label {
         line-height: 10px;
       }
@@ -259,7 +308,7 @@
   }
 
   &__title {
-    @include raleway(500, 24px);
+    @include raleway(600, 24px);
   }
 
   &__description {
@@ -287,6 +336,7 @@
 
   @include tablet {
     padding: 0;
+    padding-left: 12px;
     line-height: normal;
 
     &__title {
@@ -295,7 +345,7 @@
 
     &__description {
       font-size: 10px;
-      margin-top: 16px;
+      margin-top: 10px;
     }
 
     &__price {
@@ -372,6 +422,7 @@
     select {
       font-size: 16px;
       padding: 12px 8px;
+      padding-left: 0;
     }
 
     .arrow-down {
@@ -383,6 +434,7 @@
     select {
       font-size: 8px;
       padding: 6px 4px;
+      padding-left: 0;
     }
 
     .arrow-down {

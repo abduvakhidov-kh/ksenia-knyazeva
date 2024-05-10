@@ -177,7 +177,7 @@ picture {
     width: 70%;
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 0.5px solid black;
     padding: 0 16px;
 
     &::placeholder {
@@ -186,7 +186,24 @@ picture {
 
     &:focus {
       outline: none;
-      border-bottom-color: 2px; // Change border color on focus if desired
+      border-bottom-color: 1px; // Change border color on focus if desired
+    }
+  }
+
+  @include tablet {
+    &-label {
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+    }
+
+    &-field {
+      font-size: 17px;
+      padding: 0 6px;
+  
+      &::placeholder {
+        font-size: 16px;
+      }
     }
   }
 
@@ -232,7 +249,7 @@ picture {
       content: "";
       -webkit-appearance: none;
       background-color: transparent;
-      border: 1px solid #000;
+      border: 1px solid $gray;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
         inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
       padding: 0.6875em;
@@ -258,6 +275,16 @@ picture {
     transform: rotate(45deg);
   }
 
+  @include tablet {
+    &__label {
+      font-size: 16px;
+
+      &::before {
+        margin-right: 12px;
+      }
+    }
+  }
+
   @include mobile {
     &__label {
       font-size: 8px;
@@ -266,7 +293,6 @@ picture {
         margin-right: 6px;
       }
     }
-
   }
 }
 
@@ -399,6 +425,10 @@ picture {
   -ms-user-select: none;
   user-select: none;
 
+  @include tablet {
+    padding-left: 32px;
+  }
+
   @include mobile {
     padding-left: 20px;
   }
@@ -422,6 +452,12 @@ picture {
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
+
+  @include tablet {
+    height: 16px;
+    width: 16px;
+    border-width: 1px;
+  }
 
   @include mobile {
     height: 8px;
@@ -462,6 +498,11 @@ picture {
   height: 15px;
   border-radius: 50%;
   background: $oceanBlue;
+
+  @include tablet {
+    width: 8px;
+    height: 8px;
+  }
 
   @include mobile {
     width: 4px;

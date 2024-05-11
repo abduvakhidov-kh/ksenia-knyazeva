@@ -343,7 +343,7 @@
                 </button>
                 <div class="product-actions__group">
                   <div class="product-actions__gift">
-                    <p class="product-actions__gift-text">
+                    <p class="product-actions__gift-text" data-micromodal-trigger="modal-1">
                       подарить
                       <img
                         src="img/icons/gift.svg"
@@ -352,8 +352,180 @@
                       />
                     </p>
                     <span class="product-actions__gift-tooltip"></span>
+                    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-1-title"
+    >
+      <main class="modal__content" id="modal-1-content">
+        <div class="modal__left">
+          <img src="img/product/image1.png" alt="product image" />
+          <h3 class="modal-section__title modal-product__title">
+            пальто красное
+          </h3>
+          <div class="modal-product__options">
+            <p class="modal-product__option">Размер: 42-44</p>
+            <p class="modal-product__option">Цвет: черный</p>
+          </div>
+        </div>
+        <div class="modal__right">
+          <button
+            class="modal__close btn-reset"
+            aria-label="Close modal"
+            data-micromodal-close
+          >
+            <img src="img/icons/modal-cross.svg" alt="modal close button" />
+          </button>
+          <form class="form-wrapper">
+            <div class="modal-section">
+              <h3 class="modal-section__title">КОМУ ХОТИТЕ СДЕЛАТЬ ПОДАРОК?</h3>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientName"
+                  class="input-field"
+                  placeholder="Имя получателя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientSurname"
+                  class="input-field"
+                  placeholder="Фамилия получателя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientEmail"
+                  class="input-field"
+                  placeholder="Email получателя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientPhone"
+                  class="input-field"
+                  placeholder="Номер телефона"
+                />
+              </div>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section__title">ОТ КОГО</h3>
+              <div class="input">
+                <input
+                  type="text"
+                  id="senderName"
+                  class="input-field"
+                  placeholder="Имя отправителя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="senderEmail"
+                  class="input-field"
+                  placeholder="Email отправителя"
+                />
+              </div>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section__title">КУДА ОТПРАВИТЬ</h3>
+              <div class="input">
+                <input
+                  type="text"
+                  id="country"
+                  class="input-field"
+                  placeholder="Страна"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="city"
+                  class="input-field"
+                  placeholder="Город"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="street"
+                  class="input-field"
+                  placeholder="Улица"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="house"
+                  class="input-field"
+                  placeholder="Дом"
+                />
+              </div>
+              <div class="input-with-note">
+                <div class="input">
+                  <input
+                    type="text"
+                    id="flat"
+                    class="input-field"
+                    placeholder="Квартир, офис"
+                  />
+                </div>
+                <div class="input-with-note__text">
+                  * Для выбора способа доставки заполните поля выше
+                </div>
+              </div>
+            </div>
+            <div class="modal-section">
+              <h3 class="modal-section__title">способ доставки</h3>
+              <label
+                class="radio-button-container modal-delivery"
+                for="onplace-payment"
+              >
+                <div class="pickup">
+                  <div class="pickup__info">
+                    <h2 class="pickup__title">Пункт выдачи СДЭК</h2>
+                    <p class="pickup__description">
+                      <div class="modal-product__options">
+                        <p class="modal-product__option">Размер: 42-44</p>
+                        <p class="modal-product__option">Цвет: черный</p>
+                      </div>
+                    </p>
                   </div>
-                  <!-- <button class="btn btn-bookmark">Bookmark</button> -->
+                </div>
+                <input
+                  type="radio"
+                  name="delivery-method"
+                  id="onplace-payment"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <div class="form-checkbox">
+                <input type="checkbox" id="need-help" />
+                <label class="form-checkbox__label" for="need-help">
+                  Нужна консультация по телефону
+                </label>
+              </div>
+              <button class="btn-reset product-actions__add modal__action-btn">
+                ОФОРМИТЬ ПОДАРОК?
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+                  </div>
                   <button class="btn-reset product-actions__add">
                     ДОБАВИТЬ
                   </button>
@@ -392,12 +564,6 @@
 
         </div>
       </section>
-      <!-- <section class="container product-similar">
-        <h3 class="product-similar__title">Similar products</h3>
-        <ul class="product-similar__list list-reset">
-          <li class="product-similar__item">Similar product 1</li>
-        </ul>
-      </section> -->
       <section class="news product-similar">
         <div class="container">
           <h2 class="product-similar__title">ПОХОЖИЕ ТОВАРЫ</h2>
@@ -405,12 +571,12 @@
   <!-- Additional required wrapper -->
   <ul class="swiper-wrapper list-reset news-swiper__list">
     <!-- Slides -->
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image1.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -421,12 +587,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image2.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -437,12 +603,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image3.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -453,12 +619,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image4.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -469,12 +635,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image5.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -485,12 +651,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image6.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -501,12 +667,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image7.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -517,12 +683,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image8.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -533,12 +699,12 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img src="img/news/image9.jpg" alt="Новинки" class="news-swiper__img" />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -549,7 +715,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img
           src="img/news/image10.jpg"
@@ -558,7 +724,7 @@
         />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -569,7 +735,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img
           src="img/news/image11.jpg"
@@ -578,7 +744,7 @@
         />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -589,7 +755,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img
           src="img/news/image12.jpg"
@@ -598,7 +764,7 @@
         />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -609,7 +775,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img
           src="img/news/image13.jpg"
@@ -618,7 +784,7 @@
         />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -629,7 +795,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img
           src="img/news/image14.jpg"
@@ -638,7 +804,7 @@
         />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -649,7 +815,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li class="swiper-slide news-swiper__item similars-swiper__item">
+    <li class="swiper-slide similars-swiper__item">
       <div class="news-swiper__top">
         <img
           src="img/news/image15.jpg"
@@ -658,7 +824,7 @@
         />
         <span>NEW</span>
         <button class="btn-reset news-swiper__icon">
-          <img src="img/news/icon.png" alt="" />
+          <img src="img/icons/bookmark.svg" alt="" />
         </button>
       </div>
       <div class="d-flex-between">
@@ -669,9 +835,7 @@
         <button class="news-swiper__btn btn-reset">Добавить</button>
       </div>
     </li>
-    <li
-      class="swiper-slide news-swiper__item news-swiper__item--last d-flex-center"
-    >
+    <li class="swiper-slide news-swiper__item--last d-flex-center">
       <button class="btn-reset">смотреть все новинки</button>
     </li>
   </ul>
@@ -683,74 +847,281 @@
       <section class="news product-similar">
         <div class="container">
           <h2 class="product-similar__title">С ЧЕМ НОСИТЬ</h2>
-          <ul
-            class="gallery-list list-reset d-flex-between product-matching__list"
-          >
-            <li class="gallery-list__item product-matching__item">
-              <div class="gallery-list__top">
-                <img src="img/dresses/sub-3.png" class="gallery-list__img" />
-                <span>NEW</span>
-                <button class="btn-reset gallery-list__icon">
-                  <img src="img/news/icon.png" />
-                </button>
-              </div>
-              <div class="d-flex-between">
-                <div class="gallery-list__info d-flex-column">
-                  <p>Платье серебристое</p>
-                  <span>9’990 руб.</span>
-                </div>
-                <button class="gallery-list__btn btn-reset">Добавить</button>
-              </div>
-            </li>
-            <li class="gallery-list__item product-matching__item">
-              <div class="gallery-list__top">
-                <img src="img/dresses/sub-2.1.png" class="gallery-list__img" />
-                <span>NEW</span>
-                <button class="btn-reset gallery-list__icon">
-                  <img src="img/news/icon.png" />
-                </button>
-              </div>
-              <div class="d-flex-between">
-                <div class="gallery-list__info d-flex-column">
-                  <p>Платье голубое</p>
-                  <span>17’990 руб.</span>
-                </div>
-                <button class="gallery-list__btn btn-reset">Добавить</button>
-              </div>
-            </li>
-            <li class="gallery-list__item product-matching__item">
-              <div class="gallery-list__top">
-                <img src="img/dresses/sub-2.2.png" class="gallery-list__img" />
-                <span>NEW</span>
-                <button class="btn-reset gallery-list__icon">
-                  <img src="img/news/icon.png" />
-                </button>
-              </div>
-              <div class="d-flex-between">
-                <div class="gallery-list__info d-flex-column">
-                  <p>Платье черное</p>
-                  <span>9’990 руб.</span>
-                </div>
-                <button class="gallery-list__btn btn-reset">Добавить</button>
-              </div>
-            </li>
-            <li class="gallery-list__item product-matching__item">
-              <div class="gallery-list__top">
-                <img src="img/dresses/sub-2.2.png" class="gallery-list__img" />
-                <span>NEW</span>
-                <button class="btn-reset gallery-list__icon">
-                  <img src="img/news/icon.png" />
-                </button>
-              </div>
-              <div class="d-flex-between">
-                <div class="gallery-list__info d-flex-column">
-                  <p>Платье черное</p>
-                  <span>9’990 руб.</span>
-                </div>
-                <button class="gallery-list__btn btn-reset">Добавить</button>
-              </div>
-            </li>
-          </ul>
+          <div class="swiper similars-swiper">
+  <!-- Additional required wrapper -->
+  <ul class="swiper-wrapper list-reset news-swiper__list">
+    <!-- Slides -->
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image1.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Жакет молочный</p>
+          <span>22’490 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image2.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье</p>
+          <span>17’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image3.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Брюки молочные</p>
+          <span>14’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image4.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Жакет черный</p>
+          <span>22’490 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image5.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье серебристое</p>
+          <span>12’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image6.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье голубое</p>
+          <span>17’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image7.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Брюки серебристые</p>
+          <span>12’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image8.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье черное</p>
+          <span>9’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img src="img/news/image9.jpg" alt="Новинки" class="news-swiper__img" />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье леопардовое</p>
+          <span>9’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img
+          src="img/news/image10.jpg"
+          alt="Новинки"
+          class="news-swiper__img"
+        />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Юбка серебристая</p>
+          <span>5’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img
+          src="img/news/image11.jpg"
+          alt="Новинки"
+          class="news-swiper__img"
+        />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Джемпер синий</p>
+          <span>4’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img
+          src="img/news/image12.jpg"
+          alt="Новинки"
+          class="news-swiper__img"
+        />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Рубашка серебристая</p>
+          <span>6’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img
+          src="img/news/image13.jpg"
+          alt="Новинки"
+          class="news-swiper__img"
+        />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье серебристое</p>
+          <span>9’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img
+          src="img/news/image14.jpg"
+          alt="Новинки"
+          class="news-swiper__img"
+        />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье черное</p>
+          <span>9’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide similars-swiper__item">
+      <div class="news-swiper__top">
+        <img
+          src="img/news/image15.jpg"
+          alt="Новинки"
+          class="news-swiper__img"
+        />
+        <span>NEW</span>
+        <button class="btn-reset news-swiper__icon">
+          <img src="img/icons/bookmark.svg" alt="" />
+        </button>
+      </div>
+      <div class="d-flex-between">
+        <div class="news-swiper__info d-flex-column">
+          <p>Платье серое</p>
+          <span>17’990 руб.</span>
+        </div>
+        <button class="news-swiper__btn btn-reset">Добавить</button>
+      </div>
+    </li>
+    <li class="swiper-slide news-swiper__item--last d-flex-center">
+      <button class="btn-reset">смотреть все новинки</button>
+    </li>
+  </ul>
+  <button class="news-swiper-button-next swiper-btn-next btn-reset"></button>
+</div>
+
         </div>
       </section>
       <footer class="footer">
@@ -890,6 +1261,7 @@
 </footer>
 
     </main>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -30,7 +30,7 @@
         <div class="phone">
           <select class="country-code">
             <option value="+7">+7</option>
-            <option value="+7 531">+7 531</option>
+            <option value="+7 531">+995</option>
           </select>
           <!-- <img loading="lazy" srcset="..." alt="Country Flag" class="flag-img"> -->
           <input
@@ -48,14 +48,21 @@
           Получить новый код можно через
           <span class="code-timer">1:36</span>
         </div>
-        <button class="login-button btn-reset">ВОЙТИ</button>
+        <button
+          class="login-button btn-reset"
+          data-micromodal-trigger="signup-modal"
+        >
+          ВОЙТИ
+        </button>
         <div class="alternative-login">Войти по паролю</div>
         <div class="terms">
           При входе или регистрации вы соглашаетесь с
           <span class="terms-link">Условиями</span>
         </div>
       </div>
+      @include('./partials/components/login-modal.html')
     </main>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

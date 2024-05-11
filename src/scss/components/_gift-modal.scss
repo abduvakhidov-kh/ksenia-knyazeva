@@ -1,0 +1,409 @@
+@import "../_variables.scss";
+@import "../mixin.scss";
+
+.modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  &__container {
+    background-color: #fff;
+    padding-bottom: 71px;
+    width: 70%;
+    max-width: 1284px;
+    max-height: 90vh;
+    border-radius: 4px;
+    overflow-y: auto;
+  }
+
+  &-delivery {
+    .modal-product__options {
+      margin-left: 0;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    & .pickup {
+      padding-left: 26px;
+
+      &__title {
+        font-size: 20px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  & label.form-checkbox__label {
+    font-size: 20px;
+
+    &::before {
+      margin-right: 40px;
+    }
+  }
+
+  &__action-btn {
+    width: 80%;
+  }
+
+  &-section {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-bottom: 92px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      @include raleway(600, 24px);
+      text-transform: uppercase;
+    }
+
+    & input {
+      &::placeholder {
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+
+    & .input {
+      margin-bottom: 8px;
+
+      & .input-field {
+        width: 80%;
+      }
+    }
+  }
+
+  & .input-with-note {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  &-product__title,
+  &-product__options {
+    margin-left: 63px;
+  }
+
+  &-product__options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    @include montserrat(400, 20px);
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__right, &__left {
+    width: calc(50% - 22px);
+  }
+
+  &__close {
+    margin: 25px 25px 0 0;
+    align-self: flex-end;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #00449e;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 43px;
+  }
+
+  @include tablet {
+    &__container {
+      padding-bottom: 36px;
+      width: 80%;
+    }
+  
+    &-delivery {
+      .modal-product__options {
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+  
+      & .pickup {
+        padding-left: 20px;
+  
+        &__title {
+          font-size: 16px;
+          margin-top: 0;
+        }
+      }
+    }
+  
+    & label.form-checkbox__label {
+      font-size: 16px;
+  
+      &::before {
+        margin-right: 30px;
+      }
+    }
+  
+    &__action-btn {
+      width: 85%;
+
+    }
+
+    & .product-actions__add {
+      padding: 8px 14px !important;
+      font-size: 20px !important;
+    }
+  
+    &-section {
+      gap: 32px;
+      margin-bottom: 60px;
+  
+      &__title {
+        font-size: 18px;
+      }
+  
+      & input {
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+  
+      & .input {
+        margin-bottom: 4px;
+  
+        & .input-field {
+          width: 85%;
+        }
+      }
+    }
+  
+    & .input-with-note {
+      gap: 14px;
+      &__text {
+        font-size: 14px;
+      }
+    }
+  
+    &-product__title,
+    &-product__options {
+      margin-left: 32px;
+    }
+  
+    &-product__options {
+      gap: 10px;
+      font-size: 18px;
+    }
+  
+    &__left {
+      gap: 22px;
+    }
+  
+    &__close {
+      margin: 15px 15px 0 0;
+    }
+  
+    &__content {
+      margin-bottom: 1.3rem;
+      gap: 32px;
+    }
+  }
+
+  @include mobile {
+    &__container {
+      padding-bottom: 18px;
+      width: 90%;
+    }
+  
+    &-delivery {
+      .modal-product__options {
+        gap: 6px;
+        margin-top: 6px;
+        font-size: 7px;
+      }
+  
+      & .pickup {
+        padding-left: 10px;
+  
+        &__title {
+          font-size: 8px;
+          margin-top: 0;
+        }
+      }
+    }
+  
+    & label.form-checkbox__label {
+      font-size: 8px;
+  
+      &::before {
+        margin-right: 15px;
+      }
+    }
+  
+    &__action-btn {
+      width: 85%;
+
+    }
+
+    & .product-actions__add {
+      padding: 4px 7px !important;
+      font-size: 10px !important;
+    }
+  
+    &-section {
+      gap: 16px;
+      margin-bottom: 30px;
+  
+      &__title {
+        font-size: 9px;
+      }
+  
+      & input {
+        &::placeholder {
+          font-size: 8px;
+        }
+      }
+  
+      & .input {
+        margin-bottom: 2px;
+  
+        & .input-field {
+          width: 85%;
+        }
+      }
+    }
+  
+    & .input-with-note {
+      gap: 7px;
+      &__text {
+        font-size: 7px;
+      }
+    }
+  
+    &-product__title,
+    &-product__options {
+      margin-left: 16px;
+    }
+  
+    &-product__options {
+      gap: 6px;
+      font-size: 9px;
+    }
+  
+    &__left {
+      gap: 11px;
+    }
+  
+    &__close {
+      margin: 8px 8px 0 0;
+
+      img {
+        max-height: 11px;
+      }
+    }
+  
+    &__content {
+      margin-bottom: 0.7rem;
+      gap: 16px;
+    }
+  }
+}
+
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.micromodal-slide {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &[aria-hidden="false"] {
+    & .modal__overlay {
+      animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    & .modal__container {
+      animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  &[aria-hidden="true"] {
+    & .modal__overlay {
+      animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    & .modal__container {
+      animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  & .modal__container,
+  & .modal__overlay {
+    will-change: transform;
+  }
+}

@@ -11,6 +11,21 @@ const swiper = new Swiper('.news-swiper', {
 const similarsSwiper = new Swiper('.similars-swiper', {
   slidesPerView: 5.5,
   spaceBetween: 18,
+  breakpoints: {
+    300: {
+      slidesPerView: 2.5,
+      spaceBetween: 16
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    // when window width is >= px
+    1200: {
+      slidesPerView: 5.5,
+      spaceBetween: 30
+    },
+  },
 
   navigation: {
     nextEl: '.news-swiper-button-next',
@@ -120,3 +135,5 @@ galleryItems.forEach(item => {
     // Replace the original HTML with the new structure
     item.outerHTML = newHtml;
 });
+
+MicroModal.init();

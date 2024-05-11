@@ -1,8 +1,7 @@
+@import "../_variables.scss";
+@import "../mixin.scss";
+
 .registration-success {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #02133e;
   border: 2px solid rgba(2, 19, 62, 1);
   color: #fff;
@@ -11,10 +10,15 @@
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.72px;
-  z-index: 10;
 
-  @media (max-width: 991px) {
-    padding: 20px;
+  @include tablet {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+
+  @include mobile {
+    padding: 10px 20px;
+    font-size: 10px;
   }
 }
 
@@ -27,6 +31,16 @@
   border: none;
   color: #fff;
   cursor: pointer;
+
+  @include tablet {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+
+  @include mobile {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
 }
 
 .content-wrapper {
@@ -46,12 +60,16 @@
 }
 
 .success-title {
-  font: 600 30px Raleway, sans-serif;
+  @include raleway(600, 30px);
   letter-spacing: 0.9px;
   width: 100%;
 
-  @media (max-width: 991px) {
-    max-width: 100%;
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include mobile {
+    font-size: 10px;
   }
 }
 
@@ -59,9 +77,14 @@
   font-family: Raleway, sans-serif;
   margin-top: 117px;
 
-  @media (max-width: 991px) {
+  @include tablet {
     max-width: 100%;
     margin-top: 40px;
+  }
+
+  @include mobile {
+    max-width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -83,6 +106,17 @@
     outline: none;
     border-color: #007bff;
   }
+
+  @include tablet {
+    font-size: 14px;
+    margin-top: 55px;
+  }
+
+  @include mobile {
+    font-size: 7px;
+    margin-top: 33px;
+    margin-bottom: 10px;
+  }
 }
 
 .next-button {
@@ -101,10 +135,15 @@
   align-items: center;
   display: flex;
 
-  @media (max-width: 991px) {
-    margin-top: 40px;
-    white-space: initial;
-    padding: 0 20px;
+  @include tablet {
+    margin-top: 14px;
+    padding: 8px 30px;
+  }
+
+  @include mobile {
+    margin-top: 7px;
+    padding: 4px 15px;
+    width: fit-content
   }
 }
 

@@ -12,10 +12,6 @@
     margin-bottom: 4px;
   }
 
-  &-matching__item {
-    width: 24%;
-  }
-
   #info {
     margin: 0 36px;
   }
@@ -229,6 +225,7 @@
         display: flex;
         align-items: center;
         text-transform: uppercase;
+        cursor: pointer;
       }
       &-img {
         margin-left: 20px;
@@ -274,11 +271,11 @@
       &__group {
         gap: 6px;
       }
-  
+
       &__gift {
         gap: 8px;
         justify-content: end;
-  
+
         &-text {
           @include raleway(500, 7px);
         }
@@ -305,6 +302,20 @@
         font-variant: small-caps;
         padding: 4px 24px !important;
       }
+    }
+  }
+
+  @include tablet {
+    &-similar {
+      margin-top: 80px !important;
+
+      &__title {
+        font-size: 24px !important;
+        margin-bottom: 24px !important;
+      }
+    }
+    &-articul {
+      @include montserrat(400, 6px);
     }
   }
 

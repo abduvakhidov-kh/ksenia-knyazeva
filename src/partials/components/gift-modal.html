@@ -1,0 +1,172 @@
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-1-title"
+    >
+      <main class="modal__content" id="modal-1-content">
+        <div class="modal__left">
+          <img src="img/product/image1.png" alt="product image" />
+          <h3 class="modal-section__title modal-product__title">
+            пальто красное
+          </h3>
+          <div class="modal-product__options">
+            <p class="modal-product__option">Размер: 42-44</p>
+            <p class="modal-product__option">Цвет: черный</p>
+          </div>
+        </div>
+        <div class="modal__right">
+          <button
+            class="modal__close btn-reset"
+            aria-label="Close modal"
+            data-micromodal-close
+          >
+            <img src="img/icons/modal-cross.svg" alt="modal close button" />
+          </button>
+          <form class="form-wrapper">
+            <div class="modal-section">
+              <h3 class="modal-section__title">КОМУ ХОТИТЕ СДЕЛАТЬ ПОДАРОК?</h3>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientName"
+                  class="input-field"
+                  placeholder="Имя получателя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientSurname"
+                  class="input-field"
+                  placeholder="Фамилия получателя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientEmail"
+                  class="input-field"
+                  placeholder="Email получателя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="recipientPhone"
+                  class="input-field"
+                  placeholder="Номер телефона"
+                />
+              </div>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section__title">ОТ КОГО</h3>
+              <div class="input">
+                <input
+                  type="text"
+                  id="senderName"
+                  class="input-field"
+                  placeholder="Имя отправителя"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="senderEmail"
+                  class="input-field"
+                  placeholder="Email отправителя"
+                />
+              </div>
+            </div>
+
+            <div class="modal-section">
+              <h3 class="modal-section__title">КУДА ОТПРАВИТЬ</h3>
+              <div class="input">
+                <input
+                  type="text"
+                  id="country"
+                  class="input-field"
+                  placeholder="Страна"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="city"
+                  class="input-field"
+                  placeholder="Город"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="street"
+                  class="input-field"
+                  placeholder="Улица"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="house"
+                  class="input-field"
+                  placeholder="Дом"
+                />
+              </div>
+              <div class="input-with-note">
+                <div class="input">
+                  <input
+                    type="text"
+                    id="flat"
+                    class="input-field"
+                    placeholder="Квартир, офис"
+                  />
+                </div>
+                <div class="input-with-note__text">
+                  * Для выбора способа доставки заполните поля выше
+                </div>
+              </div>
+            </div>
+            <div class="modal-section">
+              <h3 class="modal-section__title">способ доставки</h3>
+              <label
+                class="radio-button-container modal-delivery"
+                for="onplace-payment"
+              >
+                <div class="pickup">
+                  <div class="pickup__info">
+                    <h2 class="pickup__title">Пункт выдачи СДЭК</h2>
+                    <p class="pickup__description">
+                      <div class="modal-product__options">
+                        <p class="modal-product__option">Размер: 42-44</p>
+                        <p class="modal-product__option">Цвет: черный</p>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+                <input
+                  type="radio"
+                  name="delivery-method"
+                  id="onplace-payment"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <div class="form-checkbox">
+                <input type="checkbox" id="need-help" />
+                <label class="form-checkbox__label" for="need-help">
+                  Нужна консультация по телефону
+                </label>
+              </div>
+              <button class="btn-reset product-actions__add modal__action-btn">
+                ОФОРМИТЬ ПОДАРОК?
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>

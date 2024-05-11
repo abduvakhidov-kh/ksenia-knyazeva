@@ -28,13 +28,14 @@
 
     .country-code {
       @include montserrat(500, 38px);
+      color: $gray;
       height: 100%;
-      white-space: nowrap;
-      text-align: center;
+      white-space: nowrap;      
       outline: none;
       background-color: transparent;
       border: none;
       padding: 14.5px;
+      padding-left: 20px;
       border: 1px solid $gray;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;

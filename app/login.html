@@ -150,7 +150,7 @@
         <div class="phone">
           <select class="country-code">
             <option value="+7">+7</option>
-            <option value="+7 531">+7 531</option>
+            <option value="+7 531">+995</option>
           </select>
           <!-- <img loading="lazy" srcset="..." alt="Country Flag" class="flag-img"> -->
           <input
@@ -168,14 +168,51 @@
           Получить новый код можно через
           <span class="code-timer">1:36</span>
         </div>
-        <button class="login-button btn-reset">ВОЙТИ</button>
+        <button
+          class="login-button btn-reset"
+          data-micromodal-trigger="signup-modal"
+        >
+          ВОЙТИ
+        </button>
         <div class="alternative-login">Войти по паролю</div>
         <div class="terms">
           При входе или регистрации вы соглашаетесь с
           <span class="terms-link">Условиями</span>
         </div>
       </div>
+      <div class="modal micromodal-slide" id="signup-modal" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="signup-modal-title"
+    >
+      <main class="modal__content" id="signup-modal-content">
+        <section class="registration-success">
+  <div class="content-wrapper">
+    <button class="close-button">
+      <img src="img/icons/cross.svg" alt="close button" data-micromodal-close>
+    </button>
+    <h1 class="success-title">ПОЗДРАВЛЯЕМ С УСПЕШНОЙ РЕГИСТРАЦИЕЙ!</h1>
+    <p class="success-description">
+      Если в дальнейшем Вы хотите заходить <br />
+      в Личный кабинет быстрее, пожалуйста, <br />
+      <span class="bold-text">укажите Вашу почту</span>
+    </p>
+    <form>
+      <label for="email-input" class="visually-hidden">Email</label>
+      <input type="email" id="email-input" class="email-label" placeholder="Email" aria-label="Email" />
+      <button type="submit" class="next-button">ДАЛЕЕ</button>
+    </form>
+  </div>
+</section>
+      </main>
+    </div>
+  </div>
+</div>
+
     </main>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -96,36 +96,112 @@
   }
 }
 
-.similars-swiper__item {
-  width: 17% !important;
+.similars-swiper {
+  @extend .news-swiper;
 
-  
-  .news-swiper__top {
-    .news-swiper__img {
+  &__item {
+    width: calc(19% - 30px) !important;
+
+    & .d-flex-between {
+      flex-wrap: nowrap;
     }
-    span {
-      font-size: 16px;
+
+    & .news-swiper__btn {
+      align-self: center;
+      font-size: 19px;
+      padding: 6px 14px;
     }
-    .btn-reset.news-swiper__icon {
-      img {
+
+    & .news-swiper__icon {
+      top: 22px;
+      right: 24px;
+    }
+
+    & .news-swiper__info {
+      font-size: 19px;
+    }
+
+    & .news-swiper__top {
+      span {
+        font-size: 16px;
+        bottom: 24px;
+        padding-top: 6px;
+        padding-bottom: 6px;
       }
-      &:hover {}
-      &:active {}
-      &:focus {}
     }
   }
 
-  & .news-swiper__info {
-    font-size: 19px;
+  @include tablet {
+    &__item {
+      width: calc(25% - 16px) !important;
+      & .d-flex-between {
+        flex-wrap: nowrap;
+      }
+
+      & .news-swiper__btn {
+        align-self: center;
+        font-size: 10px;
+        padding: 4px 6px;
+      }
+
+      & .news-swiper__icon {
+        top: 8px;
+        right: 16px;
+
+        img {
+          max-height: 22px;
+        }
+      }
+
+      & .news-swiper__info {
+        font-size: 14px;
+      }
+
+      & .news-swiper__top {
+        span {
+          font-size: 13px;
+          bottom: 18px;
+          padding: 4px 8px;
+        }
+      }
+    }
   }
 
-  & .d-flex-between {
-    flex-wrap: nowrap;
-  }
+  @include mobile {
+    &__item {
+      width: calc(43% - 16px) !important;
 
-  & .news-swiper__btn {
-    display: flex;
-    align-items: center;
-    padding: 6px 14px;
+      & .d-flex-between {
+        flex-wrap: nowrap;
+      }
+  
+      & .news-swiper__btn {
+        align-self: center;
+        font-size: 7px;
+        padding: 3px 6px;
+      }
+  
+      & .news-swiper__icon {
+        top: 4px;
+        right: 10px;
+  
+        img {
+          max-height: 16px;
+        }
+      }
+  
+      & .news-swiper__info {
+        font-size: 9px;
+      }
+  
+      & .news-swiper__top {
+        span {
+          font-size: 7px;
+          bottom: 12px;
+          padding: 3px 6px;
+        }
+      }
+    }
+
   }
 }

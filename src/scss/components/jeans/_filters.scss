@@ -51,6 +51,7 @@
 
   &__btn {
     display: none;
+    cursor: pointer;
   }
 
   @include tablet {

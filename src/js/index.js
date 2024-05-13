@@ -98,6 +98,49 @@ document.addEventListener("DOMContentLoaded", function () {
   //     dropdownContent.style.display = "none";
   //   });
   // });
+
+  // interactive menu
+const OPEN_BTN = ".interactive-menu__open-btn";
+const CLOSE_BTN = ".interactive-menu__close-btn";
+const OPEN_BTN_HIDDEN = "interactive-menu__open-btn-hidden";
+
+const interactiveMenuOpenBtn = document.querySelector(OPEN_BTN);
+const interactiveMenuCloseBtn = document.querySelector(CLOSE_BTN);
+const interactiveMenu = document.querySelector(".interactive-menu");
+
+interactiveMenuOpenBtn.addEventListener("click",function () {
+  interactiveMenu.style.maxHeight = interactiveMenu.scrollHeight + "px";
+  interactiveMenuOpenBtn.classList.toggle(OPEN_BTN_HIDDEN);
+})
+
+interactiveMenuCloseBtn.addEventListener("click", function () {
+  interactiveMenu.style.maxHeight = "0";
+  interactiveMenuOpenBtn.classList.toggle(OPEN_BTN_HIDDEN);
+})
+
+  const icons = document.querySelectorAll('.interactive-menu__icons-container__icon');
+  const interactiveMenuDropdown = document.querySelectorAll('.interactive-menu__dropdown');
+
+  icons.forEach(icon => {
+    icon.addEventListener('click', function() {
+      const attachedId = this.getAttribute('id');
+      interactiveMenuDropdown.forEach(dropdown => {
+        const dropdownAttachedId = dropdown.getAttribute('data-attached');
+        if (attachedId === dropdownAttachedId) {
+          const isOpen = dropdown.classList.contains('show-interactive-menu-dropdown');
+          interactiveMenuDropdown.forEach(d => d.classList.remove('show-interactive-menu-dropdown'));
+          icons.forEach(i => i.classList.remove('show-interactive-menu-icon'));
+          if (!isOpen) {
+            dropdown.classList.add('show-interactive-menu-dropdown');
+            this.classList.add('show-interactive-menu-icon');
+            interactiveMenu.classList.add('show-overlay');
+          } else {
+            interactiveMenu.classList.remove('show-overlay');
+          }
+        }
+      });
+    });
+  });
 });
 
 // Select all elements with class collapsed-gallery

@@ -141,6 +141,24 @@ interactiveMenuCloseBtn.addEventListener("click", function () {
       });
     });
   });
+
+  const mobileFilters = document.querySelector('#mobile-filters');
+  const filtersExpandBtn = document.querySelector('#filters__expand-btn');
+  const filtersCollapsBtn = document.querySelector('#filters__collapse-btn');
+
+  
+  filtersExpandBtn.addEventListener("click", function () {
+    if (!mobileFilters.style.maxHeight) {
+      mobileFilters.style.maxHeight = mobileFilters.scrollHeight + "px";
+    } else {
+      mobileFilters.style.maxHeight = null;
+    }
+  })
+
+  filtersCollapsBtn.addEventListener("click", function () {
+      mobileFilters.style.maxHeight = null;
+  })
+
 });
 
 // Select all elements with class collapsed-gallery

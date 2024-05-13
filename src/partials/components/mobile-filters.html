@@ -1,42 +1,94 @@
-<section class="mobile-filters container" id="mobile-filters">
-  <div class="mobile-filters__header">
-    <button
-      class="modal__close btn-reset"
-      aria-label="Close filters"
-    >
-      <img src="img/icons/modal-cross.svg" alt="modal close button" />
-    </button>
-    <h3 class="mobile-filters__title">фильтры</h3>
-  </div>
-  <div class="mobile-filters__section">
-    <h4 class="mobile-filters__subtitle">
-      сортировать
-    </h4>
-    <ul class="list-reset mobile-filters__list">
-      <li class="mobile-filters__item">
-        <div class="form-checkbox">
-          <input type="checkbox" id="need-help" />
-          <label class="form-checkbox__label" for="need-help"
-            >Нужна консультация по телефону</label
+<section class="mobile-filters" id="mobile-filters">
+  <div class="mobile-filters__wrapper">
+    <div class="mobile-filters__header">
+      <h3 class="mobile-filters__title">фильтры</h3>
+      <button
+        class="mobile-filters__close btn-reset"
+        aria-label="Close filters"
+        id="filters__collapse-btn"
+      >
+        <img src="img/icons/modal-cross.svg" alt="modal close button" />
+      </button>
+    </div>
+    <div class="mobile-filters__section">
+      <h4 class="mobile-filters__subtitle">сортировать</h4>
+      <ul class="list-reset mobile-filters__list">
+        <li class="mobile-filters__item">
+          <label
+            class="radio-button-container orders-checkout__delivery-courier"
+            for="default"
           >
-        </div>
-      </li>
-      <li class="mobile-filters__item">
-        <div class="form-checkbox">
-          <input type="checkbox" id="need-help" />
-          <label class="form-checkbox__label" for="need-help"
-            >Нужна консультация по телефону</label
+            <div class="mobile-filters__radio">
+              <p class="mobile-filters__radio-title">По умолчанию</p>
+            </div>
+            <input type="radio" name="sorting-order" id="default" />
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="mobile-filters__item">
+          <label
+            class="radio-button-container orders-checkout__delivery-courier"
+            for="ascend"
           >
-        </div>
-      </li>
-      <li class="mobile-filters__item">
-        <div class="form-checkbox">
-          <input type="checkbox" id="need-help" />
-          <label class="form-checkbox__label" for="need-help"
-            >Нужна консультация по телефону</label
+            <div class="mobile-filters__radio">
+              <p class="mobile-filters__radio-title">По возрастанию цены</p>
+            </div>
+            <input type="radio" name="sorting-order" id="ascend" />
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="mobile-filters__item">
+          <label
+            class="radio-button-container orders-checkout__delivery-courier"
+            for="descend"
           >
-        </div>
-      </li>
-    </ul>
+            <div class="pickup">
+              <div class="mobile-filters__radio">
+                <p class="mobile-filters__radio-title">По возрастанию цены</p>
+              </div>
+            </div>
+            <input type="radio" name="sorting-order" id="descend" />
+            <span class="checkmark"></span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-filters__section">
+      <ul class="list-reset mobile-filters__list">
+        <li class="mobile-filters__item">
+          <div class="mobile-filters__specs">
+            <p class="mobile-filters__specs-title">Размер одежды</p>
+            <img
+              src="/img/icons/arrow.png"
+              alt="arrow left"
+              class="mobile-filters__specs-icon"
+            />
+          </div>
+        </li>
+        <li class="mobile-filters__item">
+          <div class="mobile-filters__specs">
+            <p class="mobile-filters__specs-title">Размер обуви</p>
+            <img
+              src="/img/icons/arrow.png"
+              alt="arrow left"
+              class="mobile-filters__specs-icon"
+            />
+          </div>
+        </li>
+        <li class="mobile-filters__item">
+          <div class="mobile-filters__specs">
+            <p class="mobile-filters__specs-title">Цвет</p>
+            <img
+              src="/img/icons/arrow.png"
+              alt="arrow left"
+              class="mobile-filters__specs-icon"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-filters__footer">
+      <button class="btn-primary mobile-filters__footer-btn">ПОКАЗАТЬ</button>
+    </div>
   </div>
 </section>

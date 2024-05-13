@@ -60,6 +60,14 @@ picture {
   cursor: pointer;
 }
 
+.btn-primary {
+  @extend .btn-reset;
+
+  text-transform: uppercase;
+  color: white;
+  background-color: $oceanBlue;
+}
+
 .d-flex {
   display: flex;
 }

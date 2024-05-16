@@ -142,7 +142,7 @@ picture {
 .form {
   width: 100%;
   letter-spacing: 0.03em;
-  border: 1px solid black;
+  border: 2px solid $oceanBlue;
   -webkit-box-shadow: 3px 5px 18px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 5px 18px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 5px 18px -7px rgba(0, 0, 0, 0.75);
@@ -155,6 +155,7 @@ picture {
 
   &-title {
     @include raleway(500, 34px);
+    color: $oceanBlue;
     margin-bottom: 8px;
     align-self: start;
   }
@@ -208,7 +209,7 @@ picture {
     &-field {
       font-size: 17px;
       padding: 0 6px;
-  
+
       &::placeholder {
         font-size: 16px;
       }
@@ -225,11 +226,11 @@ picture {
     &-field {
       font-size: 10px;
       padding: 0 6px;
-  
+
       &::placeholder {
         font-size: 8px;
       }
-  
+
       &:focus {
         outline: none;
         border-bottom-color: 2px; // Change border color on focus if desired
@@ -394,7 +395,7 @@ picture {
     &__url {
       @include raleway(600, 18px);
     }
-  
+
     &__description {
       margin-top: 16px;
       @include raleway(400, 16px);
@@ -407,7 +408,7 @@ picture {
     &__url {
       @include raleway(600, 8px);
     }
-  
+
     &__description {
       margin-top: 7px;
       @include raleway(400, 7px);

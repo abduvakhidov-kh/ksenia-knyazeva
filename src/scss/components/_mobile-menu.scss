@@ -67,7 +67,7 @@ $menuToggleIconOpacity: 0;
 
   &__input:checked ~ .menu-toggle__icon {
     opacity: 1;
-    transform: rotate(45deg) translate(2px, 2px);
+    transform: rotate(45deg) translate(1px, 3px);
     background: #232323;
     
     &:nth-last-child(3) {

@@ -24,7 +24,7 @@
     @include('./partials/components/account-header.html')
     <main class="main">
       <section class="container">
-        <header class="section-header">
+        <header class="section-header profile-header">
           <h1 class="section-header__title">ПРОФИЛЬ</h1>
         </header>
         <section class="profile">
@@ -65,6 +65,7 @@
             </div>
           </div>
           <div class="form">
+            <div class="form-title">ЛИЧНЫЕ ДАННЫЕ</div>
             <div class="input">
               <label for="fullName" class="input-label">ФИО</label>
               <input
@@ -99,14 +100,41 @@
               </div>
             </div>
 
-            <div class="input">
+            <div class="input profile__address-input">
               <label for="address" class="input-label">Мои адреса</label>
-              <input
-                type="text"
-                id="address"
-                class="input-field"
-                placeholder="Укажите Ваш основной адрес для доставки"
-              />
+              <div class="input-field-container">
+                <input
+                  type="text"
+                  id="address"
+                  class="input-field"
+                  placeholder="Укажите Ваш основной адрес для доставки"
+                />
+                <div class="input-field-icon">
+                  <svg
+                    class="icon"
+                    width="30px"
+                    font-weight="100"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="12"
+                      y1="1"
+                      x2="12"
+                      y2="23"
+                      style="stroke: #7C7C7C; stroke-width: 1"
+                    />
+                    <line
+                      x1="1"
+                      y1="12"
+                      x2="23"
+                      y2="12"
+                      style="stroke: #7C7C7C; stroke-width: 1"
+                    />
+                  </svg>
+                </div>
+                <div class="tooltip">Добавить несколько любимых адресов</div>
+              </div>
             </div>
           </div>
           <div class="form">
@@ -180,7 +208,7 @@
             </div>
             <button class="button button--primary">ЗАГРУЗИТЬ</button>
           </div>
-          <div class="profile-settings">
+          <div class="profile-settings profile-settings__last">
             <h2 class="profile-settings__title">
               Выбрать любимый мессенджер для связи:
             </h2>
